@@ -1,5 +1,6 @@
-# AdaReferenceCard
-Reference Card of Ada Attributes, Aspects, Pragmas and a list of packages in the Ada Standard Library.
+# Ada Reference Card
+
+Reference Card of Ada Attributes, Aspect declarations, Pragmas and Standard Library.
 
 ## Source
 
