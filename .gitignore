@@ -1,5 +1,11 @@
 # Object file
 *.o
 
+*.dvi
+*.aux
+*.log
+*.out
+
+
 # Ada Library Information
 *.ali
