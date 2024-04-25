@@ -2,7 +2,7 @@
 
 Reference Card for the programming language [Ada](https://en.wikipedia.org/wiki/Ada_(programming_language)). It contains lists of Attributes, Aspects, Pragmas and also a list of packages in the Ada Standard Library.
 
-## Sourcegf
+## Source
 
 The information is mainly taken from the Ada Reference Manual (Ada 2022):
 
