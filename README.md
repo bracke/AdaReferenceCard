@@ -2,7 +2,9 @@
 
 Reference Card for the programming language [Ada](https://en.wikipedia.org/wiki/Ada_(programming_language)). It contains lists of Attributes, Aspects, Pragmas and also a list of packages in the Ada Standard Library.
 
-## Source
+*It contains the changes from newer versions of Ada up to and including Ada 2022.*
+
+## Sources
 
 The information is mainly taken from the Ada Reference Manual (Ada 2022):
 
@@ -33,3 +35,5 @@ In particular:
 - Translations.
 - Other paper sizes.
 - Other file formats.
+- Improving the projects GitHub setup
+- Improving this readme!
