@@ -21,15 +21,12 @@
 \usepackage{ragged2e}
 \usepackage{enumitem}
 \usepackage{setspace}
+\usepackage{titlesec}
 \makeatletter
-\renewcommand\section{%
-   \@startsection{section}%
-   {1}%
-   {0cm}%
-   {-0.2ex \@plus -0.1ex \@minus -.2ex}%
-   {0.1cm}%
-{\raggedright\normalfont\normalsize\bfseries}%
-}
+\titleformat{\section}[block]
+  {\titlerule\addvspace{2pt}\normalfont\fontsize{9}{10}\bfseries}
+  {\thesection\enspace}{0pt}{}[\vspace{1pt}\titlerule]
+
 \makeatother
 \begin{titlepage}
 \thispagestyle{empty}
@@ -37,7 +34,7 @@
 \begin{document}
 \begin{scriptsize}
 \begin{multicols*}{3}
-\section*{Ada 2022 REFERENCE CARD}
+\section*{\textsc{Ada 2022 Reference Card}}
 \begin{tabular}{@{}l l l l l l l l}
 \textit{italic} & Ada 2022 &&&&&&\\
 {[]} & Optional & \{\} & Repeatable & | & Alternative & \dots & Identical\\
@@ -51,7 +48,7 @@
    C - component & D - library declaration &&\\
    F - function & V - value sequence &&\\
 \end{tabular}
-\section*{ATTRIBUTES}
+\section*{\textsc{Attributes}}
 \RaggedRight
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{@{}p{2cm}p{6.5cm}}
@@ -580,7 +577,7 @@
 
 \end{tabular}
 
-\section*{ASPECTS}
+\section*{\textsc{Aspects}}
 \raggedright
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{@{}p{2cm}p{6.5cm}}
@@ -970,7 +967,7 @@
    Ensures that a callable entity includes a task dispatching point.\\
 \end{tabular}
 
-\section*{PRAGMAS}
+\section*{\textsc{Pragmas}}
 \begin{tabular}{@{}p{2cm}p{6.5cm}}
 
    \href{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{\textit{Admission\_Policy}}  & \texttt{pragma Admission\_Policy (policy\_identifier)}
@@ -1217,7 +1214,7 @@ Declares that the components of the array type — but not the array type itself
 \end{multicols*}
 \clearpage
 \begin{multicols*}{5}
-\section*{STANDARD LIBRARY}
+\section*{\textsc{Standard Library}}
 
 \begin{itemize}[leftmargin=0mm]
 \item[] \textbf{package Standard}
