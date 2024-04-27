@@ -1222,19 +1222,22 @@ Declares that the components of the array type — but not the array type itself
 \begin{itemize}[leftmargin=0mm]
 \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-1.html}{Standard}}
   \begin{itemize}[leftmargin=5mm]
-  \item[] Boolean True or False
-  \item[] Integer Implementation defined
-  \item[] Natural Integers >= 0
-  \item[] Positive Integers > 0
-  \item[] Float Implementation defined
-  \item[] Character 8-bit ASCII
-  \item[] Wide\_Character 16-bit ISO 10646
-  \item[] String Array of Characters
-  \item[] Duration Time
-  \item[] Constraint\_Error Predefined Exception
-  \item[] Program\_Error Predefined Exception
-  \item[] Storage\_Error Predefined Exception
-  \item[] Tasking\_Error Predefined Exception
+  \item[] \texttt{Boolean} True or False
+  \item[] \texttt{Integer} Implementation defined
+  \item[] \texttt{Natural} Integers >= 0
+  \item[] \texttt{Positive} Integers > 0
+  \item[] \texttt{Float} Implementation defined
+  \item[] \texttt{Character} 8-bit ASCII/ISO 8859-1
+  \item[] \texttt{Wide\_Character} 16-bit ISO 10646
+  \item[] \texttt{Wide\_Wide\_Character} 32-bit ISO 10646:2020
+  \item[] \texttt{String} Array of Characters
+  \item[] \texttt{Wide\_String} Array of Wide\_Character
+  \item[] \texttt{Wide\_Wide\_String} Array of Wide\_Wide\_Character
+  \item[] \texttt{Duration} Time in seconds
+  \item[] \texttt{Constraint\_Error} Predefined exception
+  \item[] \texttt{Program\_Error} Predefined exception
+  \item[] \texttt{Storage\_Error} Predefined exception
+  \item[] \texttt{Tasking\_Error} Predefined exception
   \end{itemize}
 \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-2.html}{Ada}}
   \begin{itemize}[leftmargin=5mm]
