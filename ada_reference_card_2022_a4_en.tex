@@ -1259,6 +1259,7 @@ Declares that the components of the array type — but not the array type itself
             \item[] Bounded\_Doubly\_Linked\_Lists
             \item[] Bounded\_Hashed\_Maps
             \item[] Bounded\_Hashed\_Sets
+            \item[] Bounded\_Indefinite\_Holders
             \item[] Bounded\_Multiway\_Trees
             \item[] Bounded\_Ordered\_Maps
             \item[] Bounded\_Ordered\_Sets
@@ -1274,11 +1275,11 @@ Declares that the components of the array type — but not the array type itself
             \item[] Indefinite\_Doubly\_Linked\_Lists
             \item[] Indefinite\_Hashed\_Maps
             \item[] Indefinite\_Hashed\_Sets
+            \item[] Indefinite\_Holders
+            \item[] Indefinite\_Multiway\_Trees
             \item[] Indefinite\_Ordered\_Maps
             \item[] Indefinite\_Ordered\_Sets
             \item[] Indefinite\_Vectors
-            \item[] Indefinite\_Holders
-            \item[] Indefinite\_Multiway\_Trees
             \item[] Multiway\_Trees
             \item[] Ordered\_Maps
             \item[] Ordered\_Sets
@@ -1290,25 +1291,25 @@ Declares that the components of the array type — but not the array type itself
       \item[] Decimal
       \item[] Direct\_IO
       \item[] Directories
-         \begin{itemize}[leftmargin=15mm]
+         \begin{itemize}[leftmargin=5mm]
             \item[] Hierarchical\_File\_Names
             \item[] Information
          \end{itemize}
       \item[] Dispatching
-         \begin{itemize}[leftmargin=15mm]
+         \begin{itemize}[leftmargin=5mm]
             \item[] EDF
             \item[] Non\_Preemptive
             \item[] Round\_Robin
          \end{itemize}
       \item[] Dynamic\_Priorities
       \item[] Environment\_Variables
+      \item[] Exceptions
       \item[] Execution\_Time
-         \begin{itemize}[leftmargin=15mm]
+         \begin{itemize}[leftmargin=5mm]
+            \item[] Group\_Budgets
             \item[] Interrupts
             \item[] Timers
-            \item[] Group\_Budgets
          \end{itemize}
-      \item[] Exceptions
       \item[] Finalization
       \item[] Float\_Text\_IO
       \item[] Float\_Wide\_Text\_IO
@@ -1317,7 +1318,7 @@ Declares that the components of the array type — but not the array type itself
       \item[] Integer\_Wide\_Text\_IO
       \item[] Integer\_Wide\_Wide\_Text\_IO
       \item[] Interrupts
-         \begin{itemize}[leftmargin=15mm]
+         \begin{itemize}[leftmargin=5mm]
             \item[] Names
          \end{itemize}
       \item[] IO\_Exceptions
@@ -1351,80 +1352,106 @@ Declares that the components of the array type — but not the array type itself
       \item[] Storage\_IO
       \item[] Streams
          \begin{itemize}[leftmargin=5mm]
+            \item[] Storage\_Streams
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Bounded\_FIFO\_Streams
+               \item[] FIFO\_Streams
+            \end{itemize}
             \item[] Stream\_IO
          \end{itemize}
       \item[] Strings
          \begin{itemize}[leftmargin=5mm]
             \item[] Bounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Hash
-                  \item[] Hash\_Case\_Insensitive
-                  \item[] Equal\_Case\_Insensitive
-                  \item[] Less\_Case\_Insensitive
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Equal\_Case\_Insensitive
+               \item[] Hash
+               \item[] Hash\_Case\_Insensitive
+               \item[] Less\_Case\_Insensitive
+            \end{itemize}
+            \item[] Equal\_Case\_Insensitive
             \item[] Fixed
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Hash
-                  \item[] Hash\_Case\_Insensitive
-                  \item[] Equal\_Case\_Insensitive
-                  \item[] Less\_Case\_Insensitive
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Equal\_Case\_Insensitive
+               \item[] Hash
+               \item[] Hash\_Case\_Insensitive
+               \item[] Less\_Case\_Insensitive
+            \end{itemize}
             \item[] Hash
             \item[] Hash\_Case\_Insensitive
             \item[] Less\_Case\_Insensitive
-            \item[] Equal\_Case\_Insensitive
             \item[] Maps
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Constants
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Constants
+            \end{itemize}
+            \item[] Text\_Buffers
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Bounded
+               \item[] Unbounded
+            \end{itemize}
             \item[] Unbounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Hash
-                  \item[] Hash\_Case\_Insensitive
-                  \item[] Equal\_Case\_Insensitive
-                  \item[] Less\_Case\_Insensitive
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Equal\_Case\_Insensitive
+               \item[] Hash
+               \item[] Hash\_Case\_Insensitive
+               \item[] Less\_Case\_Insensitive
+            \end{itemize}
             \item[] UTF\_Encoding
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Conversions
-                  \item[] Strings
-                  \item[] Wide\_Strings
-                  \item[] Wide\_Wide\_Strings
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Conversions
+               \item[] Strings
+               \item[] Wide\_Strings
+               \item[] Wide\_Wide\_Strings
+            \end{itemize}
             \item[] Wide\_Bounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Hash
+               \item[] Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
+            \item[] Wide\_Equal\_Case\_Insensitive
             \item[] Wide\_Fixed
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Hash
+               \item[] Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
             \item[] Wide\_Hash
+            \item[] Wide\_Hash\_Case\_Insensitive
             \item[] Wide\_Maps
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Constants
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Constants
+            \end{itemize}
             \item[] Wide\_Unbounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Hash
+               \item[] Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
             \item[] Wide\_Wide\_Bounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Wide\_Hash
+               \item[] Wide\_Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
+            \item[] Wide\_Wide\_Equal\_Case\_Insensitive
             \item[] Wide\_Wide\_Fixed
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Wide\_Hash
+               \item[] Wide\_Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
             \item[] Wide\_Wide\_Hash
+            \item[] Wide\_Wide\_Hash\_Case\_Insensitive
             \item[] Wide\_Wide\_Maps
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Wide\_Constants
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Wide\_Constants
+            \end{itemize}
             \item[] Wide\_Wide\_Unbounded
-               \begin{itemize}[leftmargin=5mm]
-                  \item[] Wide\_Wide\_Hash
-               \end{itemize}
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Wide\_Wide\_Equal\_Case\_Insensitive
+               \item[] Wide\_Wide\_Hash
+               \item[] Wide\_Wide\_Hash\_Case\_Insensitive
+            \end{itemize}
          \end{itemize}
       \item[] Synchronous\_Barriers
       \item[] Synchronous\_Task\_Control
@@ -1442,13 +1469,7 @@ Declares that the components of the array type — but not the array type itself
          \begin{itemize}[leftmargin=5mm]
             \item[] Bounded\_IO
             \item[] Complex\_IO
-            \item[] Decimal\_IO
             \item[] Editing
-            \item[] Enumeration\_IO
-            \item[] Fixed\_IO
-            \item[] Float\_IO
-            \item[] Integer\_IO
-            \item[] Modular\_IO
             \item[] Text\_Streams
             \item[] Unbounded\_IO
          \end{itemize}
@@ -1459,48 +1480,42 @@ Declares that the components of the array type — but not the array type itself
          \begin{itemize}[leftmargin=5mm]
             \item[] Handling
          \end{itemize}
+      \item[] Wide\_Command\_Line
+      \item[] Wide\_Directories
+      \item[] Wide\_Environment\_Variables
       \item[] Wide\_Text\_IO
          \begin{itemize}[leftmargin=5mm]
-            \item[] Wide\_Bounded\_IO
             \item[] Complex\_IO
-            \item[] Decimal\_IO
             \item[] Editing
-            \item[] Enumeration\_IO
-            \item[] Fixed\_IO
-            \item[] Float\_IO
-            \item[] Integer\_IO
-            \item[] Modular\_IO
             \item[] Text\_Streams
+            \item[] Wide\_Bounded\_IO
             \item[] Wide\_Unbounded\_IO
+            \item[] Wide\_Wide\_Characters
+            \begin{itemize}[leftmargin=5mm]
+               \item[] Handling
+            \end{itemize}
          \end{itemize}
-      \item[] Wide\_Wide\_Characters
-         \begin{itemize}[leftmargin=5mm]
-            \item[] Handling
-         \end{itemize}
+      \item[] Wide\_Wide\_Command\_Line
+      \item[] Wide\_Wide\_Directories
+      \item[] Wide\_Wide\_Environment\_Variables
       \item[] Wide\_Wide\_Text\_IO
          \begin{itemize}[leftmargin=5mm]
-            \item[] Wide\_Wide\_Bounded\_IO
             \item[] Complex\_IO
-            \item[] Decimal\_IO
             \item[] Editing
-            \item[] Enumeration\_IO
-            \item[] Fixed\_IO
-            \item[] Float\_IO
-            \item[] Integer\_IO
-            \item[] Modular\_IO
             \item[] Text\_Streams
+            \item[] Wide\_Wide\_Bounded\_IO
             \item[] Wide\_Wide\_Unbounded\_IO
          \end{itemize}
    \end{itemize}
 \item[] \textbf{package Interfaces}
    \begin{itemize}[leftmargin=5mm]
       \item[] C
-      \begin{itemize}[leftmargin=5mm]
-         \item[] Pointers
-         \item[] Strings
-      \end{itemize}
-   \item[] COBOL
-   \item[] Fortran
+         \begin{itemize}[leftmargin=5mm]
+            \item[] Pointers
+            \item[] Strings
+         \end{itemize}
+      \item[] COBOL
+      \item[] Fortran
    \end{itemize}
 \item[] \textbf{package System}
    \begin{itemize}[leftmargin=5mm]
