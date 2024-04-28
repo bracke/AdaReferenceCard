@@ -22,6 +22,7 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{titlesec}
+\usepackage{seqsplit}
 \makeatletter
 \titleformat{\section}[block]
   {\titlerule\addvspace{2pt}\normalfont\fontsize{9}{10}\bfseries}
@@ -51,527 +52,527 @@
 \section*{\textsc{Attributes}}
 \RaggedRight
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Access} & \texttt{P|X'Access return access\_type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Access}} & \texttt{P|X'Access return access\_type}
 
    Access to subprogram or object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Address} & \texttt{X|P|L'Address return System.Address}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Address}} & \texttt{X|P|L'Address return System.Address}
 
    Address of the first of the storage elements allocated to object, program unit, or label.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Adjacent} & \texttt{S'Adjacent (X,Towards:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Adjacent}} & \texttt{S'Adjacent (X,Towards:T) return T}
 
    Adjacent floating point number to X in the direction of Towards.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Aft} & \texttt{S'Aft return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Aft}} & \texttt{S'Aft return universal\_integer}
 
    Number of decimal digits needed after the decimal point to accommodate the delta.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Alignment} & \texttt{S|X'Alignment return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Alignment}} & \texttt{S|X'Alignment return universal\_integer}
 
    Alignment of object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Base} & \texttt{S'Base return S'Base}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Base}} & \texttt{S'Base return S'Base}
 
    Denotes the base unconstrained subtype of S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Bit\_Order} & \texttt{S'Bit\_Order return System.Bit\_Order}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Bit\_Order}} & \texttt{S'Bit\_Order return System.Bit\_Order}
 
    Record subtype bit ordering.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Body\_Version} & \texttt{P'Body\_Version return String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Body\_Version}} & \texttt{P'Body\_Version return String}
 
    Version of the compilation unit that contains the body.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Callable} & \texttt{T'Callable return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Callable}} & \texttt{T'Callable return Boolean}
 
    True when the task denoted by T is callable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Caller} & \texttt{E'Caller return Task\_ID}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Caller}} & \texttt{E'Caller return Task\_ID}
 
    Identifies the task whose call is now being serviced.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Ceiling} & \texttt{S'Ceiling (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Ceiling}} & \texttt{S'Ceiling (X:T) return T}
 
    Smallest (most negative) integral value greater than or equal to argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class} & \texttt{S'Class return class-wide type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Class}} & \texttt{S'Class return class-wide type}
 
    Returns the class-wide type of tagged type S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class} & \texttt{S'Class return class-wide type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Class}} & \texttt{S'Class return class-wide type}
 
    Returns the class-wide type for subtype S of an untagged private type whose full view is tagged.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Component\_Size} & \texttt{X'Component\_Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Component\_Size}} & \texttt{X'Component\_Size return universal\_integer}
 
    Size in bits of components of the array subtype or object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Compose} & \texttt{S'Compose (Fraction:T;Exponent:universal\_integer) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Compose}} & \texttt{S'Compose (Fraction:T;Exponent:universal\_integer) return T}
 
    Combine fraction and exponent into a floating point subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Constrained} & \texttt{A'Constrained return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Constrained}} & \texttt{A'Constrained return Boolean}
 
    True if A of discriminated type denotes a constant, a value, or a constrained variable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Copy\_Sign} & \texttt{S'Copy\_Sign (Value,Sign:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Copy\_Sign}} & \texttt{S'Copy\_Sign (Value,Sign:T) return T}
 
    Result whose magnitude is that of float Value and whose sign is that of Sign.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Count} & \texttt{E'Count return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Count}} & \texttt{E'Count return universal\_integer}
 
    Number of calls presently queued on the entry.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Definite} & \texttt{S'Definite return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Definite}} & \texttt{S'Definite return Boolean}
 
    True if the actual subtype of a a formal indefinite subtype is definite.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Delta} & \texttt{S'Delta return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Delta}} & \texttt{S'Delta return universal\_real}
 
    The delta of the fixed point subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Denorm} & \texttt{S'Denorm return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Denorm}} & \texttt{S'Denorm return Boolean}
 
    True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Digits} & \texttt{S'Digits return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Digits}} & \texttt{S'Digits return universal\_integer}
 
    Number of digits of the decimal fixed point subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Digits} & \texttt{S'Digits return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Digits}} & \texttt{S'Digits return universal\_integer}
 
    Number of decimal mantissa digits for floating point subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Enum\_Rep}} & \texttt{S'Enum\_Rep (X:S'Base) return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Enum\_Rep}}} & \texttt{S'Enum\_Rep (X:S'Base) return universal\_integer}
 
    Return the number representing a given enumeration literal.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Enum\_Val}} & \texttt{S'Enum\_Val (X:universal\_integer) return S'Base}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Enum\_Val}}} & \texttt{S'Enum\_Val (X:universal\_integer) return S'Base}
 
    Return the enumeration literal represented by a given number.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Exponent} & \texttt{S'Exponent (X:T) return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Exponent}} & \texttt{S'Exponent (X:T) return universal\_integer}
 
    Normalized exponent of the floating point argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{External\_Tag} & \texttt{S'External\_Tag return String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{External\_Tag}} & \texttt{S'External\_Tag return String}
 
    An external string representation of the tagged type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First} & \texttt{A'First (N) return index\_type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{First}} & \texttt{A'First (N) return index\_type}
 
    Lower bound of N-th index of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First} & \texttt{A'First return index\_type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{First}} & \texttt{A'First return index\_type}
 
    Lower bound of first index of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First} & \texttt{S'First return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{First}} & \texttt{S'First return S}
 
    Lower bound of the range of scalar subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First\_Bit} & \texttt{R.C'First\_Bit return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{First\_Bit}} & \texttt{R.C'First\_Bit return universal\_integer}
 
    Bit offset, from the start of the first of the storage elements occupied by C, of the first bit occupied by C.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First\_Valid} & \texttt{S'First\_Valid return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{First\_Valid}} & \texttt{S'First\_Valid return S}
 
    Denotes the smallest value that belongs to S and satisfies the predicates of S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Floor} & \texttt{S'Floor (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Floor}} & \texttt{S'Floor (X:T) return T}
 
    Largest integral value less than or equal to the argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Fore} & \texttt{S'Fore return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Fore}} & \texttt{S'Fore return universal\_integer}
 
    Minimum number of characters needed before the decimal point.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Fraction} & \texttt{S'Fraction (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Fraction}} & \texttt{S'Fraction (X:T) return T}
 
    Decompose floating point argument into fractional part.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Has\_Same\_Storage} & \texttt{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Has\_Same\_Storage}} & \texttt{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}
 
    Returns True if the representation of X2 occupies exactly the same bits as the representation of X and the objects occupy at least one bit.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Identity} & \texttt{E'Identity return Exception\_Id}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Identity}} & \texttt{E'Identity return Exception\_Id}
 
    Yields unique identity of the exception.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Identity} & \texttt{T'Identity return Task\_Id}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Identity}} & \texttt{T'Identity return Task\_Id}
 
    Yields unique identity of the task.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Image} & \texttt{S'Image (X) return String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Image}} & \texttt{S'Image (X) return String}
 
    Image of the value of X as a String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Image}} & \texttt{X'Image return String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Image}}} & \texttt{X'Image return String}
 
    Image of the value of X as a String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Index}} & \texttt{E'Index return entry\_index\_subtype}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Index}}} & \texttt{E'Index return entry\_index\_subtype}
 
    Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Input} & \texttt{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Class'Input}} & \texttt{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}
 
    First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Input} & \texttt{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Input}} & \texttt{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}
 
    Reads and returns one value from the Stream argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last} & \texttt{A'Last (N) return index\_type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Last}} & \texttt{A'Last (N) return index\_type}
 
    Upper bound of N-th index range of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last} & \texttt{A'Last return index\_type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Last}} & \texttt{A'Last return index\_type}
 
    Upper bound of first index range of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last} & \texttt{S'Last return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Last}} & \texttt{S'Last return T}
 
    Upper bound of the range of scalar subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last\_Bit} & \texttt{R.C'Last\_Bit return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Last\_Bit}} & \texttt{R.C'Last\_Bit return universal\_integer}
 
    Bit offset, from the start of the first of the storage elements occupied by C, of the last bit occupied by C.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Leading\_Part} & \texttt{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Leading\_Part}} & \texttt{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}
 
    The leading part of floating point value with number of radix digits given by second argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Length} & \texttt{A'Length (N) return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Length}} & \texttt{A'Length (N) return universal\_integer}
 
    Number of values of the N-th index range of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Length} & \texttt{A'Length return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Length}} & \texttt{A'Length return universal\_integer}
 
    Number of values of the first index range of [constrained] array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine} & \texttt{S'Machine (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine}} & \texttt{S'Machine (X:T) return T}
 
    Machine representation of floating point argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Emax} & \texttt{S'Machine\_Emax return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Emax}} & \texttt{S'Machine\_Emax return universal\_integer}
 
    Largest (most positive) value of floating point exponent.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Emin} & \texttt{S'Machine\_Emin return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Emin}} & \texttt{S'Machine\_Emin return universal\_integer}
 
    Smallest (most negative) value of floating point exponent.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Mantissa} & \texttt{S'Machine\_Mantissa return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Mantissa}} & \texttt{S'Machine\_Mantissa return universal\_integer}
 
    Number of digits in machine representation of mantissa.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Overflows} & \texttt{S'Machine\_Overflows return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Overflows}} & \texttt{S'Machine\_Overflows return Boolean}
 
    True if numeric overflow detected for fixed or floating point.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Radix} & \texttt{S'Machine\_Radix return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Radix}} & \texttt{S'Machine\_Radix return universal\_integer}
 
    Radix of machine representation of the fixed or floating point.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Rounds} & \texttt{S'Machine\_Rounds return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Rounds}} & \texttt{S'Machine\_Rounds return Boolean}
 
    True if rounding is performed on inexact results of the fixed or floating point.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Rounding} & \texttt{S'Machine\_Rounding (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Machine\_Rounding}} & \texttt{S'Machine\_Rounding (X:T) return T}
 
    Yields the integral value nearest to X.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max} & \texttt{S'Max (X1,X2:S) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Max}} & \texttt{S'Max (X1,X2:S) return S}
 
    Returns the greater of the values of the two parameters.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max\_Alignment\_For\_Allocation} & \texttt{S'Max\_Alignment\_For\_Allocation return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Max\_Alignment\_For\_Allocation}} & \texttt{S'Max\_Alignment\_For\_Allocation return universal\_integer}
 
    Maximum value for Alignment that can be requested by the implementation via Allocate for an access type whose designated subtype is S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max\_Size\_In\_Storage\_Elements} & \texttt{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Max\_Size\_In\_Storage\_Elements}} & \texttt{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}
 
    Maximum value for Size\_In\_Storage\_Elements that will be requested via Allocate.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Min} & \texttt{S'Min (X1,X2:S) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Min}} & \texttt{S'Min (X1,X2:S) return S}
 
    The lesser of the values of the two scalar arguments.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Mod} & \texttt{S'Mod (X:T) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Mod}} & \texttt{S'Mod (X:T) return S}
 
    Will correctly convert any integer type to a given modular type (S), using wraparound semantics.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model} & \texttt{S'Model (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Model}} & \texttt{S'Model (X:T) return T}
 
    Model number of floating point type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Emin} & \texttt{S'Model\_Emin return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Model\_Emin}} & \texttt{S'Model\_Emin return universal\_integer}
 
    Model number version of S''Machine\_Emin.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Epsilon} & \texttt{S'Model\_Epsilon return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Model\_Epsilon}} & \texttt{S'Model\_Epsilon return universal\_real}
 
    Absolute difference between the model number 1.0 and the next model number above for subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Mantissa} & \texttt{S'Model\_Mantissa return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Model\_Mantissa}} & \texttt{S'Model\_Mantissa return universal\_integer}
 
    Model number version of S'Machine\_Mantissa.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Small} & \texttt{S'Model\_Small return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Model\_Small}} & \texttt{S'Model\_Small return universal\_real}
 
    Smallest positive model number of subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Modulus} & \texttt{S'Modulus return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Modulus}} & \texttt{S'Modulus return universal\_integer}
 
    The modulus of the modular subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Object\_Size}} & \texttt{S'Object\_Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Object\_Size}}} & \texttt{S'Object\_Size return universal\_integer}
 
    The size of an object of subtype S. Must be a value that the compiler is able to allocate (usually an entire storage unit).\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Old} & \texttt{X'Old return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Old}} & \texttt{X'Old return T}
 
    The value of X on entry, has same type as X.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Output} & \texttt{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Class'Output}} & \texttt{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}
 
    Writes the external tag of Item to Stream and then dispatches to the subprogram denoted by the Output attribute of the specific type identified by the tag.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Output} & \texttt{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Output}} & \texttt{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}
 
    Writes the value of X to Stream, including any bounds or discriminants.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Overlaps\_Storage} & \texttt{X'Overlaps\_Storage (X2) return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Overlaps\_Storage}} & \texttt{X'Overlaps\_Storage (X2) return Boolean}
 
    Returns True if the representation of X2 shares at least one bit with the representation of the object denoted by X.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Parallel\_Reduce}} & \texttt{X'Parallel\_Reduce (Reducer,Initial\_Value)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Parallel\_Reduce}}} & \texttt{X'Parallel\_Reduce (Reducer,Initial\_Value)}
 
    Reduction expression that yields a result equivalent to replacing the attribute identifier with Reduce and the prefix of the attribute with the value\_sequence.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Partition\_ID} & \texttt{D'Partition\_ID return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Partition\_ID}} & \texttt{D'Partition\_ID return universal\_integer}
 
    Identifies the partition in which D was elaborated.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Pos} & \texttt{S'Pos (X) return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Pos}} & \texttt{S'Pos (X) return universal\_integer}
 
    Position of the value of the discrete subtype argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Position} & \texttt{R.C'Position return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Position}} & \texttt{R.C'Position return universal\_integer}
 
    Same as R.C'Address - R'Address for component C.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Pred} & \texttt{S'Pred (X) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Pred}} & \texttt{S'Pred (X) return S}
 
    Predecessor of the argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Preelaborable\_Initialization}} & \texttt{S'Preelaborable\_Initialization return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Preelaborable\_Initialization}}} & \texttt{S'Preelaborable\_Initialization return Boolean}
 
    Returns whether the type of S has preelaborable initialization.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Priority} & \texttt{P'Priority return System.Any\_Priority}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Priority}} & \texttt{P'Priority return System.Any\_Priority}
 
    Returns the priority of P.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Put\_Image}} & \texttt{S'Put\_Image (Buffer:
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Put\_Image}}} & \texttt{S'Put\_Image (Buffer:
    Ada.Strings.Text\_Buffers.Root\_Buffer\_Type'Class;X)}
 
    Writes an image of the value of X.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range} & \texttt{A'Range return range}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Range}} & \texttt{A'Range return range}
 
    Equivalent to the range A'First .. A'Last.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range} & \texttt{S'Range return range}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Range}} & \texttt{S'Range return range}
 
    Equivalent to the range S'First .. S'Last.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range} & \texttt{A'Range (N) return range}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Range}} & \texttt{A'Range (N) return range}
 
    Equivalent to the range A'First(N) .. A'Last(N).\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read} & \texttt{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Read}} & \texttt{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}
 
    Reads the value of X from Stream.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read} & \texttt{S'Class'Read
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Read}} & \texttt{S'Class'Read
    (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}
 
    Reads the value of X from Stream.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Reduce}} & \texttt{X|V'Reduce(Reducer, Initial\_Value)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Reduce}}} & \texttt{X|V'Reduce(Reducer, Initial\_Value)}
 
    This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Relative\_Deadline}} & \texttt{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Relative\_Deadline}}} & \texttt{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}
 
    Relative deadline of P.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Remainder} & \texttt{S'Remainder (X,Y:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Remainder}} & \texttt{S'Remainder (X,Y:T) return T}
 
    Remainder after dividing the first floating point argument by its second.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Result} & \texttt{F'Result return X}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Result}} & \texttt{F'Result return X}
 
    Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Round} & \texttt{F'Round (X) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Round}} & \texttt{F'Round (X) return S}
 
    Fixed-point value obtained by rounding X (away from 0, if X is midway between two values).\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Rounding} & \texttt{S'Rounding (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Rounding}} & \texttt{S'Rounding (X:T) return T}
 
    Floating-point integral value nearest to X, rounding away from zero if X lies exactly halfway between two integers.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Safe\_First} & \texttt{S'Safe\_First return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Safe\_First}} & \texttt{S'Safe\_First return universal\_real}
 
    Returns lower bound of the safe range.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Safe\_Last} & \texttt{S'Safe\_Last return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Safe\_Last}} & \texttt{S'Safe\_Last return universal\_real}
 
    Returns upper bound of the safe range.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Scale} & \texttt{S'Scale return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Scale}} & \texttt{S'Scale return universal\_integer}
 
    Position of the fixed-point relative to the rightmost significant digits of values of subtype S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Scaling} & \texttt{S'Scaling (X:T;Adjustment:universal\_integer) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Scaling}} & \texttt{S'Scaling (X:T;Adjustment:universal\_integer) return T}
 
    Scaling by a power of the hardware radix.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Signed\_Zeros} & \texttt{S'Signed\_Zeros return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Signed\_Zeros}} & \texttt{S'Signed\_Zeros return Boolean}
 
    True if positive and negative signed zeros are representable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Size} & \texttt{S'Size  universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Size}} & \texttt{S'Size  universal\_integer}
 
    Size in bits of objects instantiated from subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Size} & \texttt{X'Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Size}} & \texttt{X'Size return universal\_integer}
 
    Size in bits of the representation of the object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Small} & \texttt{S'Small return universal\_real}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Small}} & \texttt{S'Small return universal\_real}
 
    Small of the fixed-point type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Pool} & \texttt{S'Storage\_Pool return Root\_Storage\_Pool'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Storage\_Pool}} & \texttt{S'Storage\_Pool return Root\_Storage\_Pool'Class}
 
    Returns Storage pool of the access subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Size} & \texttt{S'Storage\_Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Storage\_Size}} & \texttt{S'Storage\_Size return universal\_integer}
 
    Number of storage elements reserved for the storage pool.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Size} & \texttt{T'Storage\_Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Storage\_Size}} & \texttt{T'Storage\_Size return universal\_integer}
 
    Number of storage elements reserved for the task.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Stream\_Size} & \texttt{S'Stream\_Size return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Stream\_Size}} & \texttt{S'Stream\_Size return universal\_integer}
 
    Number of storage elements reserved for the task.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Succ} & \texttt{S'Succ (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Succ}} & \texttt{S'Succ (X:T) return T}
 
    Returns successor of the X.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Tag} & \texttt{X|S'Tag return Tag}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Tag}} & \texttt{X|S'Tag return Tag}
 
    Returns the tag of the [class-wide] tagged type or of object X that is a class-wide tagged type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Terminated} & \texttt{T'Terminated return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Terminated}} & \texttt{T'Terminated return Boolean}
 
    Returns True if the task denoted by T is terminated.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Truncation} & \texttt{S'Truncation (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Truncation}} & \texttt{S'Truncation (X:T) return T}
 
    Returns the value Ceiling(X) when X is negative, else Floor(X).\\
 
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unbiased\_Rounding} & \texttt{S'Unbiased\_Rounding (X:T) return T}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Unbiased\_Rounding}} & \texttt{S'Unbiased\_Rounding (X:T) return T}
 
    Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unchecked\_Access} & \texttt{X'Unchecked\_Access (X:T) return access type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Unchecked\_Access}} & \texttt{X'Unchecked\_Access (X:T) return access type}
 
    Same as X'Access but lacks accessibility rules/checks.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val} & \texttt{S'Val (universal\_integer) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Val}} & \texttt{S'Val (universal\_integer) return S}
 
    Value of the discrete subtype whose position number equals the value of argument.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val} & \texttt{X'Valid return Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Val}} & \texttt{X'Valid return Boolean}
 
    True if and only if the scalar object denoted by X is normal and has a valid representation.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Value} & \texttt{S'Value (X:String) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Value}} & \texttt{S'Value (X:String) return S}
 
    Returns a value of the subtype given an image of the value as a String argument.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Version} & \texttt{P'Version return String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Version}} & \texttt{P'Version return String}
 
    Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Image} & \texttt{S'Wide\_Image (X:S) return Wide\_String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Image}} & \texttt{S'Wide\_Image (X:S) return Wide\_String}
 
    Image of the value of X as a Wide\_String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Wide\_Image}} & \texttt{X'Wide\_Image return Wide\_String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Wide\_Image}}} & \texttt{X'Wide\_Image return Wide\_String}
 
    Image of the value of X as a Wide\_String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Value} & \texttt{S'Wide\_Value (X:String) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Value}} & \texttt{S'Wide\_Value (X:String) return S}
 
    Returns a value given an image of the value as a Wide\_String argument (X).\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Width} & \texttt{S'Wide\_Width return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Width}} & \texttt{S'Wide\_Width return universal\_integer}
 
    Maximum length of Wide\_String returned by S'Image.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Image} & \texttt{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Wide\_Image}} & \texttt{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}
 
    Image of the value of X as a Wide\_Wide\_String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{Wide\_Wide\_Image}} & \texttt{X'Wide\_Wide\_Image return Wide\_Wide\_String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\textit{\seqsplit{Wide\_Wide\_Image}}} & \texttt{X'Wide\_Wide\_Image return Wide\_Wide\_String}
 
    Image of the value of X as a Wide\_Wide\_String.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Value} & \texttt{S'Wide\_Wide\_Value (X:String) return S}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Wide\_Value}} & \texttt{S'Wide\_Wide\_Value (X:String) return S}
 
    Returns a value given an image of the value as a Wide\_Wide\_String argument (X).\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Width} & \texttt{S'Wide\_Wide\_Width return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Wide\_Wide\_Width}} & \texttt{S'Wide\_Wide\_Width return universal\_integer}
 
    Maximum length of Wide\_Wide\_String returned by S'Image.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Width} & \texttt{S'Width return universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Width}} & \texttt{S'Width return universal\_integer}
 
    Maximum length of String returned by S'Image.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Write} & \texttt{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Class'Write}} & \texttt{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}
 
    Writes X to Stream.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Write} & \texttt{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{\seqsplit{Write}} & \texttt{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}
 
    Writes X to Stream.\\
 
@@ -580,633 +581,633 @@
 \section*{\textsc{Aspects}}
 \raggedright
 \renewcommand{\arraystretch}{1.5}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Address} & \texttt{X|P|L with Address => System.Address}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{Address}} & \texttt{X|P|L with Address => System.Address}
 
    Address of the first of the storage elements allocated.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-3-5.html}{\textit{Aggregate}} & \texttt{S with Aggregate => (aggregate)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-3-5.html}{\textit{\seqsplit{Aggregate}}} & \texttt{S with Aggregate => (aggregate)}
 
    Mechanism to define user-defined aggregates.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Alignment} & \texttt{X|S with Alignment => universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{Alignment}} & \texttt{X|S with Alignment => universal\_integer}
 
    Alignment of object or subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{All\_Calls\_Remote} & \texttt{P with All\_Calls\_Remote => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{\seqsplit{All\_Calls\_Remote}} & \texttt{P with All\_Calls\_Remote => Boolean}
 
    All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{\textit{Allows\_Exit}} & \texttt{P with Allows\_Exit => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{\textit{\seqsplit{Allows\_Exit}}} & \texttt{P with Allows\_Exit => Boolean}
 
    An indication of whether a subprogram will operate correctly for arbitrary transfers of control.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-4-1.html}{Asynchronous} & \texttt{P with Asynchronous => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-4-1.html}{\seqsplit{Asynchronous}} & \texttt{P with Asynchronous => Boolean}
 
    Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Atomic} & \texttt{S|X|C with Atomic => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Atomic}} & \texttt{S|X|C with Atomic => Boolean}
 
    Declare that a type, object, or component is atomic.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Atomic\_Components} & \texttt{A|X with Atomic\_Components => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Atomic\_Components}} & \texttt{A|X with Atomic\_Components => Boolean}
 
    Declare that the components of an array type or object are atomic.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{Attach\_Handler} & \texttt{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{\seqsplit{Attach\_Handler}} & \texttt{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}
 
    Protected procedure is attached to an interrupt.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-5-3.html}{Bit\_Order} & \texttt{S with Bit\_Order => System.Bit\_Order}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-5-3.html}{\seqsplit{Bit\_Order}} & \texttt{S with Bit\_Order => System.Bit\_Order}
 
    Order of bit numbering in a record\_representation\_clause.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Component\_Size} & \texttt{A|X with Component\_Size => universal\_integer}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{Component\_Size}} & \texttt{A|X with Component\_Size => universal\_integer}
 
    Size in bits of a component of an array type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{Constant\_Indexing} & \texttt{S with Constant\_Indexing => P}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{\seqsplit{Constant\_Indexing}} & \texttt{S with Constant\_Indexing => P}
 
    Defines function to implement user-defined indexed\_components.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Convention} & \texttt{S|P with Convention => convention\_identifier}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{Convention}} & \texttt{S|P with Convention => convention\_identifier}
 
    Calling convention or other convention used for interfacing to other languages.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16.html}{\textit{CPU}} & \texttt{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16.html}{\textit{\seqsplit{CPU}}} & \texttt{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}
 
    Processor on which a given task, or calling task for a protected operation, should run.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{Default\_Component\_Value} & \texttt{S with Default\_Component\_Value => Component\_Type}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{\seqsplit{Default\_Component\_Value}} & \texttt{S with Default\_Component\_Value => Component\_Type}
 
    Default value for the components of an array-of-scalar subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{\textit{Default\_Initial\_Condition}} & \texttt{S with Default\_Initial\_Condition => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{\textit{\seqsplit{Default\_Initial\_Condition}}} & \texttt{S with Default\_Initial\_Condition => Boolean}
 
    If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{Default\_Iterator} & \texttt{S with Default\_Iterator => P}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{\seqsplit{Default\_Iterator}} & \texttt{S with Default\_Iterator => P}
 
    Default iterator to be used in for loops.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-5.html}{Default\_Value} & \texttt{S with Default\_Value => scalar value}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-5.html}{\seqsplit{Default\_Value}} & \texttt{S with Default\_Value => scalar value}
 
    Default value for a scalar subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{Discard\_Names} & \texttt{S|E with Discard\_Names => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{\seqsplit{Discard\_Names}} & \texttt{S|E with Discard\_Names => Boolean}
 
    Requests a reduction in storage.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{\textit{Dispatching}} & \texttt{P with Dispatching => dispatching\_operation\_specifier}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{\textit{\seqsplit{Dispatching}}} & \texttt{P with Dispatching => dispatching\_operation\_specifier}
 
   .\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching\_Domain} & \texttt{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{\seqsplit{Dispatching\_Domain}} & \texttt{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}
 
    Domain (group of processors) on which a given task should run.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{\textit{Dynamic\_Predicate}} & \texttt{S with Dynamic\_Predicate => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{\textit{\seqsplit{Dynamic\_Predicate}}} & \texttt{S with Dynamic\_Predicate => Boolean}
 
    Condition that will hold true for objects of a given subtype; the subtype is not static.\\
 
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\textit{Elaborate\_Body}} & \texttt{D with Elaborate\_Body => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\textit{\seqsplit{Elaborate\_Body}}} & \texttt{D with Elaborate\_Body => Boolean}
 
    A given package will have a body, and that body is elaborated immediately after the declaration.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5-1.html}{Exclusive\_Functions} & \texttt{S with Exclusive\_Functions => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5-1.html}{\seqsplit{Exclusive\_Functions}} & \texttt{S with Exclusive\_Functions => Boolean}
 
    Specifies mutual exclusion behavior of protected functions in a protected type. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Export} & \texttt{P|X with Export => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{Export}} & \texttt{P|X with Export => Boolean}
 
    Entity is exported to another language.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{External\_Name} & \texttt{P|X with External\_Name => String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{External\_Name}} & \texttt{P|X with External\_Name => String}
 
    Name used to identify an imported or exported entity.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{External\_Tag} & \texttt{S with External\_Tag => String}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{External\_Tag}} & \texttt{S with External\_Tag => String}
 
    Unique identifier for a tagged type in streams.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\textit{Full\_Access\_Only}} & \texttt{X|C with Full\_Access\_Only => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\textit{\seqsplit{Full\_Access\_Only}}} & \texttt{X|C with Full\_Access\_Only => Boolean}
 
    Declare that a volatile type, object, or component is full access.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{\textit{Global}} & \texttt{D with Global => global\_aspect\_definition}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{\textit{\seqsplit{Global}}} & \texttt{D with Global => global\_aspect\_definition}
 
    Global object usage contract.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{\textit{Global'Class}} & \texttt{D with Global'Class => global\_aspect\_definition}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{\textit{\seqsplit{Global'Class}}} & \texttt{D with Global'Class => global\_aspect\_definition}
 
    Global object usage contract inherited on derivation.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-5.html}{Implicit\_Dereference} & \texttt{A with Implicit\_Dereference => Discriminant}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-5.html}{\seqsplit{Implicit\_Dereference}} & \texttt{A with Implicit\_Dereference => Discriminant}
 
    Mechanism for user-defined implicit .all.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Import} & \texttt{P|X with Import => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{Import}} & \texttt{P|X with Import => Boolean}
 
    Entity is imported from another language. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Independent} & \texttt{X|S with Independent => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Independent}} & \texttt{X|S with Independent => Boolean}
 
    Declare that a type, object, or component is independently addressable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Independent\_Components} & \texttt{A|R with Independent\_Components => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Independent\_Components}} & \texttt{A|R with Independent\_Components => Boolean}
 
    Declare that the components of an array or record type, or an array object, are independently addressable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-3-2.html}{Inline} & \texttt{P|E with Inline => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-3-2.html}{\seqsplit{Inline}} & \texttt{P|E with Inline => Boolean}
 
    For efficiency, Inline calls are requested for a subprogram.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Input} & \texttt{Input}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Input}} & \texttt{Input}
 
    Function to read a value from a stream for a given type, including any bounds and discriminants.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Input'Class} & \texttt{Input'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Input'Class}} & \texttt{Input'Class}
 
    Function to read a value from a stream for a the class-wide type associated with a given type, including any bounds and discriminants.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{Integer\_Literal}} & \texttt{Integer\_Literal}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{\seqsplit{Integer\_Literal}}} & \texttt{Integer\_Literal}
 
    Defines a function to implement user-defined integer literals.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{Interrupt\_Handler} & \texttt{Interrupt\_Handler}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{\seqsplit{Interrupt\_Handler}} & \texttt{Interrupt\_Handler}
 
    Protected procedure may be attached to interrupts.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{Interrupt\_Priority} & \texttt{Interrupt\_Priority}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{\seqsplit{Interrupt\_Priority}} & \texttt{Interrupt\_Priority}
 
    Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{Iterator\_Element} & \texttt{Iterator\_Element}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{\seqsplit{Iterator\_Element}} & \texttt{Iterator\_Element}
 
    Element type to be used for user-defined iterators.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{\textit{Iterator\_View}}  & \texttt{Iterator\_View}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{\textit{\seqsplit{Iterator\_View}}}  & \texttt{Iterator\_View}
 
    An alternative type to used for container element iterators.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-5-1.html}{Layout} & \texttt{Layout (record)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-5-1.html}{\seqsplit{Layout}} & \texttt{Layout (record)}
 
    Layout of record components. Specified by a record\_representation\_clause, not by an aspect\_specification.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Link\_Name} & \texttt{Link\_Name}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{Link\_Name}} & \texttt{Link\_Name}
 
    Linker symbol used to identify an imported or exported entity.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-F-1.html}{Machine\_Radix} & \texttt{Machine\_Radix}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-F-1.html}{\seqsplit{Machine\_Radix}} & \texttt{Machine\_Radix}
 
    Radix (2 or 10) that is used to represent a decimal fixed point type.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{\textit{Max\_Entry\_Queue\_Length}} & \texttt{Max\_Entry\_Queue\_Length}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{\textit{\seqsplit{Max\_Entry\_Queue\_Length}}} & \texttt{Max\_Entry\_Queue\_Length}
 
    The maximum entry queue length for a task type, protected type, or entry.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-4-1.html}{\textit{No\_Controlled\_Parts}} & \texttt{No\_Controlled\_Parts}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-4-1.html}{\textit{\seqsplit{No\_Controlled\_Parts}}} & \texttt{No\_Controlled\_Parts}
 
    A specification that a type and its descendants do not have controlled parts. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-5-1.html}{\textit{No\_Return}} & P with \texttt{No\_Return => Boolean}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-5-1.html}{\textit{\seqsplit{No\_Return}}} & P with \texttt{No\_Return => Boolean}
 
    Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{\textit{Nonblocking}} & \texttt{Nonblocking}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{\textit{\seqsplit{Nonblocking}}} & \texttt{Nonblocking}
 
    Specifies that an associated subprogram does not block.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Output} & \texttt{Output}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Output}} & \texttt{Output}
 
    Procedure to write a value to a stream for a given type, including any bounds and discriminants.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Output'Class} & \texttt{Output'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Output'Class}} & \texttt{Output'Class}
 
    Procedure to write a value to a stream for a the class-wide type associated with a given type, including any bounds and discriminants.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-2.html}{Pack} & \texttt{Pack}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-2.html}{\seqsplit{Pack}} & \texttt{Pack}
 
    Minimize storage when laying out records and arrays.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{\textit{Parallel\_Calls}} & \texttt{Parallel\_Calls}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{\textit{\seqsplit{Parallel\_Calls}}} & \texttt{Parallel\_Calls}
 
    Specifies whether a given subprogram is expected to be called in parallel. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{\textit{Parallel\_Iterator}} & \texttt{Parallel\_Iterator}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{\textit{\seqsplit{Parallel\_Iterator}}} & \texttt{Parallel\_Iterator}
 
    An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Post} & \texttt{with Post => Condition}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{\seqsplit{Post}} & \texttt{with Post => Condition}
 
    Postcondition; a condition that will hold true after a call.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Post'Class} & \texttt{with Post'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{\seqsplit{Post'Class}} & \texttt{with Post'Class}
 
    Postcondition that applies to corresponding subprograms of descendant types.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Pre} & \texttt{with Pre => Condition}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{\seqsplit{Pre}} & \texttt{with Pre => Condition}
 
    Precondition; a condition that is expected to hold true before a call.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Pre'Class} & \texttt{with Pre'Class => Condition}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{\seqsplit{Pre'Class}} & \texttt{with Pre'Class => Condition}
 
    Precondition that applies to corresponding subprograms of descendant types. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{Predicate\_Failure} & \texttt{Predicate\_Failure}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{\seqsplit{Predicate\_Failure}} & \texttt{Predicate\_Failure}
 
    Action to be performed when a predicate check fails.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\textit{Preelaborable\_Initialization}} & \texttt{Preelaborable\_Initialization}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\textit{\seqsplit{Preelaborable\_Initialization}}} & \texttt{Preelaborable\_Initialization}
 
    Declares that a type has preelaborable initialization.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Preelaborate} & \texttt{Preelaborate}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\seqsplit{Preelaborate}} & \texttt{Preelaborate}
 
    Code execution during elaboration is avoided for a given package.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{Priority} & \texttt{Priority}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{\seqsplit{Priority}} & \texttt{Priority}
 
    Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Pure} & \texttt{D with Pure}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\seqsplit{Pure}} & \texttt{D with Pure}
 
    Side effects are avoided in the subprograms of a given package.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-10.html}{\textit{Put\_Image}} & \texttt{Put\_Image}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-10.html}{\textit{\seqsplit{Put\_Image}}} & \texttt{Put\_Image}
 
    Procedure to define the image of a given type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read} & \texttt{Read}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Read}} & \texttt{Read}
 
    Procedure to read a value from a stream for a given type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read'Class} & \texttt{Read'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Read'Class}} & \texttt{Read'Class}
 
    Procedure to read a value from a stream for the class-wide type associated with a given type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{Real\_Literal}} & \texttt{Real\_Literal}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{\seqsplit{Real\_Literal}}} & \texttt{Real\_Literal}
 
    Defines a function or functions to implement user-defined real literals.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{\textit{Relative\_Deadline}} & \texttt{T with Relative\_Deadline => RD}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{\textit{\seqsplit{Relative\_Deadline}}} & \texttt{T with Relative\_Deadline => RD}
 
    Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{Remote\_Call\_Interface} & \texttt{Remote\_Call\_Interface}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{\seqsplit{Remote\_Call\_Interface}} & \texttt{Remote\_Call\_Interface}
 
    Subprograms in a given package may be used in remote procedure calls. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-2.html}{Remote\_Types} & \texttt{Remote\_Types}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-2.html}{\seqsplit{Remote\_Types}} & \texttt{Remote\_Types}
 
    Types in a given package may be used in remote procedure calls.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-1.html}{Shared\_Passive} & \texttt{Shared\_Passive}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-E-2-1.html}{\seqsplit{Shared\_Passive}} & \texttt{Shared\_Passive}
 
    A given package is used to represent shared memory in a distributed system.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Size} & \texttt{Size(S|X)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{Size}} & \texttt{Size(S|X)}
 
    Size in bits of objects instantiated from subtype.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-5-10.html}{Small} & \texttt{Small}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-5-10.html}{\seqsplit{Small}} & \texttt{Small}
 
    Scale factor for a fixed point type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{\textit{Stable\_Properties}} & \texttt{Stable\_Properties}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{\textit{\seqsplit{Stable\_Properties}}} & \texttt{Stable\_Properties}
 
    A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{\textit{Stable\_Properties'Class}} & \texttt{Stable\_Properties'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{\textit{\seqsplit{Stable\_Properties'Class}}} & \texttt{Stable\_Properties'Class}
 
    A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-8.html}{\textit{Static}} & \texttt{Static}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-6-8.html}{\textit{\seqsplit{Static}}} & \texttt{Static}
 
    Specifies that an associated expression function can be used in static expressions.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{\textit{Static\_Predicate}} & \texttt{Static\_Predicate}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{\textit{\seqsplit{Static\_Predicate}}} & \texttt{Static\_Predicate}
 
    Condition that will hold true for objects of a given subtype; the subtype may be static.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{Storage\_Pool} & \texttt{Storage\_Pool}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{\seqsplit{Storage\_Pool}} & \texttt{Storage\_Pool}
 
    Pool of memory from which new will allocate for a given access type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{Storage\_Size} & \texttt{Storage\_Size (access)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{\seqsplit{Storage\_Size}} & \texttt{Storage\_Size (access)}
 
    Sets memory size for allocations for an access type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Storage\_Size} & \texttt{Storage\_Size (task)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{\seqsplit{Storage\_Size}} & \texttt{Storage\_Size (task)}
 
    Size in storage elements reserved for a task type or single task object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Stream\_Size} & \texttt{Stream\_Size}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Stream\_Size}} & \texttt{Stream\_Size}
 
    Size in bits used to represent elementary objects in a stream.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{String\_Literal}} & \texttt{String\_Literal}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{\textit{\seqsplit{String\_Literal}}} & \texttt{String\_Literal}
 
    Defines a function to implement user-defined string literals.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{\textit{Synchronization}} & \texttt{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{\textit{\seqsplit{Synchronization}}} & \texttt{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}
 
    Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure. \\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{Type\_Invariant} & \texttt{Type\_Invariant}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{\seqsplit{Type\_Invariant}} & \texttt{Type\_Invariant}
 
    Condition that will hold true for all objects of a type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{Type\_Invariant'Class} & \texttt{Type\_Invariant'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{\seqsplit{Type\_Invariant'Class}} & \texttt{Type\_Invariant'Class}
 
    A condition that will hold true for all objects in a class of types.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-3-3.html}{Unchecked\_Union} & \texttt{Unchecked\_Union}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-3-3.html}{\seqsplit{Unchecked\_Union}} & \texttt{Unchecked\_Union}
 
    Type is used to interface to a C union type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-7-1.html}{\textit{Use\_Formal}} & \texttt{Use\_Formal}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-7-1.html}{\textit{\seqsplit{Use\_Formal}}} & \texttt{Use\_Formal}
 
    Generic formal parameters used in the implementation of an entity.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{Variable\_Indexing} & \texttt{Variable\_Indexing}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{\seqsplit{Variable\_Indexing}} & \texttt{Variable\_Indexing}
 
    Defines function(s) to implement user-defined indexed\_components.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile} & \texttt{S|X|C with Volatile}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Volatile}} & \texttt{S|X|C with Volatile}
 
    Declare that a type, object, or component is volatile.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile\_Components} & \texttt{A|X with Volatile\_Components}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{\seqsplit{Volatile\_Components}} & \texttt{A|X with Volatile\_Components}
 
    Declare that the components of an array type or object are volatile.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write} & \texttt{Write}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Write}} & \texttt{Write}
 
    Procedure to write a value to a stream for a given type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write'Class} & \texttt{Write'Class}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{\seqsplit{Write'Class}} & \texttt{Write'Class}
 
    Procedure to write a value to a stream for a the class-wide type associated with a given type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{\textit{Yield}} & \texttt{Yield}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{\textit{\seqsplit{Yield}}} & \texttt{Yield}
 
    Ensures that a callable entity includes a task dispatching point.\\
 \end{tabular}
 
 \section*{\textsc{Pragmas}}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{\textit{Admission\_Policy}}  & \texttt{pragma Admission\_Policy (policy\_identifier)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{\textit{\seqsplit{Admission\_Policy}}}  & \texttt{pragma Admission\_Policy (policy\_identifier)}
 
    An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{All\_Calls\_Remote}} & \texttt{pragma All\_Calls\_Remote [(library\_unit\_name)]}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{\seqsplit{All\_Calls\_Remote}}} & \texttt{pragma All\_Calls\_Remote [(library\_unit\_name)]}
 
    Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assert} & \texttt{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{\seqsplit{Assert}} & \texttt{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}
 
    Raises Assertion\_Error exception with an optional message when the expression is false.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assertion\_Policy} & \texttt{pragma Assertion\_Policy(Check | Ignore)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{\seqsplit{Assertion\_Policy}} & \texttt{pragma Assertion\_Policy(Check | Ignore)}
 
    Enables or disables assertions including pre and post conditions.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assertion\_Policy} & \texttt{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{\seqsplit{Assertion\_Policy}} & \texttt{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}
 
    Enables or disables pre and post conditions.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-13.html}{Asynchronous} & \texttt{pragma Asynchronous (local\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-13.html}{\seqsplit{Asynchronous}} & \texttt{pragma Asynchronous (local\_name)}
 
    The return message is dispensed with for a remote call on a procedure marked asynchronous.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Atomic} & \texttt{pragma Atomic (local\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{Atomic}} & \texttt{pragma Atomic (local\_name)}
 
    Is used with types and variables to specify that the code generated must read and write the type or variable from memory atomically, i.e. as a single/non-interruptible operation.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Atomic\_Components} & \texttt{pragma Atomic\_Components (array\_local\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{Atomic\_Components}} & \texttt{pragma Atomic\_Components (array\_local\_name)}
 
    The components of the named array or every array of the named type is to be examined and updated atomically.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{Attach\_Handler} & \texttt{pragma Attach\_Handler (handler\_name, expression)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{\seqsplit{Attach\_Handler}} & \texttt{pragma Attach\_Handler (handler\_name, expression)}
 
    The handler procedure is attached to the specified interrupt.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{\textit{Conflict\_Check\_Policy}} & \texttt{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{\textit{\seqsplit{Conflict\_Check\_Policy}}} & \texttt{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}
 
    This subclause determines what checks are performed relating to possible concurrent conflicting actions.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Convention} & \texttt{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{\seqsplit{Convention}} & \texttt{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}
 
    Directs the compiler to represent a type or subprogram using a foreign language convention.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-9.html}{CPU} & \texttt{pragma CPU (System.Multiprocessors.CPU\_Range)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-9.html}{\seqsplit{CPU}} & \texttt{pragma CPU (System.Multiprocessors.CPU\_Range)}
 
    Processor on which a given task, or calling task for a protected operation, should run.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11-3.html}{Default\_Storage\_Pool} & \texttt{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11-3.html}{\seqsplit{Default\_Storage\_Pool}} & \texttt{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}
 
    Specifies the storage pool that will be used in the absence of an explicit specification of a storage pool or storage size for an access type.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-5.html}{Detect\_Blocking} & \texttt{pragma Detect\_Blocking}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-5.html}{\seqsplit{Detect\_Blocking}} & \texttt{pragma Detect\_Blocking}
 
    Raises Program\_Error when a potentially blocking operation is detected that occurs during the execution of a protected operation or a parallel construct defined within a compilation unit to which the pragma applies.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{Discard\_Names} & \texttt{pragma Discard\_Names [([On => ] local\_name)]}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{\seqsplit{Discard\_Names}} & \texttt{pragma Discard\_Names [([On => ] local\_name)]}
 
    Reduce the memory needed to store names of Ada entities, where no operation uses those names.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-10.html}{Dispatching\_Domain} & \texttt{pragma Dispatching\_Domain (expression)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-10.html}{\seqsplit{Dispatching\_Domain}} & \texttt{pragma Dispatching\_Domain (expression)}
 
    Domain (group of processors) on which a given task should run.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate} & \texttt{pragma Elaborate (library\_unit\_name{, ...})}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\seqsplit{Elaborate}} & \texttt{pragma Elaborate (library\_unit\_name{, ...})}
 
    Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate\_All} & \texttt{pragma Elaborate\_All (library\_unit\_name{, ...})}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{\seqsplit{Elaborate\_All}} & \texttt{pragma Elaborate\_All (library\_unit\_name{, ...})}
 
    Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{Elaborate\_Body}} & \texttt{pragma Elaborate\_Body [(library\_unit\_name)]}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{\seqsplit{Elaborate\_Body}}} & \texttt{pragma Elaborate\_Body [(library\_unit\_name)]}
 
    Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Export} & \texttt{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{\seqsplit{Export}} & \texttt{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}
 
    Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{\textit{Generate\_Deadlines}} & \texttt{pragma Generate\_Deadlines}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{\textit{\seqsplit{Generate\_Deadlines}}} & \texttt{pragma Generate\_Deadlines}
 
    Makes the deadline of a task be recomputed each time it becomes ready. The new deadline is the value of Real\_Time.Clock at the time the task is added to a ready queue plus the value returned by Get\_Relative\_Deadline.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Import} & \texttt{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{\seqsplit{Import}} & \texttt{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}
 
    Directs the compiler to use code or data objects written in a foreign computer language.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Independent} & \texttt{pragma Independent (component\_local\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{ndependent}} & \texttt{pragma Independent (component\_local\_name)}
 
    Declare that a type, object, or component is independently addressable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Independent\_Components} & \texttt{pragma Independent\_Components
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{Independent\_Components}} & \texttt{pragma Independent\_Components
     (local\_name)}
 
     Declare that the components of an array or record type, or an array object, are independently addressable.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-1.html}{Inline} & \texttt{pragma Inline (name {, ...})}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-1.html}{\seqsplit{Inline}} & \texttt{pragma Inline (name {, ...})}
 
    Directs the compiler to inline the code of the given subprogram, making execution faster by eliminating overhead of the subprogram call.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-3-2.html}{Inspection\_Point} & \texttt{pragma Inspection\_Point [(object\_name {, ...})]}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-H-3-2.html}{\seqsplit{Inspection\_Point}} & \texttt{pragma Inspection\_Point [(object\_name {, ...})]}
 
    Directs the compiler to ensure that the specified variable is available where the pragma appears. This pragma aids in debugging.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{Interrupt\_Handler} & \texttt{pragma Interrupt\_Handler (handler\_name)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{\seqsplit{Interrupt\_Handler}} & \texttt{pragma Interrupt\_Handler (handler\_name)}
 
    Tell the compiler this is an interrupt handler.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{Interrupt\_Priority} & \texttt{pragma Interrupt\_Priority [(expression)]}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{\seqsplit{Interrupt\_Priority}} & \texttt{pragma Interrupt\_Priority [(expression)]}
 
    Assigns the given priority to the whole protected object. No other interrupts at or below that level will be enabled whenever the procedure is executing.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Linker\_Options} & \texttt{pragma Linker\_Options (string\_expression)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{\seqsplit{Linker\_Options}} & \texttt{pragma Linker\_Options (string\_expression)}
 
    Used to specify the system linker parameters needed when a given compilation unit is included in a partition.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{List} & \texttt{pragma List (identifier)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{\seqsplit{List}} & \texttt{pragma List (identifier)}
 
    Specifies that listing of the compilation is to be continued (On) or suspended (Off) until a List pragma with the opposite argument is given within the same compilation.\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-3.html}{Locking\_Policy} & \texttt{pragma Locking\_Policy (policy\_identifier)}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-D-3.html}{\seqsplit{Locking\_Policy}} & \texttt{pragma Locking\_Policy (policy\_identifier)}
 
    Chooses locking policy\\
 
-   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-2.html}{No\_Return} & \texttt{pragma No\_Return (subprogram\_local\_name{, subprogram\_local\_name})}
+   \href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-2.html}{\seqsplit{No\_Return}} & \texttt{pragma No\_Return (subprogram\_local\_name{, subprogram\_local\_name})}
 
 States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.\\
 
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-H-1.html}{Normalize\_Scalars} & \texttt{pragma Normalize\_Scalars}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-H-1.html}{\seqsplit{Normalize\_Scalars}} & \texttt{pragma Normalize\_Scalars}
 
 Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Optimize} & \texttt{pragma Optimize (identifier)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{\seqsplit{Optimize}} & \texttt{pragma Optimize (identifier)}
 
 Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-3.html}{Pack} & \texttt{pragma Pack (first\_subtype\_local\_name)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-3.html}{\seqsplit{Pack}} & \texttt{pragma Pack (first\_subtype\_local\_name)}
 
 Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Page} & \texttt{pragma Page}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{\seqsplit{Page}} & \texttt{pragma Page}
 
 Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-H-6.html}{Partition\_Elaboration\_Policy} & \texttt{pragma Partition\_Elaboration\_Policy (policy\_identifier)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-H-6.html}{\seqsplit{Partition\_Elaboration\_Policy}} & \texttt{pragma Partition\_Elaboration\_Policy (policy\_identifier)}
 
 Specifies the elaboration policy for a partition.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{Preelaborable\_Initialization}} & \texttt{pragma Preelaborable\_Initialization (direct\_name)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{\seqsplit{Preelaborable\_Initialization}}} & \texttt{pragma Preelaborable\_Initialization (direct\_name)}
 
 Specifies that all objects of the type have preelaborable initialization expressions.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{Preelaborate}} & \texttt{pragma Preelaborate [(library\_unit\_name)]}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{\seqsplit{Preelaborate}}} & \texttt{pragma Preelaborate [(library\_unit\_name)]}
 
 Slightly less restrictive than pragma Pure, but still strong enough to prevent access before elaboration problems within a unit.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{Priority} & \texttt{pragma Priority (Integer)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{\seqsplit{Priority}} & \texttt{pragma Priority (Integer)}
 
 Sets a task's priority. The pragma must be called in the task specification.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{Priority\_Specific\_Dispatching} & \texttt{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{\seqsplit{Priority\_Specific\_Dispatching}} & \texttt{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}
 
 Specifies the task dispatching policy for the specified range of priorities.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{Profile} & \texttt{pragma Profile (profile\_identifier {, profile\_pragma\_argument\_association})}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{\seqsplit{Profile}} & \texttt{pragma Profile (profile\_identifier {, profile\_pragma\_argument\_association})}
 
 Expresses the user's intent to abide by a set of Restrictions or other specified run-time policies. These may facilitate the construction of simpler run-time environments.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{Pure}} & \texttt{pragma Pure [(library\_unit\_name)]}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{\textit{\seqsplit{Pure}}} & \texttt{pragma Pure [(library\_unit\_name)]}
 
 Guarantees that no scenario within the unit can result in an access before elaboration problem.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{Queuing\_Policy} & \texttt{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{\seqsplit{Queuing\_Policy}} & \texttt{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}
 
 Defines the queuing policy used on task entry to an Ada partition.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-12.html}{Relative\_Deadline} & \texttt{pragma Relative\_Deadline (Real\_Time.Time\_Span)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-12.html}{\seqsplit{Relative\_Deadline}} & \texttt{pragma Relative\_Deadline (Real\_Time.Time\_Span)}
 
 Defines deadline.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{Remote\_Call\_Interface}} & \texttt{pragma Remote\_Call\_Interface [(library\_unit\_name)]}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{\seqsplit{Remote\_Call\_Interface}}} & \texttt{pragma Remote\_Call\_Interface [(library\_unit\_name)]}
 
 Categorizes a library-unit as a Remote-Call-Interface.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{Remote\_Types}} & \texttt{pragma Remote\_Types [(library\_unit\_name)]}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{\seqsplit{Remote\_Types}}} & \texttt{pragma Remote\_Types [(library\_unit\_name)]}
 
 Categorizes a library-unit as a Remote-Type.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{Restrictions} & \texttt{pragma Restrictions (restriction{, ...})}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{\seqsplit{Restrictions}} & \texttt{pragma Restrictions (restriction{, ...})}
 
 Used to forbid the utilization of some language features.\\
 
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-H-3-1.html}{Reviewable} & \texttt{pragma Reviewable}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-H-3-1.html}{\seqsplit{Reviewable}} & \texttt{pragma Reviewable}
 
 Directs the compiler to provide information that aids inspection of the program's object code.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{Shared\_Passive}} & \texttt{pragma Shared\_Passive [(library\_unit\_name)]}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{\textit{\seqsplit{Shared\_Passive}}} & \texttt{pragma Shared\_Passive [(library\_unit\_name)]}
 
 Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.\\
 
 \end{tabular}
-\begin{tabular}{@{}p{2cm}p{6.5cm}}
+\begin{tabular}{@{}p{2.2cm}p{6.7cm}}
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-4.html}{Storage\_Size} & \texttt{pragma Storage\_Size (expression)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-4.html}{\seqsplit{Storage\_Size}} & \texttt{pragma Storage\_Size (expression)}
 
    Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{Suppress} & \texttt{pragma Suppress (identifier)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{\seqsplit{Suppress}} & \texttt{pragma Suppress (identifier)}
 
 Gives the compiler permission to omit checks, but does not require the compiler to omit checks.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{Task\_Dispatching\_Policy} & \texttt{pragma Task\_Dispatching\_Policy (policy\_identifier)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{\seqsplit{Task\_Dispatching\_Policy}} & \texttt{pragma Task\_Dispatching\_Policy (policy\_identifier)}
 
 Chooses scheduling policies.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-6.html}{Unchecked\_Union} & \texttt{pragma Unchecked\_Union (first\_subtype\_local\_name)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-6.html}{\seqsplit{Unchecked\_Union}} & \texttt{pragma Unchecked\_Union (first\_subtype\_local\_name)}
 
 Denotes an unconstrained discriminated record subtype having a variant\_part.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{Unsuppress} & \texttt{pragma Unsuppress (identifier)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{\seqsplit{Unsuppress}} & \texttt{pragma Unsuppress (identifier)}
 
 Unsuppresses a given check.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile} & \texttt{pragma Volatile (local\_name)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{Volatile}} & \texttt{pragma Volatile (local\_name)}
 
 Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.\\
 
-\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile\_Components} & \texttt{pragma Volatile\_Components (array\_local\_name)}
+\href{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{\seqsplit{Volatile\_Components}} & \texttt{pragma Volatile\_Components (array\_local\_name)}
 
 Declares that the components of the array type — but not the array type itself — are volatile.\\
 
