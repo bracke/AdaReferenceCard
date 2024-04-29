@@ -31,5 +31,13 @@
 			"$0"
 		],
 		"description": "Ada 2022 item"
+	},
+	"AdaSection": {
+		"prefix": "ada",
+		"body": [
+			"\\section*{\\textsc{${1:title}}}",
+			"$0"
+		],
+		"description": "Ada Section"
 	}
 }
