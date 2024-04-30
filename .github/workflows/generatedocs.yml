@@ -14,4 +14,4 @@ jobs:
       - name: Download a single artifact
         uses: actions/download-artifact@v4
         with:
-          name: PDF
+          name: ada_reference_card_2022_a4_en.pdf
