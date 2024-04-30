@@ -5,7 +5,7 @@
 *.aux
 *.log
 *.out
-
+*.pdf
 
 # Ada Library Information
 *.ali
