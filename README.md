@@ -12,14 +12,14 @@ The information is mainly taken from the Ada Reference Manual (Ada 2022):
 - [Attributes](http://www.ada-auth.org/standards/22rm/html/RM-K-2.html)
 - [Pragmas](http://www.ada-auth.org/standards/22rm/html/RM-L.html)
 
-Each attribute name, aspect name and pragma name in the Ada Reference Card PDF is linked to the relevant page in the Ada Reference Manual (Ada 2022).
+Each attribute name, aspect name, pragma name and package name in the Ada Reference Card PDF is linked to the relevant page in the Ada Reference Manual (Ada 2022).
 
 ## Download
 
 The reference card is available in LaTeX and PDF format:
 
 - [LaTeX](https://github.com/bracke/AdaReferenceCard/blob/main/ada_reference_card_2022_a4_en.tex)
-- [PDF](https://github.com/bracke/AdaReferenceCard/blob/main/ada_reference_card_2022_a4_en.pdf)
+- [PDF](https://github.com/bracke/AdaReferenceCard/releases)
 
 ## Contributing
 
