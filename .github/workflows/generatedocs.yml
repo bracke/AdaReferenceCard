@@ -11,12 +11,15 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ada_reference_card_2022_a4_en.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
+      - name: Delete 'continuous' release and tag
+        uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
-          name: PDF
-          path: ada_reference_card_2022_a4_en.pdf
-      - name: Download a single artifact
-        uses: actions/download-artifact@v4
+          delete_release: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: continuous
+      - name: Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: ada_reference_card_2022_a4_en.pdf
+           files: ada_reference_card_2022_a4_en.pdf
+           prerelease: true
+           tag_name: continuous
