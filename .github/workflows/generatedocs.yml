@@ -11,6 +11,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ada_reference_card_2022_a4_en.tex
+
       - name: Delete 'continuous' release and tag
         uses: dev-drprasad/delete-tag-and-release@v1.0
         with:
@@ -23,3 +24,4 @@ jobs:
            files: ada_reference_card_2022_a4_en.pdf
            prerelease: true
            tag_name: continuous
+           
