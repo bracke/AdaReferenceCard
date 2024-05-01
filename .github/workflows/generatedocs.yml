@@ -11,12 +11,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ada_reference_card_2022_a4_en.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
+      name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
         with:
-          name: PDF
-          path: ada_reference_card_2022_a4_en.pdf
-      - name: Download a single artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: ada_reference_card_2022_a4_en.pdf
+          files: ada_reference_card_2022_a4_en.pdf
