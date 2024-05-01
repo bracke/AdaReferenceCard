@@ -9,7 +9,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: ada_reference_card_2022_a4_en.tex
-      name: Release
+      - name: Release
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/tags/')
         with:
