@@ -4,6 +4,11 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      repository-projects: write
+
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
