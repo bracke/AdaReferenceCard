@@ -4,6 +4,9 @@ Reference Card for the programming language [Ada](https://en.wikipedia.org/wiki/
 
 *It contains the changes from newer versions of Ada up to and including Ada 2022.*
 
+![ada_logo_orbitron](https://github.com/bracke/AdaReferenceCard/assets/627383/75001354-3eef-4836-94bf-ffdc2c9b0eb1)
+
+
 ## Sources
 
 The information is mainly taken from the Ada Reference Manual (Ada 2022):
