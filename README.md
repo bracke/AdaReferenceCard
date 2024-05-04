@@ -24,6 +24,18 @@ The reference card is available in LaTeX and PDF format:
 - [LaTeX](https://github.com/bracke/AdaReferenceCard/blob/main/ada_reference_card_2022_en.tex)
 - [PDF](https://github.com/bracke/AdaReferenceCard/releases)
 
+The PDF version is available in a range of paper sizes:
+
+- ISO A4 landscape
+- ISO A4 portrait
+- US Legal landscape
+- US legal portrait
+- ISO A2 landscape
+- ISO A2 portrait
+- ISO B2 landscape (poster size)
+
+You likely want either the ISO A4 landscape version or the US legal landscape version.
+
 ## Contributing
 
 This is the first version and it is likely neither entirely correct nor complete.
