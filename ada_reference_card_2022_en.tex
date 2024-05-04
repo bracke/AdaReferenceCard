@@ -1,8 +1,7 @@
-\documentclass[english]{article}
+
 \pdfcompresslevel=9
 \pdfmapfile{=nodownload.map}
 \usepackage{babel}
-\usepackage[a4paper,margin=0.25cm,landscape]{geometry}
 \usepackage{multicol}
 \setlength{\columnsep}{0.3cm}
 \usepackage[utf8]{inputenc}
@@ -45,7 +44,7 @@
 \end{titlepage}
 \begin{document}
 \begin{scriptsize}
-\begin{multicols*}{3}
+\begin{multicols*}{\columnnr}
 \section*{\textsc{Ada 2022 Reference Card}}
 \begin{tabular}{@{}l l l l l l l l}
 \textit{italic} & Ada 2022 &&&&&&\\
@@ -362,11 +361,8 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
 \end{description}
-\end{multicols*}
-\clearpage
-\begin{multicols*}{5}
-\section*{\textsc{Standard  Library}}
 
+\section*{\textsc{Standard Library}}
 \begin{itemize}[leftmargin=0mm]
 \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-1.html}{Standard}}
   \begin{itemize}[leftmargin=5mm]

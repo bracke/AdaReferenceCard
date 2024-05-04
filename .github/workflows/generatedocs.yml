@@ -15,7 +15,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: ada_reference_card_2022_a4_en.tex
+          root_file: ada_reference_card_2022_en.tex
 
       - name: Delete 'continuous' release and tag
         uses: dev-drprasad/delete-tag-and-release@v1.0
@@ -26,10 +26,9 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-           files: ada_reference_card_2022_a4_en.pdf
+           files: ada_reference_card_2022_en.pdf
            prerelease: true
            generate_release_notes: true
            append_body: true
            make_latest: true
            tag_name: continuous
-           
