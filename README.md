@@ -34,7 +34,7 @@ The PDF version is available in a range of paper sizes:
 - ISO A2 portrait
 - ISO B2 landscape (poster size)
 
-You likely want either the ISO A4 landscape version or the US legal landscape version.
+*You likely want either the ISO A4 landscape version or the US legal landscape version.*
 
 ## Contributing
 
@@ -48,7 +48,5 @@ In particular:
 - Fixing spelling mistakes.
 - Improvements to the LaTeX code.
 - Translations.
-- Other paper sizes.
-- Other file formats.
 - Improving the projects GitHub setup
-- Improving this readme!
+- Improving this readme
