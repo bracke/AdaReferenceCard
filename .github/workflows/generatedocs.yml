@@ -15,7 +15,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -jobname=ada_reference_card_2022_english_isoa4_landscape "\documentclass[english]{article}\newcommand\columnnr{3}\usepackage[a4paper,margin=0.25cm,landscape]{geometry}"
+          args: -pdf -silent -jobname=ada_reference_card_2022_english_isoa4_landscape -pdflatex="/usr/texbin/pdflatex --file-line-error --shell-escape --synctex=1 %O '\documentclass[english]{article}\newcommand\columnnr{3}\usepackage[a4paper,margin=0.25cm,landscape]{geometry}\input{%S}'" ada_reference_card_2022_en.tex
           root_file: ada_reference_card_2022_en.tex
 
       - name: Delete 'continuous' release and tag
@@ -27,7 +27,7 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-           files: ada_reference_card_2022_en.pdf
+           files: ada_reference_card_2022_english_isoa4_landscape.pdf
            prerelease: true
            generate_release_notes: true
            append_body: true
