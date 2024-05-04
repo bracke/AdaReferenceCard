@@ -21,7 +21,7 @@ Each attribute name, aspect name, pragma name and package name in the Ada Refere
 
 The reference card is available in LaTeX and PDF format:
 
-- [LaTeX](https://github.com/bracke/AdaReferenceCard/blob/main/ada_reference_card_2022_a4_en.tex)
+- [LaTeX](https://github.com/bracke/AdaReferenceCard/blob/main/ada_reference_card_2022_en.tex)
 - [PDF](https://github.com/bracke/AdaReferenceCard/releases)
 
 ## Contributing
