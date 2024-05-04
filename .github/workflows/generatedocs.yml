@@ -15,7 +15,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          args: -pdf -silent -pdflatex="/usr/texbin/pdflatex --file-line-error --shell-escape --synctex=1 %O \documentclass[english]{article}\newcommand\columnnr{3}\usepackage[a4paper,margin=0.25cm,landscape]{geometry}\input{%S}" ada_reference_card_2022_en.tex
+          args: -pdf -silent -pdflatex="/usr/texbin/pdflatex" --file-line-error --shell-escape --synctex=1 %O \documentclass[english]{article}\newcommand\columnnr{3}\usepackage[a4paper,margin=0.25cm,landscape]{geometry}\input{%S} ada_reference_card_2022_en.tex
           root_file: ada_reference_card_2022_en.tex
 
       - name: Delete 'continuous' release and tag
