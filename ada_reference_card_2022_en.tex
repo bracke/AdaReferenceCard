@@ -1,4 +1,3 @@
-
 \pdfcompresslevel=9
 \pdfmapfile{=nodownload.map}
 \usepackage{babel}
@@ -6,9 +5,9 @@
 \setlength{\columnsep}{0.3cm}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{helvet}
-\usepackage{datetime}
-\usepackage{enumitem}
+\usepackage{helvet} % Adds the Helvetica font
+\usepackage{datetime} % Needed for adding the creation date to the PDF meta data
+\usepackage{enumitem} % Needed for displaying the Ada items correctly
 \usepackage[pdfauthor={AdaReferenceCard Contributors},
             pdftitle={Ada 2022 Reference Card},
             pdfsubject={Ada 2022 Reference Card},
@@ -19,32 +18,27 @@
             colorlinks=true, urlcolor=blue, linkcolor=red
             ]{hyperref}
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage{hyphenat}
-\usepackage{ragged2e}
-\usepackage{enumitem}
-\usepackage{setspace}
+\usepackage{hyphenat} % Needed to breakup long syntax descriptions
+\usepackage{ragged2e} % Sets ragged text while still allowing hyphenation
 \usepackage{titlesec}
-\usepackage{seqsplit}
 \makeatletter
 \titleformat{\section}[block]
   {\titlerule\addvspace{2pt}\normalfont\fontsize{9}{10}\bfseries}
   {\thesection\enspace}{0pt}{}[\vspace{1pt}\titlerule]
-
 \makeatother
+% Not Ada 2022 specific
 \newcommand{\adaitem}[4]{
   \item[\href{#1}{#2}]
   \texttt{#3} \\ {#4}
 }
+% Ada 2022 specific
 \newcommand{\adanewitem}[4]{
   \item[\href{#1}{\textit{#2}}]
   \texttt{#3} \\ {#4}
 }
-\begin{titlepage}
-\thispagestyle{empty}
-\end{titlepage}
 \begin{document}
-\begin{scriptsize}
-\begin{multicols*}{\columnnr}
+\begin{scriptsize} % Sets the overall font-size to scriptsize
+\begin{multicols*}{\columnnr} % columnnr needs to be defined in call to pdflatex
 \section*{\textsc{Ada 2022 Reference Card}}
 \begin{tabular}{@{}l l l l l l l l}
 \textit{italic} & Ada 2022 &&&&&&\\
@@ -61,7 +55,6 @@
 \end{tabular}
 \section*{\textsc{Attributes}}
 \RaggedRight
-\renewcommand{\arraystretch}{1.5}
 \begin{description}[leftmargin=7.5em,style=nextline]
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
@@ -82,7 +75,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Copy\_Sign}{S'Copy\_Sign (Value,Sign:T) return T}{Result whose magnitude is that of float Value and whose sign is that of Sign.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Count}{E'Count return universal\_integer}{Number of calls presently queued on the entry.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Definite}{S'Definite return Boolean}{True if the actual subtype of a a formal indefinite subtype is definite.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Delta}{S'Delta return universal\_real}{The delta of the fixed point subtype.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Denorm}{S'Denorm return Boolean}{True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Digits}{S'Digits return universal\_integer}{Number of digits of the decimal fixed point subtype.}
@@ -106,7 +98,6 @@
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Image}{X'Image return String}{Image of the value of X as a String.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Index}{E'Index return entry\_index\_subtype}{Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Input}{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}{First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Input}{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}{Reads and returns one value from the Stream argument.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last}{A'Last (N) return index\_type}{Upper bound of N-th index range of [constrained] array type.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last}{A'Last return index\_type}{Upper bound of first index range of [constrained] array type.}
@@ -130,7 +121,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Mod}{S'Mod (X:T) return S}{Will correctly convert any integer type to a given modular type (S), using wraparound semantics.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model}{S'Model (X:T) return T}{Model number of floating point type.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Emin}{S'Model\_Emin return universal\_integer}{Model number version of S''Machine\_Emin.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Epsilon}{S'Model\_Epsilon return universal\_real}{Absolute difference between the model number 1.0 and the next model number above for subtype.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Mantissa}{S'Model\_Mantissa return universal\_integer}{Model number version of S'Machine\_Mantissa.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Small}{S'Model\_Small return universal\_real}{Smallest positive model number of subtype.}
@@ -154,7 +144,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read}{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}{Reads the value of X from Stream.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read}{S'Class'Read(Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}{Reads the value of X from Stream.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Reduce}{X|V'Reduce(Reducer, Initial\_Value)}{This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.}
-
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Relative\_Deadline}{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}{Relative deadline of P.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Remainder}{S'Remainder (X,Y:T) return T}{Remainder after dividing the first floating point argument by its second.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Result}{F'Result return X}{Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.}
@@ -179,7 +168,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unbiased\_Rounding}{S'Unbiased\_Rounding (X:T) return T}{Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unchecked\_Access}{X'Unchecked\_Access (X:T) return access type}{Same as X'Access but lacks accessibility rules/checks.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val}{S'Val (universal\_integer) return S}{Value of the discrete subtype whose position number equals the value of argument.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val}{X'Valid return Boolean}{True if and only if the scalar object denoted by X is normal and has a valid representation.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Value}{S'Value (X:String) return S}{Returns a value of the subtype given an image of the value as a String argument.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Version}{P'Version return String}{Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.}
@@ -221,7 +209,6 @@
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching\_Domain}{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}{Domain (group of processors) on which a given task should run.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{Dynamic\_Predicate}{S with Dynamic\_Predicate => Boolean}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
-
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate\_Body}{D with Elaborate\_Body => Boolean}{A given package will have a body, and that body is elaborated immediately after the declaration.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-9-5-1.html}{Exclusive\_Functions}{S with Exclusive\_Functions => Boolean}{Specifies mutual exclusion behavior of protected functions in a protected type.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Export}{P|X with Export => Boolean}{Entity is exported to another language.}
@@ -245,7 +232,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-5-1.html}{Layout}{Layout (record)}{Layout of record components. Specified by a record\_representation\_clause, not by an aspect\_specification.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Link\_Name}{Link\_Name}{Linker symbol used to identify an imported or exported entity.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-F-1.html}{Machine\_Radix}{Machine\_Radix}{Radix (2 or 10) that is used to represent a decimal fixed point type.}
-
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{Max\_Entry\_Queue\_Length}{Max\_Entry\_Queue\_Length}{The maximum entry queue length for a task type, protected type, or entry.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-H-4-1.html}{No\_Controlled\_Parts}{No\_Controlled\_Parts}{A specification that a type and its descendants do not have controlled parts.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-6-5-1.html}{No\_Return}{P with No\_Return => Boolean}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
@@ -268,7 +254,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read}{Read}{Procedure to read a value from a stream for a given type.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read'Class}{Read'Class}{Procedure to read a value from a stream for the class-wide type associated with a given type.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{Real\_Literal}{Real\_Literal}{Defines a function or functions to implement user-defined real literals.}
-
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{Remote\_Call\_Interface}{Remote\_Call\_Interface}{Subprograms in a given package may be used in remote procedure calls.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-2.html}{Remote\_Types}{Remote\_Types}{Types in a given package may be used in remote procedure calls.}
@@ -290,14 +275,12 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-3-3.html}{Unchecked\_Union}{Unchecked\_Union}{Type is used to interface to a C union type.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-H-7-1.html}{Use\_Formal}{Use\_Formal}{Generic formal parameters used in the implementation of an entity.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{Variable\_Indexing}{Variable\_Indexing}{Defines function(s) to implement user-defined indexed\_components.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile}{S|X|C with Volatile}{Declare that a type, object, or component is volatile.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile\_Components}{A|X with Volatile\_Components}{Declare that the components of an array type or object are volatile.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write}{Write}{Procedure to write a value to a stream for a given type.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write'Class}{Write'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{Yield}{Yield}{Ensures that a callable entity includes a task dispatching point.}
 \end{description}
-
 \section*{\textsc{Pragmas}}
 \begin{description}[leftmargin=8em,style=nextline]
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{Admission\_Policy}{pragma Admission\_Policy (policy\_identifier)}{An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.}
@@ -317,7 +300,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{Discard\_Names}{pragma Discard\_Names [([On => ] local\_name)]}{Reduce the memory needed to store names of Ada entities, where no operation uses those names.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-10.html}{Dispatching\_Domain}{pragma Dispatching\_Domain (expression)}{Domain (group of processors) on which a given task should run.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate}{pragma Elaborate (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate\_All}{pragma Elaborate\_All (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{Elaborate\_Body}{pragma Elaborate\_Body [(library\_unit\_name)]}{Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Export}{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.}
@@ -334,7 +316,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-3.html}{Locking\_Policy}{pragma Locking\_Policy (policy\_identifier)}{Chooses locking policy.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-2.html}{No\_Return}{pragma No\_Return (subprogram\_local\_name{, subprogram\_local\_name})}{States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-1.html}{Normalize\_Scalars}{pragma Normalize\_Scalars}{Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Optimize}{pragma Optimize (identifier)}{Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-3.html}{Pack}{pragma Pack (first\_subtype\_local\_name)}{Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Page}{pragma Page}{Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).}
@@ -352,7 +333,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{Restrictions}{pragma Restrictions (restriction{, ...})}{Used to forbid the utilization of some language features.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-3-1.html}{Reviewable}{pragma Reviewable}{Directs the compiler to provide information that aids inspection of the program's object code.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{Shared\_Passive}{pragma Shared\_Passive [(library\_unit\_name)]}{Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.}
-
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-4.html}{Storage\_Size}{pragma Storage\_Size (expression)}{Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{Suppress}{pragma Suppress (identifier)}{Gives the compiler permission to omit checks, but does not require the compiler to omit checks.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{Task\_Dispatching\_Policy}{pragma Task\_Dispatching\_Policy (policy\_identifier)}{Chooses scheduling policies.}
@@ -361,7 +341,6 @@
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
 \end{description}
-
 \section*{\textsc{Standard Library}}
 \begin{itemize}[leftmargin=0mm]
 \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-1.html}{Standard}}
