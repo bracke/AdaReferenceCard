@@ -39,5 +39,13 @@
 			"$0"
 		],
 		"description": "Ada Section"
+	},
+	"AdaRMLink": {
+		"prefix": "ada",
+		"body": [
+			"\\adarmlink{${1:page}}",
+			"$0"
+		],
+		"description": "Link to Ada RM"
 	}
 }

@@ -36,6 +36,7 @@
   \item[\href{#1}{\textit{#2}}]
   \texttt{#3} \\ {#4}
 }
+\newcommand{\adarmlink}[1]{http://www.ada-auth.org/standards/22rm/html/#1}
 \begin{document}
 \begin{multicols*}{\columnnr} % columnnr needs to be defined in call to pdflatex
 \raggedcolumns
@@ -56,296 +57,295 @@
 \end{tabular}
 \section*{\textsc{Attributes}}
 \RaggedRight
-
 \begin{description}[leftmargin=7.5em,style=nextline]
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Adjacent}{S'Adjacent (X,Towards:T) return T}{Adjacent floating point number to X in the direction of Towards.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Aft}{S'Aft return universal\_integer}{Number of decimal digits needed after the decimal point to accommodate the delta.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Alignment}{S|X'Alignment return universal\_integer}{Alignment of object.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Base}{S'Base return S'Base}{Denotes the base unconstrained subtype of S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Bit\_Order}{S'Bit\_Order return System.Bit\_Order}{Record subtype bit ordering.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Body\_Version}{P'Body\_Version return String}{Version of the compilation unit that contains the body.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Callable}{T'Callable return Boolean}{True when the task denoted by T is callable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Caller}{E'Caller return Task\_ID}{Identifies the task whose call is now being serviced.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Ceiling}{S'Ceiling (X:T) return T}{Smallest (most negative) integral value greater than or equal to argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class}{S'Class return class-wide type}{Returns the class-wide type of tagged type S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class}{S'Class return class-wide type}{Returns the class-wide type for subtype S of an untagged private type whose full view is tagged.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Component\_Size}{X'Component\_Size return universal\_integer}{Size in bits of components of the array subtype or object.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Compose}{S'Compose (Fraction:T;Exponent:universal\_integer) return T}{Combine fraction and exponent into a floating point subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Constrained}{A'Constrained return Boolean}{True if A of discriminated type denotes a constant, a value, or a constrained variable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Copy\_Sign}{S'Copy\_Sign (Value,Sign:T) return T}{Result whose magnitude is that of float Value and whose sign is that of Sign.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Count}{E'Count return universal\_integer}{Number of calls presently queued on the entry.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Definite}{S'Definite return Boolean}{True if the actual subtype of a a formal indefinite subtype is definite.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Delta}{S'Delta return universal\_real}{The delta of the fixed point subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Denorm}{S'Denorm return Boolean}{True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Digits}{S'Digits return universal\_integer}{Number of digits of the decimal fixed point subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Digits}{S'Digits return universal\_integer}{Number of decimal mantissa digits for floating point subtype.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Enum\_Rep}{S'Enum\_Rep (X:S'Base) return universal\_integer}{Return the number representing a given enumeration literal.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Enum\_Val}{S'Enum\_Val (X:universal\_integer) return S'Base}{Return the enumeration literal represented by a given number.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Exponent}{S'Exponent (X:T) return universal\_integer}{Normalized exponent of the floating point argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{External\_Tag}{S'External\_Tag return String}{An external string representation of the tagged type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First}{A'First (N) return index\_type}{Lower bound of N-th index of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First}{A'First return index\_type}{Lower bound of first index of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First}{S'First return S}{Lower bound of the range of scalar subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First\_Bit}{R.C'First\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the first bit occupied by C.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{First\_Valid}{S'First\_Valid return S}{Denotes the smallest value that belongs to S and satisfies the predicates of S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Floor}{S'Floor (X:T) return T}{Largest integral value less than or equal to the argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Fore}{S'Fore return universal\_integer}{Minimum number of characters needed before the decimal point.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Fraction}{S'Fraction (X:T) return T}{Decompose floating point argument into fractional part.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Has\_Same\_Storage}{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}{Returns True if the representation of X2 occupies exactly the same bits as the representation of X and the objects occupy at least one bit.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Identity}{E'Identity return Exception\_Id}{Yields unique identity of the exception.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Identity}{T'Identity return Task\_Id}{Yields unique identity of the task.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Image}{S'Image (X) return String}{Image of the value of X as a String.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Image}{X'Image return String}{Image of the value of X as a String.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Index}{E'Index return entry\_index\_subtype}{Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Input}{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}{First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Input}{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}{Reads and returns one value from the Stream argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last}{A'Last (N) return index\_type}{Upper bound of N-th index range of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last}{A'Last return index\_type}{Upper bound of first index range of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last}{S'Last return T}{Upper bound of the range of scalar subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Last\_Bit}{R.C'Last\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the last bit occupied by C.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Leading\_Part}{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}{The leading part of floating point value with number of radix digits given by second argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Length}{A'Length (N) return universal\_integer}{Number of values of the N-th index range of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Length}{A'Length return universal\_integer}{Number of values of the first index range of [constrained] array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine}{S'Machine (X:T) return T}{Machine representation of floating point argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Emax}{S'Machine\_Emax return universal\_integer}{Largest (most positive) value of floating point exponent.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Emin}{S'Machine\_Emin return universal\_integer}{Smallest (most negative) value of floating point exponent.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Mantissa}{S'Machine\_Mantissa return universal\_integer}{Number of digits in machine representation of mantissa.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Overflows}{S'Machine\_Overflows return Boolean}{True if numeric overflow detected for fixed or floating point.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Radix}{S'Machine\_Radix return universal\_integer}{Radix of machine representation of the fixed or floating point.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Rounds}{S'Machine\_Rounds return Boolean}{True if rounding is performed on inexact results of the fixed or floating point.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Machine\_Rounding}{S'Machine\_Rounding (X:T) return T}{Yields the integral value nearest to X.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max}{S'Max (X1,X2:S) return S}{Returns the greater of the values of the two parameters.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max\_Alignment\_For\_Allocation}{S'Max\_Alignment\_For\_Allocation return universal\_integer}{Maximum value for Alignment that can be requested by the implementation via Allocate for an access type whose designated subtype is S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Max\_Size\_In\_Storage\_Elements}{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}{Maximum value for Size\_In\_Storage\_Elements that will be requested via Allocate.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Min}{S'Min (X1,X2:S) return S}{The lesser of the values of the two scalar arguments.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Mod}{S'Mod (X:T) return S}{Will correctly convert any integer type to a given modular type (S), using wraparound semantics.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model}{S'Model (X:T) return T}{Model number of floating point type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Emin}{S'Model\_Emin return universal\_integer}{Model number version of S''Machine\_Emin.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Epsilon}{S'Model\_Epsilon return universal\_real}{Absolute difference between the model number 1.0 and the next model number above for subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Mantissa}{S'Model\_Mantissa return universal\_integer}{Model number version of S'Machine\_Mantissa.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Model\_Small}{S'Model\_Small return universal\_real}{Smallest positive model number of subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Modulus}{S'Modulus return universal\_integer}{The modulus of the modular subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Object\_Size}{S'Object\_Size return universal\_integer}{The size of an object of subtype S. Must be a value that the compiler is able to allocate (usually an entire storage unit).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Old}{X'Old return T}{The value of X on entry, has same type as X.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Output}{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the external tag of Item to Stream and then dispatches to the subprogram denoted by the Output attribute of the specific type identified by the tag.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Output}{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the value of X to Stream, including any bounds or discriminants.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Overlaps\_Storage}{X'Overlaps\_Storage (X2) return Boolean}{Returns True if the representation of X2 shares at least one bit with the representation of the object denoted by X.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Parallel\_Reduce}{X'Parallel\_Reduce (Reducer,Initial\_Value)}{Reduction expression that yields a result equivalent to replacing the attribute identifier with Reduce and the prefix of the attribute with the value\_sequence.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Partition\_ID}{D'Partition\_ID return universal\_integer}{Identifies the partition in which D was elaborated.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Pos}{S'Pos (X) return universal\_integer}{Position of the value of the discrete subtype argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Position}{R.C'Position return universal\_integer}{Same as R.C'Address - R'Address for component C.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Pred}{S'Pred (X) return S}{Predecessor of the argument.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Preelaborable\_Initialization}{S'Preelaborable\_Initialization return Boolean}{Returns whether the type of S has preelaborable initialization.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Priority}{P'Priority return System.Any\_Priority}{Returns the priority of P.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Put\_Image}{S'Put\_Image (Buffer:Ada.Strings.Text\_Buffers.Root\_Buffer\_Type'Class;X)}{ Writes an image of the value of X.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range}{A'Range return range}{Equivalent to the range A'First .. A'Last.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range}{S'Range return range}{Equivalent to the range S'First .. S'Last.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Range}{A'Range (N) return range}{Equivalent to the range A'First(N) .. A'Last(N).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read}{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}{Reads the value of X from Stream.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Read}{S'Class'Read(Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}{Reads the value of X from Stream.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Reduce}{X|V'Reduce(Reducer, Initial\_Value)}{This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Relative\_Deadline}{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}{Relative deadline of P.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Remainder}{S'Remainder (X,Y:T) return T}{Remainder after dividing the first floating point argument by its second.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Result}{F'Result return X}{Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Round}{F'Round (X) return S}{Fixed-point value obtained by rounding X (away from 0, if X is midway between two values).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Rounding}{S'Rounding (X:T) return T}{Floating-point integral value nearest to X, rounding away from zero if X lies exactly halfway between two integers.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Safe\_First}{S'Safe\_First return universal\_real}{Returns lower bound of the safe range.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Safe\_Last}{S'Safe\_Last return universal\_real}{Returns upper bound of the safe range}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Scale}{S'Scale return universal\_integer}{Position of the fixed-point relative to the rightmost significant digits of values of subtype S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.htm}{Scaling}{S'Scaling (X:T;Adjustment:universal\_integer) return T}{Scaling by a power of the hardware radix.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Signed\_Zeros}{S'Signed\_Zeros return Boolean}{True if positive and negative signed zeros are representable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Size}{S'Size universal\_integer}{Size in bits of objects instantiated from subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Size}{X'Size return universal\_integer}{Size in bits of the representation of the object.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Small}{S'Small return universal\_real}{Small of the fixed-point type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Pool}{S'Storage\_Pool return Root\_Storage\_Pool'Class}{Returns Storage pool of the access subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Size}{S'Storage\_Size return universal\_integer}{Number of storage elements reserved for the storage pool.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Storage\_Size}{T'Storage\_Size return universal\_integer}{Number of storage elements reserved for the task.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Stream\_Size}{S'Stream\_Size return universal\_integer}{Number of bits read from or written to a stream by the default implementations of S'Read and S'Write.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Succ}{S'Succ (X:T) return T}{Returns successor of the X.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Tag}{X|S'Tag return Tag}{Returns the tag of the [class-wide] tagged type or of object X that is a class-wide tagged type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Terminated}{T'Terminated return Boolean}{Returns True if the task denoted by T is terminated.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Truncation}{S'Truncation (X:T) return T}{Returns the value Ceiling(X) when X is negative, else Floor(X).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unbiased\_Rounding}{S'Unbiased\_Rounding (X:T) return T}{Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Unchecked\_Access}{X'Unchecked\_Access (X:T) return access type}{Same as X'Access but lacks accessibility rules/checks.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val}{S'Val (universal\_integer) return S}{Value of the discrete subtype whose position number equals the value of argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Val}{X'Valid return Boolean}{True if and only if the scalar object denoted by X is normal and has a valid representation.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Value}{S'Value (X:String) return S}{Returns a value of the subtype given an image of the value as a String argument.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Version}{P'Version return String}{Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Image}{S'Wide\_Image (X:S) return Wide\_String}{Image of the value of X as a Wide\_String.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Image}{X'Wide\_Image return Wide\_String}{Image of the value of X as a Wide\_String.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Value}{S'Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_String argument (X).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Width}{S'Wide\_Width return universal\_integer}{Maximum length of Wide\_String returned by S'Image.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Image}{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Image}{X'Wide\_Wide\_Image return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Value}{S'Wide\_Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_Wide\_String argument (X).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Wide\_Wide\_Width}{S'Wide\_Wide\_Width return universal\_integer}{Maximum length of Wide\_Wide\_String returned by S'Image.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Width}{S'Width return universal\_integer}{Maximum length of String returned by S'Image.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Class'Write}{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}{Writes X to Stream.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Write}{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}{Writes X to Stream.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Adjacent}{S'Adjacent (X,Towards:T) return T}{Adjacent floating point number to X in the direction of Towards.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Aft}{S'Aft return universal\_integer}{Number of decimal digits needed after the decimal point to accommodate the delta.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Alignment}{S|X'Alignment return universal\_integer}{Alignment of object.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Base}{S'Base return S'Base}{Denotes the base unconstrained subtype of S.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Bit\_Order}{S'Bit\_Order return System.Bit\_Order}{Record subtype bit ordering.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Body\_Version}{P'Body\_Version return String}{Version of the compilation unit that contains the body.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Callable}{T'Callable return Boolean}{True when the task denoted by T is callable.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Caller}{E'Caller return Task\_ID}{Identifies the task whose call is now being serviced.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Ceiling}{S'Ceiling (X:T) return T}{Smallest (most negative) integral value greater than or equal to argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Class}{S'Class return class-wide type}{Returns the class-wide type of tagged type S.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Class}{S'Class return class-wide type}{Returns the class-wide type for subtype S of an untagged private type whose full view is tagged.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Component\_Size}{X'Component\_Size return universal\_integer}{Size in bits of components of the array subtype or object.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Compose}{S'Compose (Fraction:T;Exponent:universal\_integer) return T}{Combine fraction and exponent into a floating point subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Constrained}{A'Constrained return Boolean}{True if A of discriminated type denotes a constant, a value, or a constrained variable.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Copy\_Sign}{S'Copy\_Sign (Value,Sign:T) return T}{Result whose magnitude is that of float Value and whose sign is that of Sign.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Count}{E'Count return universal\_integer}{Number of calls presently queued on the entry.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Definite}{S'Definite return Boolean}{True if the actual subtype of a a formal indefinite subtype is definite.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Delta}{S'Delta return universal\_real}{The delta of the fixed point subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Denorm}{S'Denorm return Boolean}{True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Digits}{S'Digits return universal\_integer}{Number of digits of the decimal fixed point subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Digits}{S'Digits return universal\_integer}{Number of decimal mantissa digits for floating point subtype.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Enum\_Rep}{S'Enum\_Rep (X:S'Base) return universal\_integer}{Return the number representing a given enumeration literal.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Enum\_Val}{S'Enum\_Val (X:universal\_integer) return S'Base}{Return the enumeration literal represented by a given number.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Exponent}{S'Exponent (X:T) return universal\_integer}{Normalized exponent of the floating point argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{External\_Tag}{S'External\_Tag return String}{An external string representation of the tagged type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{First}{A'First (N) return index\_type}{Lower bound of N-th index of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{First}{A'First return index\_type}{Lower bound of first index of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{First}{S'First return S}{Lower bound of the range of scalar subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{First\_Bit}{R.C'First\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the first bit occupied by C.}
+   \adaitem{\adarmlink{RM-K-2.html}}{First\_Valid}{S'First\_Valid return S}{Denotes the smallest value that belongs to S and satisfies the predicates of S.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Floor}{S'Floor (X:T) return T}{Largest integral value less than or equal to the argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Fore}{S'Fore return universal\_integer}{Minimum number of characters needed before the decimal point.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Fraction}{S'Fraction (X:T) return T}{Decompose floating point argument into fractional part.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Has\_Same\_Storage}{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}{Returns True if the representation of X2 occupies exactly the same bits as the representation of X and the objects occupy at least one bit.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Identity}{E'Identity return Exception\_Id}{Yields unique identity of the exception.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Identity}{T'Identity return Task\_Id}{Yields unique identity of the task.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Image}{S'Image (X) return String}{Image of the value of X as a String.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Image}{X'Image return String}{Image of the value of X as a String.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Index}{E'Index return entry\_index\_subtype}{Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Class'Input}{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}{First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Input}{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}{Reads and returns one value from the Stream argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Last}{A'Last (N) return index\_type}{Upper bound of N-th index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Last}{A'Last return index\_type}{Upper bound of first index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Last}{S'Last return T}{Upper bound of the range of scalar subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Last\_Bit}{R.C'Last\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the last bit occupied by C.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Leading\_Part}{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}{The leading part of floating point value with number of radix digits given by second argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Length}{A'Length (N) return universal\_integer}{Number of values of the N-th index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Length}{A'Length return universal\_integer}{Number of values of the first index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine}{S'Machine (X:T) return T}{Machine representation of floating point argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Emax}{S'Machine\_Emax return universal\_integer}{Largest (most positive) value of floating point exponent.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Emin}{S'Machine\_Emin return universal\_integer}{Smallest (most negative) value of floating point exponent.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Mantissa}{S'Machine\_Mantissa return universal\_integer}{Number of digits in machine representation of mantissa.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Overflows}{S'Machine\_Overflows return Boolean}{True if numeric overflow detected for fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Radix}{S'Machine\_Radix return universal\_integer}{Radix of machine representation of the fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Rounds}{S'Machine\_Rounds return Boolean}{True if rounding is performed on inexact results of the fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Rounding}{S'Machine\_Rounding (X:T) return T}{Yields the integral value nearest to X.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Max}{S'Max (X1,X2:S) return S}{Returns the greater of the values of the two parameters.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Max\_Alignment\_For\_Allocation}{S'Max\_Alignment\_For\_Allocation return universal\_integer}{Maximum value for Alignment that can be requested by the implementation via Allocate for an access type whose designated subtype is S.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Max\_Size\_In\_Storage\_Elements}{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}{Maximum value for Size\_In\_Storage\_Elements that will be requested via Allocate.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Min}{S'Min (X1,X2:S) return S}{The lesser of the values of the two scalar arguments.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Mod}{S'Mod (X:T) return S}{Will correctly convert any integer type to a given modular type (S), using wraparound semantics.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Model}{S'Model (X:T) return T}{Model number of floating point type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Emin}{S'Model\_Emin return universal\_integer}{Model number version of S''Machine\_Emin.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Epsilon}{S'Model\_Epsilon return universal\_real}{Absolute difference between the model number 1.0 and the next model number above for subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Mantissa}{S'Model\_Mantissa return universal\_integer}{Model number version of S'Machine\_Mantissa.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Small}{S'Model\_Small return universal\_real}{Smallest positive model number of subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Modulus}{S'Modulus return universal\_integer}{The modulus of the modular subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Object\_Size}{S'Object\_Size return universal\_integer}{The size of an object of subtype S. Must be a value that the compiler is able to allocate (usually an entire storage unit).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Old}{X'Old return T}{The value of X on entry, has same type as X.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Class'Output}{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the external tag of Item to Stream and then dispatches to the subprogram denoted by the Output attribute of the specific type identified by the tag.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Output}{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the value of X to Stream, including any bounds or discriminants.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Overlaps\_Storage}{X'Overlaps\_Storage (X2) return Boolean}{Returns True if the representation of X2 shares at least one bit with the representation of the object denoted by X.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Parallel\_Reduce}{X'Parallel\_Reduce (Reducer,Initial\_Value)}{Reduction expression that yields a result equivalent to replacing the attribute identifier with Reduce and the prefix of the attribute with the value\_sequence.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Partition\_ID}{D'Partition\_ID return universal\_integer}{Identifies the partition in which D was elaborated.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Pos}{S'Pos (X) return universal\_integer}{Position of the value of the discrete subtype argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Position}{R.C'Position return universal\_integer}{Same as R.C'Address - R'Address for component C.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Pred}{S'Pred (X) return S}{Predecessor of the argument.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Preelaborable\_Initialization}{S'Preelaborable\_Initialization return Boolean}{Returns whether the type of S has preelaborable initialization.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Priority}{P'Priority return System.Any\_Priority}{Returns the priority of P.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Put\_Image}{S'Put\_Image (Buffer:Ada.Strings.Text\_Buffers.Root\_Buffer\_Type'Class;X)}{ Writes an image of the value of X.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Range}{A'Range return range}{Equivalent to the range A'First .. A'Last.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Range}{S'Range return range}{Equivalent to the range S'First .. S'Last.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Range}{A'Range (N) return range}{Equivalent to the range A'First(N) .. A'Last(N).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Read}{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}{Reads the value of X from Stream.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Read}{S'Class'Read(Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}{Reads the value of X from Stream.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Reduce}{X|V'Reduce(Reducer, Initial\_Value)}{This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Relative\_Deadline}{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}{Relative deadline of P.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Remainder}{S'Remainder (X,Y:T) return T}{Remainder after dividing the first floating point argument by its second.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Result}{F'Result return X}{Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Round}{F'Round (X) return S}{Fixed-point value obtained by rounding X (away from 0, if X is midway between two values).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Rounding}{S'Rounding (X:T) return T}{Floating-point integral value nearest to X, rounding away from zero if X lies exactly halfway between two integers.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Safe\_First}{S'Safe\_First return universal\_real}{Returns lower bound of the safe range.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Safe\_Last}{S'Safe\_Last return universal\_real}{Returns upper bound of the safe range}
+   \adaitem{\adarmlink{RM-K-2.html}}{Scale}{S'Scale return universal\_integer}{Position of the fixed-point relative to the rightmost significant digits of values of subtype S.}
+   \adaitem{\adarmlink{RM-K-2.htm}}{Scaling}{S'Scaling (X:T;Adjustment:universal\_integer) return T}{Scaling by a power of the hardware radix.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Signed\_Zeros}{S'Signed\_Zeros return Boolean}{True if positive and negative signed zeros are representable.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Size}{S'Size universal\_integer}{Size in bits of objects instantiated from subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Size}{X'Size return universal\_integer}{Size in bits of the representation of the object.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Small}{S'Small return universal\_real}{Small of the fixed-point type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Pool}{S'Storage\_Pool return Root\_Storage\_Pool'Class}{Returns Storage pool of the access subtype.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Size}{S'Storage\_Size return universal\_integer}{Number of storage elements reserved for the storage pool.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Size}{T'Storage\_Size return universal\_integer}{Number of storage elements reserved for the task.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Stream\_Size}{S'Stream\_Size return universal\_integer}{Number of bits read from or written to a stream by the default implementations of S'Read and S'Write.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Succ}{S'Succ (X:T) return T}{Returns successor of the X.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Tag}{X|S'Tag return Tag}{Returns the tag of the [class-wide] tagged type or of object X that is a class-wide tagged type.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Terminated}{T'Terminated return Boolean}{Returns True if the task denoted by T is terminated.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Truncation}{S'Truncation (X:T) return T}{Returns the value Ceiling(X) when X is negative, else Floor(X).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Unbiased\_Rounding}{S'Unbiased\_Rounding (X:T) return T}{Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Unchecked\_Access}{X'Unchecked\_Access (X:T) return access type}{Same as X'Access but lacks accessibility rules/checks.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Val}{S'Val (universal\_integer) return S}{Value of the discrete subtype whose position number equals the value of argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Val}{X'Valid return Boolean}{True if and only if the scalar object denoted by X is normal and has a valid representation.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Value}{S'Value (X:String) return S}{Returns a value of the subtype given an image of the value as a String argument.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Version}{P'Version return String}{Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Image}{S'Wide\_Image (X:S) return Wide\_String}{Image of the value of X as a Wide\_String.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Wide\_Image}{X'Wide\_Image return Wide\_String}{Image of the value of X as a Wide\_String.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Value}{S'Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_String argument (X).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Width}{S'Wide\_Width return universal\_integer}{Maximum length of Wide\_String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Image}{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
+   \adanewitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Image}{X'Wide\_Wide\_Image return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Value}{S'Wide\_Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_Wide\_String argument (X).}
+   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Width}{S'Wide\_Wide\_Width return universal\_integer}{Maximum length of Wide\_Wide\_String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Width}{S'Width return universal\_integer}{Maximum length of String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Class'Write}{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}{Writes X to Stream.}
+   \adaitem{\adarmlink{RM-K-2.html}}{Write}{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}{Writes X to Stream.}
 \end{description}
 \section*{\textsc{Aspects}}
 \raggedright
 \begin{description}[leftmargin=8em,style=nextline]
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Address}{X|P|L with Address => System.Address}{Address of the first of the storage elements allocated.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-3-5.html}{Aggregate}{S with Aggregate => (aggregate)}{Mechanism to define user-defined aggregates.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Alignment}{X|S with Alignment => universal\_integer}{Alignment of object or subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{All\_Calls\_Remote}{P with All\_Calls\_Remote => Boolean}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{Allows\_Exit}{P with Allows\_Exit => Boolean}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-4-1.html}{Asynchronous}{P with Asynchronous => Boolean}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Atomic}{S|X|C with Atomic => Boolean}{Declare that a type, object, or component is atomic.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Atomic\_Components}{A|X with Atomic\_Components => Boolean}{Declare that the components of an array type or object are atomic.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure is attached to an interrupt.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-5-3.html}{Bit\_Order}{S with Bit\_Order => System.Bit\_Order}{Order of bit numbering in a record\_representation\_clause.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Component\_Size}{A|X with Component\_Size => universal\_integer}{Size in bits of a component of an array type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{onstant\_Indexing}{S with Constant\_Indexing => P}{Defines function to implement user-defined indexed\_components.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Convention}{S|P with Convention => convention\_identifier}{Calling convention or other convention used for interfacing to other languages.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-16.html}{CPU}{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}{Processor on which a given task, or calling task for a protected operation, should run.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{Default\_Component\_Value}{S with Default\_Component\_Value => Component\_Type}{Default value for the components of an array-of-scalar subtype.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition => Boolean}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-3-6.html}{Default\_Iterator}{S with Default\_Iterator => P}{Default iterator to be used in for loops.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-3-5.html}{Default\_Value}{S with Default\_Value => scalar value}{Default value for a scalar subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{Discard\_Names}{S|E with Discard\_Names => Boolean}{Requests a reduction in storage.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching\_Domain}{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}{Domain (group of processors) on which a given task should run.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{Dynamic\_Predicate}{S with Dynamic\_Predicate => Boolean}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate\_Body}{D with Elaborate\_Body => Boolean}{A given package will have a body, and that body is elaborated immediately after the declaration.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-9-5-1.html}{Exclusive\_Functions}{S with Exclusive\_Functions => Boolean}{Specifies mutual exclusion behavior of protected functions in a protected type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Export}{P|X with Export => Boolean}{Entity is exported to another language.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{External\_Name}{P|X with External\_Name => String}{Name used to identify an imported or exported entity.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{External\_Tag}{S with External\_Tag => String}{Unique identifier for a tagged type in streams.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Full\_Access\_Only}{X|C with Full\_Access\_Only => Boolean}{Declare that a volatile type, object, or component is full access.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{Global}{D with Global => global\_aspect\_definition}{Global object usage contract.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-2.html}{Global'Class}{D with Global'Class => global\_aspect\_definition}{Global object usage contract inherited on derivation.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-4-1-5.html}{Implicit\_Dereference}{A with Implicit\_Dereference => Discriminant}{Mechanism for user-defined implicit .all.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Import}{P|X with Import => Boolean}{Entity is imported from another language.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Independent}{X|S with Independent => Boolean}{Declare that a type, object, or component is independently addressable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Independent\_Components}{A|R with Independent\_Components => Boolean}{Declare that the components of an array or record type, or an array object, are independently addressable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-6-3-2.html}{Inline}{P|E with Inline => Boolean}{For efficiency, Inline calls are requested for a subprogram.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Input}{Input}{Function to read a value from a stream for a given type, including any bounds and discriminants.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Input'Class}{Input'Class}{Function to read a value from a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{Integer\_Literal}{Integer\_Literal}{Defines a function to implement user-defined integer literals.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-3-1.html}{Interrupt\_Handler}{Interrupt\_Handler}{Protected procedure may be attached to interrupts.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{Interrupt\_Priority}{Interrupt\_Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{Iterator\_Element}{Iterator\_Element}{Element type to be used for user-defined iterators.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{Iterator\_View}{Iterator\_View}{An alternative type to used for container element iterators.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-5-1.html}{Layout}{Layout (record)}{Layout of record components. Specified by a record\_representation\_clause, not by an aspect\_specification.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Link\_Name}{Link\_Name}{Linker symbol used to identify an imported or exported entity.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-F-1.html}{Machine\_Radix}{Machine\_Radix}{Radix (2 or 10) that is used to represent a decimal fixed point type.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{Max\_Entry\_Queue\_Length}{Max\_Entry\_Queue\_Length}{The maximum entry queue length for a task type, protected type, or entry.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-H-4-1.html}{No\_Controlled\_Parts}{No\_Controlled\_Parts}{A specification that a type and its descendants do not have controlled parts.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-6-5-1.html}{No\_Return}{P with No\_Return => Boolean}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{Nonblocking}{Nonblocking}{Specifies that an associated subprogram does not block.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Output}{Output}{Procedure to write a value to a stream for a given type, including any bounds and discriminants.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Output'Class}{Output'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-2.html}{Pack}{Pack}{Minimize storage when laying out records and arrays.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{Parallel\_Calls}{Parallel\_Calls}{Specifies whether a given subprogram is expected to be called in parallel.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-5-5-3.html}{Parallel\_Iterator}{Parallel\_Iterator}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Post}{with Post => Condition}{Postcondition; a condition that will hold true after a call.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Post'Class}{with Post'Class}{Postcondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Pre}{with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-6-1-1.html}{Pre'Class}{with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{Predicate\_Failure}{Predicate\_Failure}{Action to be performed when a predicate check fails.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Preelaborable\_Initialization}{Preelaborable\_Initialization}{Declares that a type has preelaborable initialization.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Preelaborate}{Preelaborate}{Code execution during elaboration is avoided for a given package.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-1.html}{Priority}{Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Pure}{D with Pure}{Side effects are avoided in the subprograms of a given package.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-10.html}{Put\_Image}{Put\_Image}{Procedure to define the image of a given type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read}{Read}{Procedure to read a value from a stream for a given type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Read'Class}{Read'Class}{Procedure to read a value from a stream for the class-wide type associated with a given type.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{Real\_Literal}{Real\_Literal}{Defines a function or functions to implement user-defined real literals.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-3.html}{Remote\_Call\_Interface}{Remote\_Call\_Interface}{Subprograms in a given package may be used in remote procedure calls.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-2.html}{Remote\_Types}{Remote\_Types}{Types in a given package may be used in remote procedure calls.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-E-2-1.html}{Shared\_Passive}{Shared\_Passive}{A given package is used to represent shared memory in a distributed system.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Size}{Size(S|X)}{Size in bits of objects instantiated from subtype.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-3-5-10.html}{Small}{Small}{Scale factor for a fixed point type.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{Stable\_Properties}{Stable\_Properties}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-7-3-4.html}{Stable\_Properties'Class}{Stable\_Properties'Class}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-6-8.html}{Static}{Static}{Specifies that an associated expression function can be used in static expressions.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-3-2-4.html}{Static\_Predicate}{Static\_Predicate}{Condition that will hold true for objects of a given subtype; the subtype may be static.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{Storage\_Pool}{Storage\_Pool}{Pool of memory from which new will allocate for a given access type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{Storage\_Size}{Storage\_Size (access)}{Sets memory size for allocations for an access type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Storage\_Size}{Storage\_Size (task)}{Size in storage elements reserved for a task type or single task object.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Stream\_Size}{Stream\_Size}{Size in bits used to represent elementary objects in a stream.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-2-1.html}{String\_Literal}{String\_Literal}{Defines a function to implement user-defined string literals.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-9-5.html}{Synchronization}{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}{Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{Type\_Invariant}{Type\_Invariant}{Condition that will hold true for all objects of a type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-7-3-2.html}{Type\_Invariant'Class}{Type\_Invariant'Class}{A condition that will hold true for all objects in a class of types.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-3-3.html}{Unchecked\_Union}{Unchecked\_Union}{Type is used to interface to a C union type.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-H-7-1.html}{Use\_Formal}{Use\_Formal}{Generic formal parameters used in the implementation of an entity.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-4-1-6.html}{Variable\_Indexing}{Variable\_Indexing}{Defines function(s) to implement user-defined indexed\_components.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile}{S|X|C with Volatile}{Declare that a type, object, or component is volatile.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-6.html}{Volatile\_Components}{A|X with Volatile\_Components}{Declare that the components of an array type or object are volatile.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write}{Write}{Procedure to write a value to a stream for a given type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-13-2.html}{Write'Class}{Write'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{Yield}{Yield}{Ensures that a callable entity includes a task dispatching point.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Address}{X|P|L with Address => System.Address}{Address of the first of the storage elements allocated.}
+   \adanewitem{\adarmlink{RM-4-3-5.html}}{Aggregate}{S with Aggregate => (aggregate)}{Mechanism to define user-defined aggregates.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Alignment}{X|S with Alignment => universal\_integer}{Alignment of object or subtype.}
+   \adaitem{\adarmlink{RM-E-2-3.html}}{All\_Calls\_Remote}{P with All\_Calls\_Remote => Boolean}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
+   \adanewitem{\adarmlink{RM-5-5-3.html}}{Allows\_Exit}{P with Allows\_Exit => Boolean}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
+   \adaitem{\adarmlink{RM-E-4-1.html}}{Asynchronous}{P with Asynchronous => Boolean}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Atomic}{S|X|C with Atomic => Boolean}{Declare that a type, object, or component is atomic.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Atomic\_Components}{A|X with Atomic\_Components => Boolean}{Declare that the components of an array type or object are atomic.}
+   \adaitem{\adarmlink{RM-C-3-1.html}}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure is attached to an interrupt.}
+   \adaitem{\adarmlink{RM-13-5-3.html}}{Bit\_Order}{S with Bit\_Order => System.Bit\_Order}{Order of bit numbering in a record\_representation\_clause.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Component\_Size}{A|X with Component\_Size => universal\_integer}{Size in bits of a component of an array type.}
+   \adaitem{\adarmlink{RM-4-1-6.html}}{Constant\_Indexing}{S with Constant\_Indexing => P}{Defines function to implement user-defined indexed\_components.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Convention}{S|P with Convention => convention\_identifier}{Calling convention or other convention used for interfacing to other languages.}
+   \adanewitem{\adarmlink{RM-D-16.html}}{CPU}{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}{Processor on which a given task, or calling task for a protected operation, should run.}
+   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Component\_Value}{S with Default\_Component\_Value => Component\_Type}{Default value for the components of an array-of-scalar subtype.}
+   \adanewitem{\adarmlink{RM-3-6.html}}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition => Boolean}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
+   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Iterator}{S with Default\_Iterator => P}{Default iterator to be used in for loops.}
+   \adaitem{\adarmlink{RM-3-5.html}}{Default\_Value}{S with Default\_Value => scalar value}{Default value for a scalar subtype.}
+   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{S|E with Discard\_Names => Boolean}{Requests a reduction in storage.}
+   \adanewitem{\adarmlink{RM-D-16-1.html}}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
+   \adaitem{\adarmlink{RM-D-16-1.html}}{Dispatching\_Domain}{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}{Domain (group of processors) on which a given task should run.}
+   \adanewitem{\adarmlink{RM-3-2-4.html}}{Dynamic\_Predicate}{S with Dynamic\_Predicate => Boolean}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
+   \adanewitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_Body}{D with Elaborate\_Body => Boolean}{A given package will have a body, and that body is elaborated immediately after the declaration.}
+   \adaitem{\adarmlink{RM-9-5-1.html}}{Exclusive\_Functions}{S with Exclusive\_Functions => Boolean}{Specifies mutual exclusion behavior of protected functions in a protected type.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Export}{P|X with Export => Boolean}{Entity is exported to another language.}
+   \adaitem{\adarmlink{RM-B-1.html}}{External\_Name}{P|X with External\_Name => String}{Name used to identify an imported or exported entity.}
+   \adaitem{\adarmlink{RM-13-3.html}}{External\_Tag}{S with External\_Tag => String}{Unique identifier for a tagged type in streams.}
+   \adanewitem{\adarmlink{RM-C-6.html}}{Full\_Access\_Only}{X|C with Full\_Access\_Only => Boolean}{Declare that a volatile type, object, or component is full access.}
+   \adanewitem{\adarmlink{RM-6-1-2.html}}{Global}{D with Global => global\_aspect\_definition}{Global object usage contract.}
+   \adanewitem{\adarmlink{RM-6-1-2.html}}{Global'Class}{D with Global'Class => global\_aspect\_definition}{Global object usage contract inherited on derivation.}
+   \adaitem{\adarmlink{RM-4-1-5.html}}{Implicit\_Dereference}{A with Implicit\_Dereference => Discriminant}{Mechanism for user-defined implicit .all.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Import}{P|X with Import => Boolean}{Entity is imported from another language.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Independent}{X|S with Independent => Boolean}{Declare that a type, object, or component is independently addressable.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Independent\_Components}{A|R with Independent\_Components => Boolean}{Declare that the components of an array or record type, or an array object, are independently addressable.}
+   \adaitem{\adarmlink{RM-6-3-2.html}}{Inline}{P|E with Inline => Boolean}{For efficiency, Inline calls are requested for a subprogram.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Input}{Input}{Function to read a value from a stream for a given type, including any bounds and discriminants.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Input'Class}{Input'Class}{Function to read a value from a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{Integer\_Literal}{Integer\_Literal}{Defines a function to implement user-defined integer literals.}
+   \adaitem{\adarmlink{RM-C-3-1.html}}{Interrupt\_Handler}{Interrupt\_Handler}{Protected procedure may be attached to interrupts.}
+   \adaitem{\adarmlink{RM-D-1.html}}{Interrupt\_Priority}{Interrupt\_Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
+   \adaitem{\adarmlink{RM-5-5-1.html}}{Iterator\_Element}{Iterator\_Element}{Element type to be used for user-defined iterators.}
+   \adanewitem{\adarmlink{RM-5-5-1.html}}{Iterator\_View}{Iterator\_View}{An alternative type to used for container element iterators.}
+   \adaitem{\adarmlink{RM-13-5-1.html}}{Layout}{Layout (record)}{Layout of record components. Specified by a record\_representation\_clause, not by an aspect\_specification.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Link\_Name}{Link\_Name}{Linker symbol used to identify an imported or exported entity.}
+   \adaitem{\adarmlink{RM-F-1.html}}{Machine\_Radix}{Machine\_Radix}{Radix (2 or 10) that is used to represent a decimal fixed point type.}
+   \adanewitem{\adarmlink{RM-D-4.html}}{Max\_Entry\_Queue\_Length}{Max\_Entry\_Queue\_Length}{The maximum entry queue length for a task type, protected type, or entry.}
+   \adanewitem{\adarmlink{RM-H-4-1.html}}{No\_Controlled\_Parts}{No\_Controlled\_Parts}{A specification that a type and its descendants do not have controlled parts.}
+   \adanewitem{\adarmlink{RM-6-5-1.html}}{No\_Return}{P with No\_Return => Boolean}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
+   \adanewitem{\adarmlink{RM-9-5.html}}{Nonblocking}{Nonblocking}{Specifies that an associated subprogram does not block.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Output}{Output}{Procedure to write a value to a stream for a given type, including any bounds and discriminants.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Output'Class}{Output'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
+   \adaitem{\adarmlink{RM-13-2.html}}{Pack}{Pack}{Minimize storage when laying out records and arrays.}
+   \adanewitem{\adarmlink{RM-9-10-1.html}}{Parallel\_Calls}{Parallel\_Calls}{Specifies whether a given subprogram is expected to be called in parallel.}
+   \adanewitem{\adarmlink{RM-5-5-3.html}}{Parallel\_Iterator}{Parallel\_Iterator}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Post}{with Post => Condition}{Postcondition; a condition that will hold true after a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Post'Class}{with Post'Class}{Postcondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre}{with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre'Class}{with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{Predicate\_Failure}{Action to be performed when a predicate check fails.}
+   \adanewitem{\adarmlink{RM-10-2-1.html}}{Preelaborable\_Initialization}{Preelaborable\_Initialization}{Declares that a type has preelaborable initialization.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Preelaborate}{Preelaborate}{Code execution during elaboration is avoided for a given package.}
+   \adaitem{\adarmlink{RM-D-1.html}}{Priority}{Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Pure}{D with Pure}{Side effects are avoided in the subprograms of a given package.}
+   \adanewitem{\adarmlink{RM-4-10.html}}{Put\_Image}{Put\_Image}{Procedure to define the image of a given type.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Read}{Read}{Procedure to read a value from a stream for a given type.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Read'Class}{Read'Class}{Procedure to read a value from a stream for the class-wide type associated with a given type.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{Real\_Literal}{Real\_Literal}{Defines a function or functions to implement user-defined real literals.}
+   \adanewitem{\adarmlink{RM-D-2-6.html}}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
+   \adaitem{\adarmlink{RM-E-2-3.html}}{Remote\_Call\_Interface}{Remote\_Call\_Interface}{Subprograms in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-2.html}}{Remote\_Types}{Remote\_Types}{Types in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-1.html}}{Shared\_Passive}{Shared\_Passive}{A given package is used to represent shared memory in a distributed system.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Size}{Size(S|X)}{Size in bits of objects instantiated from subtype.}
+   \adaitem{\adarmlink{RM-3-5-10.html}}{Small}{Small}{Scale factor for a fixed point type.}
+   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties}{Stable\_Properties}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
+   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties'Class}{Stable\_Properties'Class}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
+   \adanewitem{\adarmlink{RM-6-8.html}}{Static}{Static}{Specifies that an associated expression function can be used in static expressions.}
+   \adanewitem{\adarmlink{RM-3-2-4.html}}{Static\_Predicate}{Static\_Predicate}{Condition that will hold true for objects of a given subtype; the subtype may be static.}
+   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Pool}{Storage\_Pool}{Pool of memory from which new will allocate for a given access type.}
+   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Size}{Storage\_Size (access)}{Sets memory size for allocations for an access type.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Storage\_Size}{Storage\_Size (task)}{Size in storage elements reserved for a task type or single task object.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Stream\_Size}{Stream\_Size}{Size in bits used to represent elementary objects in a stream.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{String\_Literal}{String\_Literal}{Defines a function to implement user-defined string literals.}
+   \adanewitem{\adarmlink{RM-9-5.html}}{Synchronization}{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}{Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure.}
+   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant}{Type\_Invariant}{Condition that will hold true for all objects of a type.}
+   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant'Class}{Type\_Invariant'Class}{A condition that will hold true for all objects in a class of types.}
+   \adaitem{\adarmlink{RM-B-3-3.html}}{Unchecked\_Union}{Unchecked\_Union}{Type is used to interface to a C union type.}
+   \adanewitem{\adarmlink{RM-H-7-1.html}}{Use\_Formal}{Use\_Formal}{Generic formal parameters used in the implementation of an entity.}
+   \adaitem{\adarmlink{RM-4-1-6.html}}{Variable\_Indexing}{Variable\_Indexing}{Defines function(s) to implement user-defined indexed\_components.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Volatile}{S|X|C with Volatile}{Declare that a type, object, or component is volatile.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Volatile\_Components}{A|X with Volatile\_Components}{Declare that the components of an array type or object are volatile.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Write}{Write}{Procedure to write a value to a stream for a given type.}
+   \adaitem{\adarmlink{RM-13-13-2.html}}{Write'Class}{Write'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type.}
+   \adanewitem{\adarmlink{RM-D-2-1.html}}{Yield}{Yield}{Ensures that a callable entity includes a task dispatching point.}
 \end{description}
 \section*{\textsc{Pragmas}}
 \raggedright
 \begin{description}[leftmargin=8em,style=nextline]
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{Admission\_Policy}{pragma Admission\_Policy (policy\_identifier)}{An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{All\_Calls\_Remote}{pragma All\_Calls\_Remote [(library\_unit\_name)]}{Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assert}{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}{Raises Assertion\_Error exception with an optional message when the expression is false.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assertion\_Policy}{pragma Assertion\_Policy(Check | Ignore)}{Enables or disables assertions including pre and post conditions.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assertion\_Policy}{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}{Enables or disables pre and post conditions.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-13.html}{Asynchronous}{pragma Asynchronous (local\_name)}{The return message is dispensed with for a remote call on a procedure marked asynchronous.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Atomic}{pragma Atomic (local\_name)}{Is used with types and variables to specify that the code generated must read and write the type or variable from memory atomically, i.e. as a single/non-interruptible operation.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Atomic\_Components}{pragma Atomic\_Components (array\_local\_name)}{The components of the named array or every array of the named type is to be examined and updated atomically.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{Attach\_Handler}{pragma Attach\_Handler (handler\_name, expression)}{The handler procedure is attached to the specified interrupt.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-9-10-1.html}{Conflict\_Check\_Policy}{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}{This subclause determines what checks are performed relating to possible concurrent conflicting actions.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Convention}{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}{Directs the compiler to represent a type or subprogram using a foreign language convention.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-9.html}{CPU}{pragma CPU (System.Multiprocessors.CPU\_Range)}{Processor on which a given task, or calling task for a protected operation, should run.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-11-3.html}{Default\_Storage\_Pool}{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}{Specifies the storage pool that will be used in the absence of an explicit specification of a storage pool or storage size for an access type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-5.html}{Detect\_Blocking}{pragma Detect\_Blocking}{Raises Program\_Error when a potentially blocking operation is detected that occurs during the execution of a protected operation or a parallel construct defined within a compilation unit to which the pragma applies.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-C-5.html}{Discard\_Names}{pragma Discard\_Names [([On => ] local\_name)]}{Reduce the memory needed to store names of Ada entities, where no operation uses those names.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-10.html}{Dispatching\_Domain}{pragma Dispatching\_Domain (expression)}{Domain (group of processors) on which a given task should run.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate}{pragma Elaborate (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-10-2-1.html}{Elaborate\_All}{pragma Elaborate\_All (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{Elaborate\_Body}{pragma Elaborate\_Body [(library\_unit\_name)]}{Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Export}{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{Generate\_Deadlines}{pragma Generate\_Deadlines}{Makes the deadline of a task be recomputed each time it becomes ready. The new deadline is the value of Real\_Time.Clock at the time the task is added to a ready queue plus the value returned by Get\_Relative\_Deadline.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-5.html}{Import}{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to use code or data objects written in a foreign computer language.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Independent}{pragma Independent (component\_local\_name)}{Declare that a type, object, or component is independently addressable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Independent\_Components}{pragma Independent\_Components (local\_name)}{Declare that the components of an array or record type, or an array object, are independently addressable.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-1.html}{Inline}{pragma Inline (name {, ...})}{Directs the compiler to inline the code of the given subprogram, making execution faster by eliminating overhead of the subprogram call.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-3-2.html}{Inspection\_Point}{pragma Inspection\_Point [(object\_name {, ...})]}{Directs the compiler to ensure that the specified variable is available where the pragma appears. This pragma aids in debugging.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-7.html}{Interrupt\_Handler}{pragma Interrupt\_Handler (handler\_name)}{Tell the compiler this is an interrupt handler.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{Interrupt\_Priority}{pragma Interrupt\_Priority [(expression)]}{Assigns the given priority to the whole protected object. No other interrupts at or below that level will be enabled whenever the procedure is executing.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-B-1.html}{Linker\_Options}{pragma Linker\_Options (string\_expression)}{Used to specify the system linker parameters needed when a given compilation unit is included in a partition.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{List}{pragma List (identifier)}{Specifies that listing of the compilation is to be continued (On) or suspended (Off) until a List pragma with the opposite argument is given within the same compilation.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-3.html}{Locking\_Policy}{pragma Locking\_Policy (policy\_identifier)}{Chooses locking policy.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-2.html}{No\_Return}{pragma No\_Return (subprogram\_local\_name{, subprogram\_local\_name})}{States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-1.html}{Normalize\_Scalars}{pragma Normalize\_Scalars}{Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Optimize}{pragma Optimize (identifier)}{Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-3.html}{Pack}{pragma Pack (first\_subtype\_local\_name)}{Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-2-8.html}{Page}{pragma Page}{Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-6.html}{Partition\_Elaboration\_Policy}{pragma Partition\_Elaboration\_Policy (policy\_identifier)}{Specifies the elaboration policy for a partition.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{Preelaborable\_Initialization}{pragma Preelaborable\_Initialization (direct\_name)}{Specifies that all objects of the type have preelaborable initialization expressions.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{Preelaborate}{pragma Preelaborate [(library\_unit\_name)]}{Slightly less restrictive than pragma Pure, but still strong enough to prevent access before elaboration problems within a unit.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-11.html}{Priority}{pragma Priority (Integer)}{Sets a task's priority. The pragma must be called in the task specification.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{Priority\_Specific\_Dispatching}{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}{Specifies the task dispatching policy for the specified range of priorities.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{Profile}{pragma Profile (profile\_identifier {, profile\_pragma\_argument\_association})}{Expresses the user's intent to abide by a set of Restrictions or other specified run-time policies. These may facilitate the construction of simpler run-time environments.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-14.html}{Pure}{pragma Pure [(library\_unit\_name)]}{Guarantees that no scenario within the unit can result in an access before elaboration problem.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4.html}{Queuing\_Policy}{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}{Defines the queuing policy used on task entry to an Ada partition.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-12.html}{Relative\_Deadline}{pragma Relative\_Deadline (Real\_Time.Time\_Span)}{Defines deadline.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{Remote\_Call\_Interface}{pragma Remote\_Call\_Interface [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Call-Interface.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{Remote\_Types}{pragma Remote\_Types [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Type.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-12.html}{Restrictions}{pragma Restrictions (restriction{, ...})}{Used to forbid the utilization of some language features.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-H-3-1.html}{Reviewable}{pragma Reviewable}{Directs the compiler to provide information that aids inspection of the program's object code.}
-   \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{Shared\_Passive}{pragma Shared\_Passive [(library\_unit\_name)]}{Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-4.html}{Storage\_Size}{pragma Storage\_Size (expression)}{Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{Suppress}{pragma Suppress (identifier)}{Gives the compiler permission to omit checks, but does not require the compiler to omit checks.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-2.html}{Task\_Dispatching\_Policy}{pragma Task\_Dispatching\_Policy (policy\_identifier)}{Chooses scheduling policies.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-6.html}{Unchecked\_Union}{pragma Unchecked\_Union (first\_subtype\_local\_name)}{Denotes an unconstrained discriminated record subtype having a variant\_part.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-11-5.html}{Unsuppress}{pragma Unsuppress (identifier)}{Unsuppresses a given check.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
-   \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-8.html}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
+   \adanewitem{\adarmlink{RM-D-4-1.html}}{Admission\_Policy}{pragma Admission\_Policy (policy\_identifier)}{An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.}
+   \adanewitem{\adarmlink{RM-J-15-15.html}}{All\_Calls\_Remote}{pragma All\_Calls\_Remote [(library\_unit\_name)]}{Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.}
+   \adaitem{\adarmlink{RM-11-4-2.html}}{Assert}{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}{Raises Assertion\_Error exception with an optional message when the expression is false.}
+   \adaitem{\adarmlink{RM-11-4-2.html}}{Assertion\_Policy}{pragma Assertion\_Policy(Check | Ignore)}{Enables or disables assertions including pre and post conditions.}
+   \adaitem{\adarmlink{RM-11-4-2.html}}{Assertion\_Policy}{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}{Enables or disables pre and post conditions.}
+   \adaitem{\adarmlink{RM-J-15-13.html}}{Asynchronous}{pragma Asynchronous (local\_name)}{The return message is dispensed with for a remote call on a procedure marked asynchronous.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Atomic}{pragma Atomic (local\_name)}{Is used with types and variables to specify that the code generated must read and write the type or variable from memory atomically, i.e. as a single/non-interruptible operation.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Atomic\_Components}{pragma Atomic\_Components (array\_local\_name)}{The components of the named array or every array of the named type is to be examined and updated atomically.}
+   \adaitem{\adarmlink{RM-J-15-7.html}}{Attach\_Handler}{pragma Attach\_Handler (handler\_name, expression)}{The handler procedure is attached to the specified interrupt.}
+   \adanewitem{\adarmlink{RM-9-10-1.html}}{Conflict\_Check\_Policy}{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}{This subclause determines what checks are performed relating to possible concurrent conflicting actions.}
+   \adaitem{\adarmlink{RM-J-15-5.html}}{Convention}{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}{Directs the compiler to represent a type or subprogram using a foreign language convention.}
+   \adaitem{\adarmlink{RM-J-15-9.html}}{CPU}{pragma CPU (System.Multiprocessors.CPU\_Range)}{Processor on which a given task, or calling task for a protected operation, should run.}
+   \adaitem{\adarmlink{RM-13-11-3.html}}{Default\_Storage\_Pool}{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}{Specifies the storage pool that will be used in the absence of an explicit specification of a storage pool or storage size for an access type.}
+   \adaitem{\adarmlink{RM-H-5.html}}{Detect\_Blocking}{pragma Detect\_Blocking}{Raises Program\_Error when a potentially blocking operation is detected that occurs during the execution of a protected operation or a parallel construct defined within a compilation unit to which the pragma applies.}
+   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{pragma Discard\_Names [([On => ] local\_name)]}{Reduce the memory needed to store names of Ada entities, where no operation uses those names.}
+   \adaitem{\adarmlink{RM-J-15-10.html}}{Dispatching\_Domain}{pragma Dispatching\_Domain (expression)}{Domain (group of processors) on which a given task should run.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Elaborate}{pragma Elaborate (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_All}{pragma Elaborate\_All (library\_unit\_name{, ...})}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.}
+   \adanewitem{\adarmlink{RM-J-15-14.html}}{Elaborate\_Body}{pragma Elaborate\_Body [(library\_unit\_name)]}{Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.}
+   \adaitem{\adarmlink{RM-J-15-5.html}}{Export}{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.}
+   \adanewitem{\adarmlink{RM-D-2-6.html}}{Generate\_Deadlines}{pragma Generate\_Deadlines}{Makes the deadline of a task be recomputed each time it becomes ready. The new deadline is the value of Real\_Time.Clock at the time the task is added to a ready queue plus the value returned by Get\_Relative\_Deadline.}
+   \adaitem{\adarmlink{RM-J-15-5.html}}{Import}{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to use code or data objects written in a foreign computer language.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Independent}{pragma Independent (component\_local\_name)}{Declare that a type, object, or component is independently addressable.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Independent\_Components}{pragma Independent\_Components (local\_name)}{Declare that the components of an array or record type, or an array object, are independently addressable.}
+   \adaitem{\adarmlink{RM-J-15-1.html}}{Inline}{pragma Inline (name {, ...})}{Directs the compiler to inline the code of the given subprogram, making execution faster by eliminating overhead of the subprogram call.}
+   \adaitem{\adarmlink{RM-H-3-2.html}}{Inspection\_Point}{pragma Inspection\_Point [(object\_name {, ...})]}{Directs the compiler to ensure that the specified variable is available where the pragma appears. This pragma aids in debugging.}
+   \adaitem{\adarmlink{RM-J-15-7.html}}{Interrupt\_Handler}{pragma Interrupt\_Handler (handler\_name)}{Tell the compiler this is an interrupt handler.}
+   \adaitem{\adarmlink{RM-J-15-11.html}}{Interrupt\_Priority}{pragma Interrupt\_Priority [(expression)]}{Assigns the given priority to the whole protected object. No other interrupts at or below that level will be enabled whenever the procedure is executing.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Linker\_Options}{pragma Linker\_Options (string\_expression)}{Used to specify the system linker parameters needed when a given compilation unit is included in a partition.}
+   \adaitem{\adarmlink{RM-2-8.html}}{List}{pragma List (identifier)}{Specifies that listing of the compilation is to be continued (On) or suspended (Off) until a List pragma with the opposite argument is given within the same compilation.}
+   \adaitem{\adarmlink{RM-D-3.html}}{Locking\_Policy}{pragma Locking\_Policy (policy\_identifier)}{Chooses locking policy.}
+   \adaitem{\adarmlink{RM-J-15-2.html}}{No\_Return}{pragma No\_Return (subprogram\_local\_name{, subprogram\_local\_name})}{States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.}
+   \adaitem{\adarmlink{RM-H-1.html}}{Normalize\_Scalars}{pragma Normalize\_Scalars}{Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.}
+   \adaitem{\adarmlink{RM-2-8.html}}{Optimize}{pragma Optimize (identifier)}{Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).}
+   \adaitem{\adarmlink{RM-J-15-3.html}}{Pack}{pragma Pack (first\_subtype\_local\_name)}{Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.}
+   \adaitem{\adarmlink{RM-2-8.html}}{Page}{pragma Page}{Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).}
+   \adaitem{\adarmlink{RM-H-6.html}}{Partition\_Elaboration\_Policy}{pragma Partition\_Elaboration\_Policy (policy\_identifier)}{Specifies the elaboration policy for a partition.}
+   \adanewitem{\adarmlink{RM-J-15-14.html}}{Preelaborable\_Initialization}{pragma Preelaborable\_Initialization (direct\_name)}{Specifies that all objects of the type have preelaborable initialization expressions.}
+   \adanewitem{\adarmlink{RM-J-15-14.html}}{Preelaborate}{pragma Preelaborate [(library\_unit\_name)]}{Slightly less restrictive than pragma Pure, but still strong enough to prevent access before elaboration problems within a unit.}
+   \adaitem{\adarmlink{RM-J-15-11.html}}{Priority}{pragma Priority (Integer)}{Sets a task's priority. The pragma must be called in the task specification.}
+   \adaitem{\adarmlink{RM-D-2-2.html}}{Priority\_Specific\_Dispatching}{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}{Specifies the task dispatching policy for the specified range of priorities.}
+   \adaitem{\adarmlink{RM-13-12.html}}{Profile}{pragma Profile (profile\_identifier {, profile\_pragma\_argument\_association})}{Expresses the user's intent to abide by a set of Restrictions or other specified run-time policies. These may facilitate the construction of simpler run-time environments.}
+   \adanewitem{\adarmlink{RM-J-15-14.html}}{Pure}{pragma Pure [(library\_unit\_name)]}{Guarantees that no scenario within the unit can result in an access before elaboration problem.}
+   \adaitem{\adarmlink{RM-D-4.html}}{Queuing\_Policy}{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}{Defines the queuing policy used on task entry to an Ada partition.}
+   \adaitem{\adarmlink{RM-J-15-12.html}}{Relative\_Deadline}{pragma Relative\_Deadline (Real\_Time.Time\_Span)}{Defines deadline.}
+   \adanewitem{\adarmlink{RM-J-15-15.html}}{Remote\_Call\_Interface}{pragma Remote\_Call\_Interface [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Call-Interface.}
+   \adanewitem{\adarmlink{RM-J-15-15.html}}{Remote\_Types}{pragma Remote\_Types [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Type.}
+   \adaitem{\adarmlink{RM-13-12.html}}{Restrictions}{pragma Restrictions (restriction{, ...})}{Used to forbid the utilization of some language features.}
+   \adaitem{\adarmlink{RM-H-3-1.html}}{Reviewable}{pragma Reviewable}{Directs the compiler to provide information that aids inspection of the program's object code.}
+   \adanewitem{\adarmlink{RM-J-15-15.html}}{Shared\_Passive}{pragma Shared\_Passive [(library\_unit\_name)]}{Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.}
+   \adaitem{\adarmlink{RM-J-15-4.html}}{Storage\_Size}{pragma Storage\_Size (expression)}{Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).}
+   \adaitem{\adarmlink{RM-11-5.html}}{Suppress}{pragma Suppress (identifier)}{Gives the compiler permission to omit checks, but does not require the compiler to omit checks.}
+   \adaitem{\adarmlink{RM-D-2-2.html}}{Task\_Dispatching\_Policy}{pragma Task\_Dispatching\_Policy (policy\_identifier)}{Chooses scheduling policies.}
+   \adaitem{\adarmlink{RM-J-15-6.html}}{Unchecked\_Union}{pragma Unchecked\_Union (first\_subtype\_local\_name)}{Denotes an unconstrained discriminated record subtype having a variant\_part.}
+   \adaitem{\adarmlink{RM-11-5.html}}{Unsuppress}{pragma Unsuppress (identifier)}{Unsuppresses a given check.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
+   \adaitem{\adarmlink{RM-J-15-8.html}}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
 \end{description}
 \section*{\textsc{Standard Library}}
 \begin{itemize}[leftmargin=0mm]
-\item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-1.html}{Standard}}
+\item[] \textbf{package \href{\adarmlink{RM-A-1.html}}{Standard}}
   \begin{itemize}[leftmargin=5mm]
   \item[] \texttt{Boolean} True or False
   \item[] \texttt{Integer} Implementation defined
@@ -364,306 +364,306 @@
   \item[] \texttt{Storage\_Error} Predefined exception
   \item[] \texttt{Tasking\_Error} Predefined exception
   \end{itemize}
-\item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-A-2.html}{Ada}}
+\item[] \textbf{package \href{\adarmlink{RM-A-2.html}}{Ada}}
   \begin{itemize}[leftmargin=5mm]
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-2.html}{Assertions}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-11.html}{Asynchronous\_Task\_Control}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-9-6.html}{Calendar}
+  \item[] \href{\adarmlink{RM-11-4-2.html}}{Assertions}
+  \item[] \href{\adarmlink{RM-D-11.html}}{Asynchronous\_Task\_Control}
+  \item[] \href{\adarmlink{RM-9-6.html}}{Calendar}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-9-6-1.html}{Arithmetic}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-9-6-1.html}{Formatting}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-9-6-1.html}{Time\_Zones}
+	\item[] \href{\adarmlink{RM-9-6-1.html}}{Arithmetic}
+	\item[] \href{\adarmlink{RM-9-6-1.html}}{Formatting}
+	\item[] \href{\adarmlink{RM-9-6-1.html}}{Time\_Zones}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-1.html}{Characters}
+  \item[] \href{\adarmlink{RM-A-3-1.html}}{Characters}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-4.html}{Conversions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-2.html}{Handling}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-3.html}{Latin\_1}
+	\item[] \href{\adarmlink{RM-A-3-4.html}}{Conversions}
+	\item[] \href{\adarmlink{RM-A-3-2.html}}{Handling}
+	\item[] \href{\adarmlink{RM-A-3-3.html}}{Latin\_1}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-15.html}{Command\_Line}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-3.html}{Complex\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-1.html}{Containers}
+  \item[] \href{\adarmlink{RM-A-15.html}}{Command\_Line}
+  \item[] \href{\adarmlink{RM-G-1-3.html}}{Complex\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-18-1.html}}{Containers}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-20.html}{Bounded\_Doubly\_Linked\_Lists}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-21.html}{Bounded\_Hashed\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-23.html}{Bounded\_Hashed\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-32.html}{Bounded\_Indefinite\_Holders}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-25.html}{Bounded\_Multiway\_Trees}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-22.html}{Bounded\_Ordered\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-24.html}{Bounded\_Ordered\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-31.html}{Bounded\_Priority\_Queues}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-29.html}{Bounded\_Synchronized\_Queues}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-19.html}{Bounded\_Vectors}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-3.html}{Doubly\_Linked\_Lists}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-26.html}{Generic\_Array\_Sort}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-26.html}{Generic\_Constrained\_Array\_Sort}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-26.html}{Generic\_Sort}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-5.html}{Hashed\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-8.html}{Hashed\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-12.html}{Indefinite\_Doubly\_Linked\_Lists}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-13.html}{Indefinite\_Hashed\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-15.html}{Indefinite\_Hashed\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-18.html}{Indefinite\_Holders}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-17.html}{Indefinite\_Multiway\_Trees}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-14.html}{Indefinite\_Ordered\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-16.html}{Indefinite\_Ordered\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-11.html}{Indefinite\_Vectors}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-10.html}{Multiway\_Trees}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-6.html}{Ordered\_Maps}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-9.html}{Ordered\_Sets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-27.html}{Synchronized\_Queue\_Interfaces}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-30.html}{Unbounded\_Priority\_Queues}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-28.html}{Unbounded\_Synchronized\_Queues}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-18-2.html}{Vectors}
+	\item[] \href{\adarmlink{RM-A-18-20.html}}{Bounded\_Doubly\_Linked\_Lists}
+	\item[] \href{\adarmlink{RM-A-18-21.html}}{Bounded\_Hashed\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-23.html}}{Bounded\_Hashed\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-32.html}}{Bounded\_Indefinite\_Holders}
+	\item[] \href{\adarmlink{RM-A-18-25.html}}{Bounded\_Multiway\_Trees}
+	\item[] \href{\adarmlink{RM-A-18-22.html}}{Bounded\_Ordered\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-24.html}}{Bounded\_Ordered\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-31.html}}{Bounded\_Priority\_Queues}
+	\item[] \href{\adarmlink{RM-A-18-29.html}}{Bounded\_Synchronized\_Queues}
+	\item[] \href{\adarmlink{RM-A-18-19.html}}{Bounded\_Vectors}
+	\item[] \href{\adarmlink{RM-A-18-3.html}}{Doubly\_Linked\_Lists}
+	\item[] \href{\adarmlink{RM-A-18-26.html}}{Generic\_Array\_Sort}
+	\item[] \href{\adarmlink{RM-A-18-26.html}}{Generic\_Constrained\_Array\_Sort}
+	\item[] \href{\adarmlink{RM-A-18-26.html}}{Generic\_Sort}
+	\item[] \href{\adarmlink{RM-A-18-5.html}}{Hashed\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-8.html}}{Hashed\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-12.html}}{Indefinite\_Doubly\_Linked\_Lists}
+	\item[] \href{\adarmlink{RM-A-18-13.html}}{Indefinite\_Hashed\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-15.html}}{Indefinite\_Hashed\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-18.html}}{Indefinite\_Holders}
+	\item[] \href{\adarmlink{RM-A-18-17.html}}{Indefinite\_Multiway\_Trees}
+	\item[] \href{\adarmlink{RM-A-18-14.html}}{Indefinite\_Ordered\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-16.html}}{Indefinite\_Ordered\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-11.html}}{Indefinite\_Vectors}
+	\item[] \href{\adarmlink{RM-A-18-10.html}}{Multiway\_Trees}
+	\item[] \href{\adarmlink{RM-A-18-6.html}}{Ordered\_Maps}
+	\item[] \href{\adarmlink{RM-A-18-9.html}}{Ordered\_Sets}
+	\item[] \href{\adarmlink{RM-A-18-27.html}}{Synchronized\_Queue\_Interfaces}
+	\item[] \href{\adarmlink{RM-A-18-30.html}}{Unbounded\_Priority\_Queues}
+	\item[] \href{\adarmlink{RM-A-18-28.html}}{Unbounded\_Synchronized\_Queues}
+	\item[] \href{\adarmlink{RM-A-18-2.html}}{Vectors}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-F-2.html}{Decimal}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-8-4.html}{Direct\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-16.html}{Directories}
+  \item[] \href{\adarmlink{RM-F-2.html}}{Decimal}
+  \item[] \href{\adarmlink{RM-A-8-4.html}}{Direct\_IO}
+  \item[] \href{\adarmlink{RM-A-16.html}}{Directories}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-16-1.html}{Hierarchical\_File\_Names}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-16.html}{Information}
+	\item[] \href{\adarmlink{RM-A-16-1.html}}{Hierarchical\_File\_Names}
+	\item[] \href{\adarmlink{RM-A-16.html}}{Information}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{Dispatching}
+  \item[] \href{\adarmlink{RM-D-2-1.html}}{Dispatching}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-6.html}{EDF}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-4.html}{Non\_Preemptive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-2-5.html}{Round\_Robin}
+	\item[] \href{\adarmlink{RM-D-2-6.html}}{EDF}
+	\item[] \href{\adarmlink{RM-D-2-4.html}}{Non\_Preemptive}
+	\item[] \href{\adarmlink{RM-D-2-5.html}}{Round\_Robin}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-5-1.html}{Dynamic\_Priorities}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-17.html}{Environment\_Variables}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-11-4-1.html}{Exceptions}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-14.html}{Execution\_Time}
+  \item[] \href{\adarmlink{RM-D-5-1.html}}{Dynamic\_Priorities}
+  \item[] \href{\adarmlink{RM-A-17.html}}{Environment\_Variables}
+  \item[] \href{\adarmlink{RM-11-4-1.html}}{Exceptions}
+  \item[] \href{\adarmlink{RM-D-14.html}}{Execution\_Time}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-14-2.html}{Group\_Budgets}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-14-3.html}{Interrupts}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-14-1.html}{Timers}
+	\item[] \href{\adarmlink{RM-D-14-2.html}}{Group\_Budgets}
+	\item[] \href{\adarmlink{RM-D-14-3.html}}{Interrupts}
+	\item[] \href{\adarmlink{RM-D-14-1.html}}{Timers}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-7-6.html}{Finalization}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-10-9.html}{Float\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Float\_Wide\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Float\_Wide\_Wide\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-10-8.html}{Integer\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Integer\_Wide\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Integer\_Wide\_Wide\_Text\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-2.html}{Interrupts}
+  \item[] \href{\adarmlink{RM-7-6.html}}{Finalization}
+  \item[] \href{\adarmlink{RM-A-10-9.html}}{Float\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-11.html}}{Float\_Wide\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-11.html}}{Float\_Wide\_Wide\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-10-8.html}}{Integer\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-11.html}}{Integer\_Wide\_Text\_IO}
+  \item[] \href{\adarmlink{RM-A-11.html}}{Integer\_Wide\_Wide\_Text\_IO}
+  \item[] \href{\adarmlink{RM-C-3-2.html}}{Interrupts}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-3-2.html}{Names}
+	\item[] \href{\adarmlink{RM-C-3-2.html}}{Names}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-13.html}{IO\_Exceptions}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-5-5-1.html}{Iterator\_Interfaces}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-19.html}{Locales}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5.html}{Numerics}
+  \item[] \href{\adarmlink{RM-A-13.html}}{IO\_Exceptions}
+  \item[] \href{\adarmlink{RM-5-5-1.html}}{Iterator\_Interfaces}
+  \item[] \href{\adarmlink{RM-A-19.html}}{Locales}
+  \item[] \href{\adarmlink{RM-A-5.html}}{Numerics}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-5.html}{\textit{Big\_Numbers}}
+	\item[] \href{\adarmlink{RM-A-5-5.html}}{\textit{Big\_Numbers}}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-6.html}{\textit{Big\_Integers}}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-7.html}{\textit{Big\_Reals}}
+	  \item[] \href{\adarmlink{RM-A-5-6.html}}{\textit{Big\_Integers}}
+	  \item[] \href{\adarmlink{RM-A-5-7.html}}{\textit{Big\_Reals}}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-3-2.html}{Complex\_Arrays}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-2.html}{Complex\_Elementary\_Functions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-1.html}{Complex\_Types}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-2.html}{Discrete\_Random}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-1.html}{Elementary\_Functions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-2.html}{Float\_Random}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-3-2.html}{Generic\_Complex\_Arrays}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-2.html}{Generic\_Complex\_Elementary\_Functions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-1.html}{Generic\_Complex\_Types}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-5-1.html}{Generic\_Elementary\_Functions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-3-1.html}{Generic\_Real\_Arrays}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-3-1.html}{Real\_Arrays}
+	\item[] \href{\adarmlink{RM-G-3-2.html}}{Complex\_Arrays}
+	\item[] \href{\adarmlink{RM-G-1-2.html}}{Complex\_Elementary\_Functions}
+	\item[] \href{\adarmlink{RM-G-1-1.html}}{Complex\_Types}
+	\item[] \href{\adarmlink{RM-A-5-2.html}}{Discrete\_Random}
+	\item[] \href{\adarmlink{RM-A-5-1.html}}{Elementary\_Functions}
+	\item[] \href{\adarmlink{RM-A-5-2.html}}{Float\_Random}
+	\item[] \href{\adarmlink{RM-G-3-2.html}}{Generic\_Complex\_Arrays}
+	\item[] \href{\adarmlink{RM-G-1-2.html}}{Generic\_Complex\_Elementary\_Functions}
+	\item[] \href{\adarmlink{RM-G-1-1.html}}{Generic\_Complex\_Types}
+	\item[] \href{\adarmlink{RM-A-5-1.html}}{Generic\_Elementary\_Functions}
+	\item[] \href{\adarmlink{RM-G-3-1.html}}{Generic\_Real\_Arrays}
+	\item[] \href{\adarmlink{RM-G-3-1.html}}{Real\_Arrays}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-8.html}{Real\_Time}
+  \item[] \href{\adarmlink{RM-D-8.html}}{Real\_Time}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-15.html}{Timing\_Events}
+	\item[] \href{\adarmlink{RM-D-15.html}}{Timing\_Events}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-8-1.html}{Sequential\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-9.html}{Storage\_IO}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-1.html}{Streams}
+  \item[] \href{\adarmlink{RM-A-8-1.html}}{Sequential\_IO}
+  \item[] \href{\adarmlink{RM-A-9.html}}{Storage\_IO}
+  \item[] \href{\adarmlink{RM-13-13-1.html}}{Streams}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-1.html}{Storage\_Streams}
+	\item[] \href{\adarmlink{RM-13-13-1.html}}{Storage\_Streams}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-1.html}{Bounded\_FIFO\_Streams}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-13-1.html}{FIFO\_Streams}
+	  \item[] \href{\adarmlink{RM-13-13-1.html}}{Bounded\_FIFO\_Streams}
+	  \item[] \href{\adarmlink{RM-13-13-1.html}}{FIFO\_Streams}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-12-1.html}{Stream\_IO}
+	\item[] \href{\adarmlink{RM-A-12-1.html}}{Stream\_IO}
 	\end{itemize}
-  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-1.html}{Strings}
+  \item[] \href{\adarmlink{RM-A-4-1.html}}{Strings}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-4.html}{Bounded}
+	\item[] \href{\adarmlink{RM-A-4-4.html}}{Bounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Less\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Less\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Equal\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-3.html}{Fixed}
+	\item[] \href{\adarmlink{RM-A-4-10.html}}{Equal\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-3.html}}{Fixed}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Less\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Less\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Less\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-2.html}{Maps}
+	\item[] \href{\adarmlink{RM-A-4-9.html}}{Hash}
+	\item[] \href{\adarmlink{RM-A-4-9.html}}{Hash\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-10.html}}{Less\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-2.html}}{Maps}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-6.html}{Constants}
+	  \item[] \href{\adarmlink{RM-A-4-6.html}}{Constants}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-12.html}{Text\_Buffers}
+	\item[] \href{\adarmlink{RM-A-4-12.html}}{Text\_Buffers}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-12.html}{Bounded}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-12.html}{Unbounded}
+	  \item[] \href{\adarmlink{RM-A-4-12.html}}{Bounded}
+	  \item[] \href{\adarmlink{RM-A-4-12.html}}{Unbounded}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-5.html}{Unbounded}
+	\item[] \href{\adarmlink{RM-A-4-5.html}}{Unbounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-9.html}{Hash\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-10.html}{Less\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash}
+	  \item[] \href{\adarmlink{RM-A-4-9.html}}{Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-10.html}}{Less\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-11.html}{UTF\_Encoding}
+	\item[] \href{\adarmlink{RM-A-4-11.html}}{UTF\_Encoding}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-11.html}{Conversions}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-11.html}{Strings}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-11.html}{Wide\_Strings}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-11.html}{Wide\_Wide\_Strings}
+	  \item[] \href{\adarmlink{RM-A-4-11.html}}{Conversions}
+	  \item[] \href{\adarmlink{RM-A-4-11.html}}{Strings}
+	  \item[] \href{\adarmlink{RM-A-4-11.html}}{Wide\_Strings}
+	  \item[] \href{\adarmlink{RM-A-4-11.html}}{Wide\_Wide\_Strings}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Bounded}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Bounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Equal\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Fixed}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Equal\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Fixed}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Maps}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Maps}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Constants}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Constants}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Unbounded}
+	\item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Unbounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-7.html}{Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-7.html}}{Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Bounded}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Bounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Equal\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Fixed}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Equal\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Fixed}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash\_Case\_Insensitive}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Maps}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash\_Case\_Insensitive}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Maps}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Constants}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Constants}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Unbounded}
+	\item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Unbounded}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Equal\_Case\_Insensitive}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-4-8.html}{Wide\_Wide\_Hash\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Equal\_Case\_Insensitive}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash}
+	  \item[] \href{\adarmlink{RM-A-4-8.html}}{Wide\_Wide\_Hash\_Case\_Insensitive}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-10-1.html}{Synchronous\_Barriers}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-10.html}{Synchronous\_Task\_Control}
+	\item[] \href{\adarmlink{RM-D-10-1.html}}{Synchronous\_Barriers}
+	\item[] \href{\adarmlink{RM-D-10.html}}{Synchronous\_Task\_Control}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-10.html}{EDF}
+	  \item[] \href{\adarmlink{RM-D-10.html}}{EDF}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-3-9.html}{Tags}
+	\item[] \href{\adarmlink{RM-3-9.html}}{Tags}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-3-9.html}{Generic\_Dispatching\_Constructor}
+	  \item[] \href{\adarmlink{RM-3-9.html}}{Generic\_Dispatching\_Constructor}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-7-2.html}{Task\_Attributes}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-7-1.html}{Task\_Identification}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-7-3.html}{Task\_Termination}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-10-1.html}{Text\_IO}
+	\item[] \href{\adarmlink{RM-C-7-2.html}}{Task\_Attributes}
+	\item[] \href{\adarmlink{RM-C-7-1.html}}{Task\_Identification}
+	\item[] \href{\adarmlink{RM-C-7-3.html}}{Task\_Termination}
+	\item[] \href{\adarmlink{RM-A-10-1.html}}{Text\_IO}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-10-11.html}{Bounded\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-3.html}{Complex\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-F-3-3.html}{Editing}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-12-2.html}{Text\_Streams}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-10-12.html}{Unbounded\_IO}
+	  \item[] \href{\adarmlink{RM-A-10-11.html}}{Bounded\_IO}
+	  \item[] \href{\adarmlink{RM-G-1-3.html}}{Complex\_IO}
+	  \item[] \href{\adarmlink{RM-F-3-3.html}}{Editing}
+	  \item[] \href{\adarmlink{RM-A-12-2.html}}{Text\_Streams}
+	  \item[] \href{\adarmlink{RM-A-10-12.html}}{Unbounded\_IO}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-9.html}{Unchecked\_Conversion}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11-5.html}{Unchecked\_Deallocate\_Subpool}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11-2.html}{Unchecked\_Deallocation}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-1.html}{Wide\_Characters}
+	\item[] \href{\adarmlink{RM-13-9.html}}{Unchecked\_Conversion}
+	\item[] \href{\adarmlink{RM-13-11-5.html}}{Unchecked\_Deallocate\_Subpool}
+	\item[] \href{\adarmlink{RM-13-11-2.html}}{Unchecked\_Deallocation}
+	\item[] \href{\adarmlink{RM-A-3-1.html}}{Wide\_Characters}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-5.html}{Handling}
+	  \item[] \href{\adarmlink{RM-A-3-5.html}}{Handling}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-15-1.html}{Wide\_Command\_Line}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-16-2.html}{Wide\_Directories}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-17-1.html}{Wide\_Environment\_Variables}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Text\_IO}
+	\item[] \href{\adarmlink{RM-A-15-1.html}}{Wide\_Command\_Line}
+	\item[] \href{\adarmlink{RM-A-16-2.html}}{Wide\_Directories}
+	\item[] \href{\adarmlink{RM-A-17-1.html}}{Wide\_Environment\_Variables}
+	\item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Text\_IO}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-4.html}{Complex\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-F-3-4.html}{Editing}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-12-3.html}{Text\_Streams}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Bounded\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Unbounded\_IO}
+	  \item[] \href{\adarmlink{RM-G-1-4.html}}{Complex\_IO}
+	  \item[] \href{\adarmlink{RM-F-3-4.html}}{Editing}
+	  \item[] \href{\adarmlink{RM-A-12-3.html}}{Text\_Streams}
+	  \item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Bounded\_IO}
+	  \item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Unbounded\_IO}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-1.html}{Wide\_Wide\_Characters}
+	\item[] \href{\adarmlink{RM-A-3-1.html}}{Wide\_Wide\_Characters}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-3-6.html}{Handling}
+	  \item[] \href{\adarmlink{RM-A-3-6.html}}{Handling}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-15-1.html}{Wide\_Wide\_Command\_Line}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-16-2.html}{Wide\_Wide\_Directories}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-17-1.html}{Wide\_Wide\_Environment\_Variables}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Wide\_Text\_IO}
+	\item[] \href{\adarmlink{RM-A-15-1.html}}{Wide\_Wide\_Command\_Line}
+	\item[] \href{\adarmlink{RM-A-16-2.html}}{Wide\_Wide\_Directories}
+	\item[] \href{\adarmlink{RM-A-17-1.html}}{Wide\_Wide\_Environment\_Variables}
+	\item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Wide\_Text\_IO}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-G-1-5.html}{Complex\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-F-3-5.html}{Editing}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-12-4.html}{Text\_Streams}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Wide\_Bounded\_IO}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-A-11.html}{Wide\_Wide\_Unbounded\_IO}
+	  \item[] \href{\adarmlink{RM-G-1-5.html}}{Complex\_IO}
+	  \item[] \href{\adarmlink{RM-F-3-5.html}}{Editing}
+	  \item[] \href{\adarmlink{RM-A-12-4.html}}{Text\_Streams}
+	  \item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Wide\_Bounded\_IO}
+	  \item[] \href{\adarmlink{RM-A-11.html}}{Wide\_Wide\_Unbounded\_IO}
 	  \end{itemize}
 	\end{itemize}
-  \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-B-2.html}{Interfaces}}
+  \item[] \textbf{package \href{\adarmlink{RM-B-2.html}}{Interfaces}}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-B-3.html}{C}
+	\item[] \href{\adarmlink{RM-B-3.html}}{C}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-B-3-2.html}{Pointers}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-B-3-1.html}{Strings}
+	  \item[] \href{\adarmlink{RM-B-3-2.html}}{Pointers}
+	  \item[] \href{\adarmlink{RM-B-3-1.html}}{Strings}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-B-4.html}{COBOL}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-B-5.html}{Fortran}
+	\item[] \href{\adarmlink{RM-B-4.html}}{COBOL}
+	\item[] \href{\adarmlink{RM-B-5.html}}{Fortran}
 	\end{itemize}
-  \item[] \textbf{package \href{http://www.ada-auth.org/standards/22rm/html/RM-13-7.html}{System}}
+  \item[] \textbf{package \href{\adarmlink{RM-13-7.html}}{System}}
 	\begin{itemize}[leftmargin=5mm]
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-7-2.html}{Address\_To\_Access\_Conversions}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6-1.html}{\textit{Atomic\_Operations}}
+	\item[] \href{\adarmlink{RM-13-7-2.html}}{Address\_To\_Access\_Conversions}
+	\item[] \href{\adarmlink{RM-C-6-1.html}}{\textit{Atomic\_Operations}}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6-2.html}{\textit{Exchange}}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6-4.html}{\textit{Integer\_Arithmetic}}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6-5.html}{\textit{Modular\_Arithmetic}}
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-C-6-3.html}{\textit{Test\_And\_Set}}
+	  \item[] \href{\adarmlink{RM-C-6-2.html}}{\textit{Exchange}}
+	  \item[] \href{\adarmlink{RM-C-6-4.html}}{\textit{Integer\_Arithmetic}}
+	  \item[] \href{\adarmlink{RM-C-6-5.html}}{\textit{Modular\_Arithmetic}}
+	  \item[] \href{\adarmlink{RM-C-6-3.html}}{\textit{Test\_And\_Set}}
 	  \end{itemize}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-8.html}{Machine\_Code}
-	\item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16.html}{Multiprocessors}
+	\item[] \href{\adarmlink{RM-13-8.html}}{Machine\_Code}
+	\item[] \href{\adarmlink{RM-D-16.html}}{Multiprocessors}
 	  \begin{itemize}[leftmargin=5mm]
-	  \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-D-16-1.html}{Dispatching\_Domains}
+	  \item[] \href{\adarmlink{RM-D-16-1.html}}{Dispatching\_Domains}
       \end{itemize}
-    \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-E-5.html}{RPC}
-    \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-7-1.html}{Storage\_Elements}
-    \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11.html}{Storage\_Pools}
+    \item[] \href{\adarmlink{RM-E-5.html}}{RPC}
+    \item[] \href{\adarmlink{RM-13-7-1.html}}{Storage\_Elements}
+    \item[] \href{\adarmlink{RM-13-11.html}}{Storage\_Pools}
       \begin{itemize}[leftmargin=5mm]
-      \item[] \href{http://www.ada-auth.org/standards/22rm/html/RM-13-11-4.html}{Subpools}
+      \item[] \href{\adarmlink{RM-13-11-4.html}}{Subpools}
       \end{itemize}
     \end{itemize}
   \end{itemize}
