@@ -6,7 +6,6 @@ Reference Card for the programming language [Ada](https://en.wikipedia.org/wiki/
 
 ![ada_logo_orbitron](https://github.com/bracke/AdaReferenceCard/assets/627383/75001354-3eef-4836-94bf-ffdc2c9b0eb1)
 
-
 ## Sources
 
 The information is mainly taken from the Ada Reference Manual (Ada 2022):
@@ -26,13 +25,13 @@ The reference card is available in LaTeX and PDF format:
 
 The PDF version is available in a range of paper sizes:
 
-- ISO A4 landscape
-- ISO A4 portrait
-- US Legal landscape
-- US legal portrait
-- ISO A2 landscape
-- ISO A2 portrait
-- ISO B2 landscape (poster size)
+- ISO A4 landscape.
+- ISO A4 portrait.
+- US Legal landscape.
+- US legal portrait.
+- ISO A2 landscape.
+- ISO A2 portrait.
+- ISO B2 landscape (poster size).
 
 *You likely want either the ISO A4 landscape version or the US legal landscape version.*
 
@@ -48,5 +47,5 @@ In particular:
 - Fixing spelling mistakes.
 - Improvements to the LaTeX code.
 - Translations.
-- Improving the projects GitHub setup
-- Improving this readme
+- Improving the projects GitHub setup.
+- Improving this readme.
