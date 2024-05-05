@@ -37,8 +37,9 @@
   \texttt{#3} \\ {#4}
 }
 \begin{document}
-\begin{scriptsize} % Sets the overall font-size to scriptsize
 \begin{multicols*}{\columnnr} % columnnr needs to be defined in call to pdflatex
+\raggedcolumns
+\begin{scriptsize} % Sets the overall font-size to scriptsize
 \section*{\textsc{Ada 2022 Reference Card}}
 \begin{tabular}{@{}l l l l l l l l}
 \textit{italic} & Ada 2022 &&&&&&\\
@@ -55,6 +56,7 @@
 \end{tabular}
 \section*{\textsc{Attributes}}
 \RaggedRight
+
 \begin{description}[leftmargin=7.5em,style=nextline]
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-K-2.html}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
@@ -185,7 +187,6 @@
 \end{description}
 \section*{\textsc{Aspects}}
 \raggedright
-\renewcommand{\arraystretch}{1.5}
 \begin{description}[leftmargin=8em,style=nextline]
    \adaitem{http://www.ada-auth.org/standards/22rm/html/RM-13-3.html}{Address}{X|P|L with Address => System.Address}{Address of the first of the storage elements allocated.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-4-3-5.html}{Aggregate}{S with Aggregate => (aggregate)}{Mechanism to define user-defined aggregates.}
@@ -282,6 +283,7 @@
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-2-1.html}{Yield}{Yield}{Ensures that a callable entity includes a task dispatching point.}
 \end{description}
 \section*{\textsc{Pragmas}}
+\raggedright
 \begin{description}[leftmargin=8em,style=nextline]
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-D-4-1.html}{Admission\_Policy}{pragma Admission\_Policy (policy\_identifier)}{An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.}
    \adanewitem{http://www.ada-auth.org/standards/22rm/html/RM-J-15-15.html}{All\_Calls\_Remote}{pragma All\_Calls\_Remote [(library\_unit\_name)]}{Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.}
@@ -666,6 +668,6 @@
     \end{itemize}
   \end{itemize}
 \end{itemize}
-\end{multicols*}
 \end{scriptsize}
+\end{multicols*}
 \end{document}
