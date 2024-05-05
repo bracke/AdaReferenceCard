@@ -1,6 +1,6 @@
 # Ada Reference Card
 
-![PDF generation workflow](https://github.com/bracke/AdaReferenceCard/actions/workflows/generatedocs.yml/badge.svg)
+![PDF generation workflow](https://github.com/bracke/AdaReferenceCard/actions/workflows/generatedocs.yml/badge.svg?event=push)
 
 Reference Card for the programming language [Ada](https://en.wikipedia.org/wiki/Ada_(programming_language)). It contains lists of Attributes, Aspects, Pragmas and also a list of packages in the Ada Standard Library.
 
