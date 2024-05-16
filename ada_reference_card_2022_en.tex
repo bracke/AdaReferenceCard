@@ -1,10 +1,10 @@
 \pdfcompresslevel=9
-\pdfmapfile{=nodownload.map}
 \usepackage{babel}
 \usepackage{multicol}
 \setlength{\columnsep}{0.3cm}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{inconsolata}
 \usepackage{helvet} % Adds the Helvetica font
 \usepackage{datetime} % Needed for adding the creation date to the PDF meta data
 \usepackage{enumitem} % Needed for displaying the Ada items correctly
@@ -29,12 +29,12 @@
 % Not Ada 2022 specific
 \newcommand{\adaitem}[4]{
   \item[\href{#1}{#2}]
-  \texttt{#3} \\ {#4}
+  \begin{footnotesize}\textbf{\texttt{#3}}\end{footnotesize} \\ {#4}
 }
 % Ada 2022 specific
 \newcommand{\adanewitem}[4]{
   \item[\href{#1}{\textit{#2}}]
-  \texttt{#3} \\ {#4}
+  \begin{footnotesize}\textbf{\texttt{#3}}\end{footnotesize} \\ {#4}
 }
 \newcommand{\adarmlink}[1]{http://www.ada-auth.org/standards/22rm/html/#1}
 \begin{document}
@@ -191,96 +191,84 @@
    \adaitem{\adarmlink{RM-13-3.html}}{Address}{X|P|L with Address => System.Address}{Address of the first of the storage elements allocated.}
    \adanewitem{\adarmlink{RM-4-3-5.html}}{Aggregate}{S with Aggregate => (aggregate)}{Mechanism to define user-defined aggregates.}
    \adaitem{\adarmlink{RM-13-3.html}}{Alignment}{X|S with Alignment => universal\_integer}{Alignment of object or subtype.}
-   \adaitem{\adarmlink{RM-E-2-3.html}}{All\_Calls\_Remote}{P with All\_Calls\_Remote => Boolean}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
-   \adanewitem{\adarmlink{RM-5-5-3.html}}{Allows\_Exit}{P with Allows\_Exit => Boolean}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
-   \adaitem{\adarmlink{RM-E-4-1.html}}{Asynchronous}{P with Asynchronous => Boolean}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Atomic}{S|X|C with Atomic => Boolean}{Declare that a type, object, or component is atomic.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Atomic\_Components}{A|X with Atomic\_Components => Boolean}{Declare that the components of an array type or object are atomic.}
-   \adaitem{\adarmlink{RM-C-3-1.html}}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure is attached to an interrupt.}
+   \adaitem{\adarmlink{RM-E-2-3.html}}{All\_Calls\_Remote}{P with All\_Calls\_Remote [=> Boolean]}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
+   \adanewitem{\adarmlink{RM-5-5-3.html}}{Allows\_Exit}{P with Allows\_Exit [=> Boolean]}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
+   \adaitem{\adarmlink{RM-E-4-1.html}}{Asynchronous}{P with Asynchronous [=> Boolean]}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Atomic}{S|X|C with Atomic [=> Boolean]}{Declare that a type, object, or component is atomic.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Atomic\_Components}{A|X with Atomic\_Components [=> Boolean]}{Declare that the components of an array type or object are atomic.}
+   \adaitem{\adarmlink{RM-C-3-1.html}}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure P is attached to an interrupt.}
    \adaitem{\adarmlink{RM-13-5-3.html}}{Bit\_Order}{S with Bit\_Order => System.Bit\_Order}{Order of bit numbering in a record\_representation\_clause.}
    \adaitem{\adarmlink{RM-13-3.html}}{Component\_Size}{A|X with Component\_Size => universal\_integer}{Size in bits of a component of an array type.}
    \adaitem{\adarmlink{RM-4-1-6.html}}{Constant\_Indexing}{S with Constant\_Indexing => P}{Defines function to implement user-defined indexed\_components.}
    \adaitem{\adarmlink{RM-B-1.html}}{Convention}{S|P with Convention => convention\_identifier}{Calling convention or other convention used for interfacing to other languages.}
    \adanewitem{\adarmlink{RM-D-16.html}}{CPU}{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}{Processor on which a given task, or calling task for a protected operation, should run.}
    \adaitem{\adarmlink{RM-3-6.html}}{Default\_Component\_Value}{S with Default\_Component\_Value => Component\_Type}{Default value for the components of an array-of-scalar subtype.}
-   \adanewitem{\adarmlink{RM-3-6.html}}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition => Boolean}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
-   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Iterator}{S with Default\_Iterator => P}{Default iterator to be used in for loops.}
+   \adanewitem{\adarmlink{RM-3-6.html}}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition [=> Boolean]}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
+   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Iterator}{S with Default\_Iterator => F}{Default iterator to be used in for loops.}
    \adaitem{\adarmlink{RM-3-5.html}}{Default\_Value}{S with Default\_Value => scalar value}{Default value for a scalar subtype.}
-   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{S|E with Discard\_Names => Boolean}{Requests a reduction in storage.}
+   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{S|E with Discard\_Names [=> Boolean]}{Requests a reduction in storage.}
    \adanewitem{\adarmlink{RM-D-16-1.html}}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
    \adaitem{\adarmlink{RM-D-16-1.html}}{Dispatching\_Domain}{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}{Domain (group of processors) on which a given task should run.}
-   \adanewitem{\adarmlink{RM-3-2-4.html}}{Dynamic\_Predicate}{S with Dynamic\_Predicate => Boolean}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
-   \adanewitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_Body}{D with Elaborate\_Body => Boolean}{A given package will have a body, and that body is elaborated immediately after the declaration.}
-   \adaitem{\adarmlink{RM-9-5-1.html}}{Exclusive\_Functions}{S with Exclusive\_Functions => Boolean}{Specifies mutual exclusion behavior of protected functions in a protected type.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Export}{P|X with Export => Boolean}{Entity is exported to another language.}
+   \adanewitem{\adarmlink{RM-3-2-4.html}}{Dynamic\_Predicate}{S with Dynamic\_Predicate [=> Boolean]}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
+   \adanewitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_Body}{D with Elaborate\_Body [=> Boolean]}{A given package will have a body, and that body is elaborated immediately after the declaration.}
+   \adaitem{\adarmlink{RM-9-5-1.html}}{Exclusive\_Functions}{S with Exclusive\_Functions [=> Boolean]}{Specifies mutual exclusion behavior of protected functions in a protected type.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Export}{P|X with Export [=> Boolean]}{Entity is exported to another language.}
    \adaitem{\adarmlink{RM-B-1.html}}{External\_Name}{P|X with External\_Name => String}{Name used to identify an imported or exported entity.}
    \adaitem{\adarmlink{RM-13-3.html}}{External\_Tag}{S with External\_Tag => String}{Unique identifier for a tagged type in streams.}
-   \adanewitem{\adarmlink{RM-C-6.html}}{Full\_Access\_Only}{X|C with Full\_Access\_Only => Boolean}{Declare that a volatile type, object, or component is full access.}
+   \adanewitem{\adarmlink{RM-C-6.html}}{Full\_Access\_Only}{X|C with Full\_Access\_Only [=> Boolean]}{Declare that a volatile type, object, or component is full access.}
    \adanewitem{\adarmlink{RM-6-1-2.html}}{Global}{D with Global => global\_aspect\_definition}{Global object usage contract.}
    \adanewitem{\adarmlink{RM-6-1-2.html}}{Global'Class}{D with Global'Class => global\_aspect\_definition}{Global object usage contract inherited on derivation.}
    \adaitem{\adarmlink{RM-4-1-5.html}}{Implicit\_Dereference}{A with Implicit\_Dereference => Discriminant}{Mechanism for user-defined implicit .all.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Import}{P|X with Import => Boolean}{Entity is imported from another language.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Independent}{X|S with Independent => Boolean}{Declare that a type, object, or component is independently addressable.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Independent\_Components}{A|R with Independent\_Components => Boolean}{Declare that the components of an array or record type, or an array object, are independently addressable.}
-   \adaitem{\adarmlink{RM-6-3-2.html}}{Inline}{P|E with Inline => Boolean}{For efficiency, Inline calls are requested for a subprogram.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Input}{Input}{Function to read a value from a stream for a given type, including any bounds and discriminants.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Input'Class}{Input'Class}{Function to read a value from a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{Integer\_Literal}{Integer\_Literal}{Defines a function to implement user-defined integer literals.}
-   \adaitem{\adarmlink{RM-C-3-1.html}}{Interrupt\_Handler}{Interrupt\_Handler}{Protected procedure may be attached to interrupts.}
-   \adaitem{\adarmlink{RM-D-1.html}}{Interrupt\_Priority}{Interrupt\_Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
-   \adaitem{\adarmlink{RM-5-5-1.html}}{Iterator\_Element}{Iterator\_Element}{Element type to be used for user-defined iterators.}
-   \adanewitem{\adarmlink{RM-5-5-1.html}}{Iterator\_View}{Iterator\_View}{An alternative type to used for container element iterators.}
-   \adaitem{\adarmlink{RM-13-5-1.html}}{Layout}{Layout (record)}{Layout of record components. Specified by a record\_representation\_clause, not by an aspect\_specification.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Link\_Name}{Link\_Name}{Linker symbol used to identify an imported or exported entity.}
-   \adaitem{\adarmlink{RM-F-1.html}}{Machine\_Radix}{Machine\_Radix}{Radix (2 or 10) that is used to represent a decimal fixed point type.}
-   \adanewitem{\adarmlink{RM-D-4.html}}{Max\_Entry\_Queue\_Length}{Max\_Entry\_Queue\_Length}{The maximum entry queue length for a task type, protected type, or entry.}
-   \adanewitem{\adarmlink{RM-H-4-1.html}}{No\_Controlled\_Parts}{No\_Controlled\_Parts}{A specification that a type and its descendants do not have controlled parts.}
-   \adanewitem{\adarmlink{RM-6-5-1.html}}{No\_Return}{P with No\_Return => Boolean}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
-   \adanewitem{\adarmlink{RM-9-5.html}}{Nonblocking}{Nonblocking}{Specifies that an associated subprogram does not block.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Output}{Output}{Procedure to write a value to a stream for a given type, including any bounds and discriminants.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Output'Class}{Output'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type, including any bounds and discriminants.}
-   \adaitem{\adarmlink{RM-13-2.html}}{Pack}{Pack}{Minimize storage when laying out records and arrays.}
-   \adanewitem{\adarmlink{RM-9-10-1.html}}{Parallel\_Calls}{Parallel\_Calls}{Specifies whether a given subprogram is expected to be called in parallel.}
-   \adanewitem{\adarmlink{RM-5-5-3.html}}{Parallel\_Iterator}{Parallel\_Iterator}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Post}{with Post => Condition}{Postcondition; a condition that will hold true after a call.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Post'Class}{with Post'Class}{Postcondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre}{with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre'Class}{with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{Predicate\_Failure}{Action to be performed when a predicate check fails.}
-   \adanewitem{\adarmlink{RM-10-2-1.html}}{Preelaborable\_Initialization}{Preelaborable\_Initialization}{Declares that a type has preelaborable initialization.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Preelaborate}{Preelaborate}{Code execution during elaboration is avoided for a given package.}
-   \adaitem{\adarmlink{RM-D-1.html}}{Priority}{Priority}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Pure}{D with Pure}{Side effects are avoided in the subprograms of a given package.}
-   \adanewitem{\adarmlink{RM-4-10.html}}{Put\_Image}{Put\_Image}{Procedure to define the image of a given type.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Read}{Read}{Procedure to read a value from a stream for a given type.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Read'Class}{Read'Class}{Procedure to read a value from a stream for the class-wide type associated with a given type.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{Real\_Literal}{Real\_Literal}{Defines a function or functions to implement user-defined real literals.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Import}{P|X with Import [=> Boolean]}{Entity is imported from another language.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Independent}{X|S with Independent [=> Boolean]}{Declare that a type, object, or component is independently addressable.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Independent\_Components}{A|R with Independent\_Components [=> Boolean]}{Declare that the components of an array or record type, or an array object, are independently addressable.}
+   \adaitem{\adarmlink{RM-6-3-2.html}}{Inline}{P|E with Inline [=> Boolean]}{For efficiency, Inline calls are requested for a subprogram.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{Integer\_Literal}{S with Integer\_Literal => F}{Defines a function to implement user-defined integer literals.}
+   \adaitem{\adarmlink{RM-C-3-1.html}}{Interrupt\_Handler}{P with Interrupt\_Handler}{Protected procedure P may be attached to interrupts.}
+   \adaitem{\adarmlink{RM-D-1.html}}{Interrupt\_Priority}{T|S|P with Interrupt\_Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
+   \adaitem{\adarmlink{RM-5-5-1.html}}{Iterator\_Element}{S with Iterator\_Element => S2}{Element type to be used for user-defined iterators.}
+   \adanewitem{\adarmlink{RM-5-5-1.html}}{Iterator\_View}{S with Iterator\_View => S2}{An alternative type to be used for container element iterators.}
+   \adaitem{\adarmlink{RM-B-1.html}}{Link\_Name}{P|X with Link\_Name => String}{Linker symbol used to identify an imported or exported entity.}
+   \adanewitem{\adarmlink{RM-D-4.html}}{Max\_Entry\_Queue\_Length}{T|S|E with Max\_Entry\_Queue\_Length => Integer}{The maximum entry queue length for a task type, protected type, or entry.}
+   \adanewitem{\adarmlink{RM-H-4-1.html}}{No\_Controlled\_Parts}{S with No\_Controlled\_Parts [=> Boolean]}{A specification that a type and its descendants do not have controlled parts.}
+   \adanewitem{\adarmlink{RM-6-5-1.html}}{No\_Return}{P with No\_Return [=> Boolean]}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
+   \adanewitem{\adarmlink{RM-9-5.html}}{Nonblocking}{P with Nonblocking [=> Boolean]}{Specifies that an associated subprogram P does not block.}
+   \adaitem{\adarmlink{RM-13-2.html}}{Pack}{R|A with Pack [=> Boolean]}{Minimize storage when laying out records and arrays.}
+   \adanewitem{\adarmlink{RM-9-10-1.html}}{Parallel\_Calls}{P with Parallel\_Calls [=> Boolean]}{Specifies whether a given subprogram is expected to be called in parallel.}
+   \adanewitem{\adarmlink{RM-5-5-3.html}}{Parallel\_Iterator}{P with Parallel\_Iterator [=> Boolean]}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Post}{P with Post => Condition}{Postcondition; a condition that will hold true after a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Post'Class}{P with Post'Class => Condition}{Postcondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre}{P with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre'Class}{P with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{S with Predicate\_Failure => String}{Defines message of the Assertion\_Error exception raised when a predicate check fails.}
+   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{S with Predicate\_Failure => raise E [with String]}{Declares exception to be raised when a predicate check fails.}
+   \adanewitem{\adarmlink{RM-10-2-1.html}}{Preelaborable\_Initialization}{S with Preelaborable\_Initialization [=> Boolean]}{Declares that a type has preelaborable initialization.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Preelaborate}{P with Preelaborate [=> Boolean]}{Code execution during elaboration is avoided for a given package.}
+   \adaitem{\adarmlink{RM-D-1.html}}{Priority}{T|S|P with Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
+   \adaitem{\adarmlink{RM-10-2-1.html}}{Pure}{D with Pure [=> Boolean]}{Side effects are avoided in the subprograms of a given package.}
+   \adanewitem{\adarmlink{RM-4-10.html}}{Put\_Image}{S with Put\_Image => P}{Procedure to define the image of a given type.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{Real\_Literal}{S with Real\_Literal => F}{Defines a function or functions to implement user-defined real literals.}
    \adanewitem{\adarmlink{RM-D-2-6.html}}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
-   \adaitem{\adarmlink{RM-E-2-3.html}}{Remote\_Call\_Interface}{Remote\_Call\_Interface}{Subprograms in a given package may be used in remote procedure calls.}
-   \adaitem{\adarmlink{RM-E-2-2.html}}{Remote\_Types}{Remote\_Types}{Types in a given package may be used in remote procedure calls.}
-   \adaitem{\adarmlink{RM-E-2-1.html}}{Shared\_Passive}{Shared\_Passive}{A given package is used to represent shared memory in a distributed system.}
-   \adaitem{\adarmlink{RM-13-3.html}}{Size}{Size(S|X)}{Size in bits of objects instantiated from subtype.}
-   \adaitem{\adarmlink{RM-3-5-10.html}}{Small}{Small}{Scale factor for a fixed point type.}
-   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties}{Stable\_Properties}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
-   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties'Class}{Stable\_Properties'Class}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
-   \adanewitem{\adarmlink{RM-6-8.html}}{Static}{Static}{Specifies that an associated expression function can be used in static expressions.}
-   \adanewitem{\adarmlink{RM-3-2-4.html}}{Static\_Predicate}{Static\_Predicate}{Condition that will hold true for objects of a given subtype; the subtype may be static.}
-   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Pool}{Storage\_Pool}{Pool of memory from which new will allocate for a given access type.}
-   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Size}{Storage\_Size (access)}{Sets memory size for allocations for an access type.}
-   \adaitem{\adarmlink{RM-13-3.html}}{Storage\_Size}{Storage\_Size (task)}{Size in storage elements reserved for a task type or single task object.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Stream\_Size}{Stream\_Size}{Size in bits used to represent elementary objects in a stream.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{String\_Literal}{String\_Literal}{Defines a function to implement user-defined string literals.}
+   \adaitem{\adarmlink{RM-E-2-3.html}}{Remote\_Call\_Interface}{D with Remote\_Call\_Interface [=> Boolean]}{Subprograms in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-2.html}}{Remote\_Types}{D with Remote\_Types [=> Boolean]}{Types in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-1.html}}{Shared\_Passive}{D with Shared\_Passive [=> Boolean]}{A given package is used to represent shared memory in a distributed system.}
+   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties}{S with Stable\_Properties => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
+   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties'Class}{S with Stable\_Properties'Class => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
+   \adanewitem{\adarmlink{RM-6-8.html}}{Static}{F with Static [=> Boolean]}{Specifies that an associated expression function can be used in static expressions.}
+   \adanewitem{\adarmlink{RM-3-2-4.html}}{Static\_Predicate}{S with Static\_Predicate [=> Boolean]}{Condition that will hold true for objects of a given subtype; the subtype may be static.}
+   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Size}{S with Storage\_Size => universal\_integer}{Sets memory size for storage pool of the access type S.}
+   \adaitem{\adarmlink{RM-13-3.html}}{Storage\_Size}{T with Storage\_Size => universal\_integer}{Size in storage elements reserved for a task type or single task object.}
+   \adanewitem{\adarmlink{RM-4-2-1.html}}{String\_Literal}{S with String\_Literal => F}{Defines a function to implement user-defined string literals.}
    \adanewitem{\adarmlink{RM-9-5.html}}{Synchronization}{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}{Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure.}
-   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant}{Type\_Invariant}{Condition that will hold true for all objects of a type.}
-   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant'Class}{Type\_Invariant'Class}{A condition that will hold true for all objects in a class of types.}
-   \adaitem{\adarmlink{RM-B-3-3.html}}{Unchecked\_Union}{Unchecked\_Union}{Type is used to interface to a C union type.}
-   \adanewitem{\adarmlink{RM-H-7-1.html}}{Use\_Formal}{Use\_Formal}{Generic formal parameters used in the implementation of an entity.}
-   \adaitem{\adarmlink{RM-4-1-6.html}}{Variable\_Indexing}{Variable\_Indexing}{Defines function(s) to implement user-defined indexed\_components.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Volatile}{S|X|C with Volatile}{Declare that a type, object, or component is volatile.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Volatile\_Components}{A|X with Volatile\_Components}{Declare that the components of an array type or object are volatile.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Write}{Write}{Procedure to write a value to a stream for a given type.}
-   \adaitem{\adarmlink{RM-13-13-2.html}}{Write'Class}{Write'Class}{Procedure to write a value to a stream for a the class-wide type associated with a given type.}
-   \adanewitem{\adarmlink{RM-D-2-1.html}}{Yield}{Yield}{Ensures that a callable entity includes a task dispatching point.}
+   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant}{S with Type\_Invariant => Condition}{Condition that will hold true for all objects of a type.}
+   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant'Class}{S with Type\_Invariant'Class => Condition}{A condition that will hold true for all objects in a class of types.}
+   \adaitem{\adarmlink{RM-B-3-3.html}}{Unchecked\_Union}{R with Unchecked\_Union [=> Boolean]}{The discriminated record type R is used to interface to a C union type.}
+   \adanewitem{\adarmlink{RM-H-7-1.html}}{Use\_Formal}{P with Use\_Formal => all|null|formal\_parameter\_name[,...]}{Generic formal parameters used in the implementation of an entity.}
+
+   \adaitem{\adarmlink{RM-4-1-6.html}}{Variable\_Indexing}{S with Variable\_Indexing => F}{Defines function(S, Key) to implement user-defined indexed\_components.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Volatile}{S|X|C with Volatile [=> Boolean]}{Declare that a type, object, or component is volatile.}
+   \adaitem{\adarmlink{RM-C-6.html}}{Volatile\_Components}{A|X with Volatile\_Components [=> Boolean]}{Declare that the components of an array type or object are volatile.}
+   \adanewitem{\adarmlink{RM-D-2-1.html}}{Yield}{S with Yield [=> Boolean]}{Ensures that a callable entity includes a task dispatching point.}
 \end{description}
 \section*{\textsc{Pragmas}}
 \raggedright
