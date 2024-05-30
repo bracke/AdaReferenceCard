@@ -51,3 +51,16 @@ In particular:
 - Translations.
 - Improving the projects GitHub setup.
 - Improving this readme.
+
+## Requirements for building PDF
+
+- pdflatex
+
+## Building a PDF
+
+The following will build use pdflatex to build a PDF with papersize A4 landscape.
+It will use the Tex file ada_reference_card_2022_en.tex as a source.
+
+```sh
+pdflatex -jobname=ada_reference_card_2022_en_a4_landscape "\documentclass[5pt]{article}\newcommand\columnnr{3}\usepackage[a4paper,margin=0.25cm,landscape]{geometry}\input{ada_reference_card_2022_en}"
+```
