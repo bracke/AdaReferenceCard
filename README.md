@@ -58,7 +58,7 @@ In particular:
 
 ## Building a PDF
 
-The following will build use pdflatex to build a PDF with papersize A4 landscape.
+The following will use pdflatex to build a PDF with papersize A4 landscape.
 It will use the Tex file ada_reference_card_2022_en.tex as a source.
 
 ```sh
