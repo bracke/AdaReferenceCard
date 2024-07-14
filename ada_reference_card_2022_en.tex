@@ -58,277 +58,276 @@
 \section*{\textsc{Attributes}}
 \RaggedRight
 \begin{description}[leftmargin=7.5em,style=nextline]
-   \adaitem{\adarmlink{RM-K-2.html}}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Adjacent}{S'Adjacent (X,Towards:T) return T}{Adjacent floating point number to X in the direction of Towards.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Aft}{S'Aft return universal\_integer}{Number of decimal digits needed after the decimal point to accommodate the delta.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Alignment}{S|X'Alignment return universal\_integer}{Alignment of object.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Base}{S'Base return S'Base}{Denotes the base unconstrained subtype of S.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Bit\_Order}{S'Bit\_Order return System.Bit\_Order}{Record subtype bit ordering.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Body\_Version}{P'Body\_Version return String}{Version of the compilation unit that contains the body.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Callable}{T'Callable return Boolean}{True when the task denoted by T is callable.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Caller}{E'Caller return Task\_ID}{Identifies the task whose call is now being serviced.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Ceiling}{S'Ceiling (X:T) return T}{Smallest (most negative) integral value greater than or equal to argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Class}{S'Class return class-wide type}{Returns the class-wide type of tagged type S.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Class}{S'Class return class-wide type}{Returns the class-wide type for subtype S of an untagged private type whose full view is tagged.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Component\_Size}{X'Component\_Size return universal\_integer}{Size in bits of components of the array subtype or object.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Compose}{S'Compose (Fraction:T;Exponent:universal\_integer) return T}{Combine fraction and exponent into a floating point subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Constrained}{A'Constrained return Boolean}{True if A of discriminated type denotes a constant, a value, or a constrained variable.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Copy\_Sign}{S'Copy\_Sign (Value,Sign:T) return T}{Result whose magnitude is that of float Value and whose sign is that of Sign.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Count}{E'Count return universal\_integer}{Number of calls presently queued on the entry.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Definite}{S'Definite return Boolean}{True if the actual subtype of a a formal indefinite subtype is definite.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Delta}{S'Delta return universal\_real}{The delta of the fixed point subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Denorm}{S'Denorm return Boolean}{True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Digits}{S'Digits return universal\_integer}{Number of digits of the decimal fixed point subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Digits}{S'Digits return universal\_integer}{Number of decimal mantissa digits for floating point subtype.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Enum\_Rep}{S'Enum\_Rep (X:S'Base) return universal\_integer}{Return the number representing a given enumeration literal.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Enum\_Val}{S'Enum\_Val (X:universal\_integer) return S'Base}{Return the enumeration literal represented by a given number.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Exponent}{S'Exponent (X:T) return universal\_integer}{Normalized exponent of the floating point argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{External\_Tag}{S'External\_Tag return String}{An external string representation of the tagged type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{First}{A'First (N) return index\_type}{Lower bound of N-th index of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{First}{A'First return index\_type}{Lower bound of first index of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{First}{S'First return S}{Lower bound of the range of scalar subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{First\_Bit}{R.C'First\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the first bit occupied by C.}
-   \adaitem{\adarmlink{RM-K-2.html}}{First\_Valid}{S'First\_Valid return S}{Denotes the smallest value that belongs to S and satisfies the predicates of S.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Floor}{S'Floor (X:T) return T}{Largest integral value less than or equal to the argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Fore}{S'Fore return universal\_integer}{Minimum number of characters needed before the decimal point.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Fraction}{S'Fraction (X:T) return T}{Decompose floating point argument into fractional part.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Has\_Same\_Storage}{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}{Returns True if the representation of X2 occupies exactly the same bits as the representation of X and the objects occupy at least one bit.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Identity}{E'Identity return Exception\_Id}{Yields unique identity of the exception.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Identity}{T'Identity return Task\_Id}{Yields unique identity of the task.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Image}{S'Image (X) return String}{Image of the value of X as a String.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Image}{X'Image return String}{Image of the value of X as a String.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Index}{E'Index return entry\_index\_subtype}{Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Class'Input}{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}{First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Input}{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}{Reads and returns one value from the Stream argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Last}{A'Last (N) return index\_type}{Upper bound of N-th index range of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Last}{A'Last return index\_type}{Upper bound of first index range of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Last}{S'Last return T}{Upper bound of the range of scalar subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Last\_Bit}{R.C'Last\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the last bit occupied by C.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Leading\_Part}{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}{The leading part of floating point value with number of radix digits given by second argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Length}{A'Length (N) return universal\_integer}{Number of values of the N-th index range of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Length}{A'Length return universal\_integer}{Number of values of the first index range of [constrained] array type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine}{S'Machine (X:T) return T}{Machine representation of floating point argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Emax}{S'Machine\_Emax return universal\_integer}{Largest (most positive) value of floating point exponent.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Emin}{S'Machine\_Emin return universal\_integer}{Smallest (most negative) value of floating point exponent.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Mantissa}{S'Machine\_Mantissa return universal\_integer}{Number of digits in machine representation of mantissa.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Overflows}{S'Machine\_Overflows return Boolean}{True if numeric overflow detected for fixed or floating point.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Radix}{S'Machine\_Radix return universal\_integer}{Radix of machine representation of the fixed or floating point.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Rounds}{S'Machine\_Rounds return Boolean}{True if rounding is performed on inexact results of the fixed or floating point.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Machine\_Rounding}{S'Machine\_Rounding (X:T) return T}{Yields the integral value nearest to X.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Max}{S'Max (X1,X2:S) return S}{Returns the greater of the values of the two parameters.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Max\_Alignment\_For\_Allocation}{S'Max\_Alignment\_For\_Allocation return universal\_integer}{Maximum value for Alignment that can be requested by the implementation via Allocate for an access type whose designated subtype is S.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Max\_Size\_In\_Storage\_Elements}{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}{Maximum value for Size\_In\_Storage\_Elements that will be requested via Allocate.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Min}{S'Min (X1,X2:S) return S}{The lesser of the values of the two scalar arguments.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Mod}{S'Mod (X:T) return S}{Will correctly convert any integer type to a given modular type (S), using wraparound semantics.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Model}{S'Model (X:T) return T}{Model number of floating point type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Emin}{S'Model\_Emin return universal\_integer}{Model number version of S''Machine\_Emin.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Epsilon}{S'Model\_Epsilon return universal\_real}{Absolute difference between the model number 1.0 and the next model number above for subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Mantissa}{S'Model\_Mantissa return universal\_integer}{Model number version of S'Machine\_Mantissa.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Model\_Small}{S'Model\_Small return universal\_real}{Smallest positive model number of subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Modulus}{S'Modulus return universal\_integer}{The modulus of the modular subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Object\_Size}{S'Object\_Size return universal\_integer}{The size of an object of subtype S. Must be a value that the compiler is able to allocate (usually an entire storage unit).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Old}{X'Old return T}{The value of X on entry, has same type as X.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Class'Output}{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the external tag of Item to Stream and then dispatches to the subprogram denoted by the Output attribute of the specific type identified by the tag.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Output}{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the value of X to Stream, including any bounds or discriminants.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Overlaps\_Storage}{X'Overlaps\_Storage (X2) return Boolean}{Returns True if the representation of X2 shares at least one bit with the representation of the object denoted by X.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Parallel\_Reduce}{X'Parallel\_Reduce (Reducer,Initial\_Value)}{Reduction expression that yields a result equivalent to replacing the attribute identifier with Reduce and the prefix of the attribute with the value\_sequence.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Partition\_ID}{D'Partition\_ID return universal\_integer}{Identifies the partition in which D was elaborated.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Pos}{S'Pos (X) return universal\_integer}{Position of the value of the discrete subtype argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Position}{R.C'Position return universal\_integer}{Same as R.C'Address - R'Address for component C.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Pred}{S'Pred (X) return S}{Predecessor of the argument.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Preelaborable\_Initialization}{S'Preelaborable\_Initialization return Boolean}{Returns whether the type of S has preelaborable initialization.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Priority}{P'Priority return System.Any\_Priority}{Returns the priority of P.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Put\_Image}{S'Put\_Image (Buffer:Ada.Strings.Text\_Buffers.Root\_Buffer\_Type'Class;X)}{ Writes an image of the value of X.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Range}{A'Range return range}{Equivalent to the range A'First .. A'Last.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Range}{S'Range return range}{Equivalent to the range S'First .. S'Last.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Range}{A'Range (N) return range}{Equivalent to the range A'First(N) .. A'Last(N).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Read}{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}{Reads the value of X from Stream.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Read}{S'Class'Read(Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}{Reads the value of X from Stream.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Reduce}{X|V'Reduce(Reducer, Initial\_Value)}{This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Relative\_Deadline}{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}{Relative deadline of P.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Remainder}{S'Remainder (X,Y:T) return T}{Remainder after dividing the first floating point argument by its second.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Result}{F'Result return X}{Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Round}{F'Round (X) return S}{Fixed-point value obtained by rounding X (away from 0, if X is midway between two values).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Rounding}{S'Rounding (X:T) return T}{Floating-point integral value nearest to X, rounding away from zero if X lies exactly halfway between two integers.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Safe\_First}{S'Safe\_First return universal\_real}{Returns lower bound of the safe range.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Safe\_Last}{S'Safe\_Last return universal\_real}{Returns upper bound of the safe range}
-   \adaitem{\adarmlink{RM-K-2.html}}{Scale}{S'Scale return universal\_integer}{Position of the fixed-point relative to the rightmost significant digits of values of subtype S.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Scaling}{S'Scaling (X:T;Adjustment:universal\_integer) return T}{Scaling by a power of the hardware radix.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Signed\_Zeros}{S'Signed\_Zeros return Boolean}{True if positive and negative signed zeros are representable.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Size}{S'Size universal\_integer}{Size in bits of objects instantiated from subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Size}{X'Size return universal\_integer}{Size in bits of the representation of the object.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Small}{S'Small return universal\_real}{Small of the fixed-point type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Pool}{S'Storage\_Pool return Root\_Storage\_Pool'Class}{Returns Storage pool of the access subtype.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Size}{S'Storage\_Size return universal\_integer}{Number of storage elements reserved for the storage pool.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Storage\_Size}{T'Storage\_Size return universal\_integer}{Number of storage elements reserved for the task.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Stream\_Size}{S'Stream\_Size return universal\_integer}{Number of bits read from or written to a stream by the default implementations of S'Read and S'Write.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Succ}{S'Succ (X:T) return T}{Returns successor of the X.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Tag}{X|S'Tag return Tag}{Returns the tag of the [class-wide] tagged type or of object X that is a class-wide tagged type.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Terminated}{T'Terminated return Boolean}{Returns True if the task denoted by T is terminated.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Truncation}{S'Truncation (X:T) return T}{Returns the value Ceiling(X) when X is negative, else Floor(X).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Unbiased\_Rounding}{S'Unbiased\_Rounding (X:T) return T}{Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Unchecked\_Access}{X'Unchecked\_Access (X:T) return access type}{Same as X'Access but lacks accessibility rules/checks.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Val}{S'Val (universal\_integer) return S}{Value of the discrete subtype whose position number equals the value of argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Val}{X'Valid return Boolean}{True if and only if the scalar object denoted by X is normal and has a valid representation.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Value}{S'Value (X:String) return S}{Returns a value of the subtype given an image of the value as a String argument.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Version}{P'Version return String}{Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Image}{S'Wide\_Image (X:S) return Wide\_String}{Image of the value of X as a Wide\_String.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Wide\_Image}{X'Wide\_Image return Wide\_String}{Image of the value of X as a Wide\_String.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Value}{S'Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_String argument (X).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Width}{S'Wide\_Width return universal\_integer}{Maximum length of Wide\_String returned by S'Image.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Image}{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
-   \adanewitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Image}{X'Wide\_Wide\_Image return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Value}{S'Wide\_Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_Wide\_String argument (X).}
-   \adaitem{\adarmlink{RM-K-2.html}}{Wide\_Wide\_Width}{S'Wide\_Wide\_Width return universal\_integer}{Maximum length of Wide\_Wide\_String returned by S'Image.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Width}{S'Width return universal\_integer}{Maximum length of String returned by S'Image.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Class'Write}{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}{Writes X to Stream.}
-   \adaitem{\adarmlink{RM-K-2.html}}{Write}{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}{Writes X to Stream.}
+   \adaitem{\adarmlink{RM-K-2.html\#p2}}{Access}{P|X'Access return access\_type}{Access to subprogram or object.}
+   \adaitem{\adarmlink{RM-K-2.html\#p6}}{Address}{X|P|L'Address return System.Address}{Address of the first of the storage elements allocated to object, program unit, or label.}
+   \adaitem{\adarmlink{RM-K-2.html\#p8}}{Adjacent}{S'Adjacent (X,Towards:T) return T}{Adjacent floating point number to X in the direction of Towards.}
+   \adaitem{\adarmlink{RM-K-2.html\#p12}}{Aft}{S'Aft return universal\_integer}{Number of decimal digits needed after the decimal point to accommodate the delta.}
+   \adaitem{\adarmlink{RM-K-2.html\#p13.1}}{Alignment}{S|X'Alignment return universal\_integer}{Alignment of object.}
+   \adaitem{\adarmlink{RM-K-2.html\#p17}}{Base}{S'Base return S'Base}{Denotes the base unconstrained subtype of S.}
+   \adaitem{\adarmlink{RM-K-2.html\#p19}}{Bit\_Order}{S'Bit\_Order return System.Bit\_Order}{Record subtype bit ordering.}
+   \adaitem{\adarmlink{RM-K-2.html\#p21}}{Body\_Version}{P'Body\_Version return String}{Version of the compilation unit that contains the body.}
+   \adaitem{\adarmlink{RM-K-2.html\#23}}{Callable}{T'Callable return Boolean}{True when the task denoted by T is callable.}
+   \adaitem{\adarmlink{RM-K-2.html\#p25}}{Caller}{E'Caller return Task\_ID}{Identifies the task whose call is now being serviced.}
+   \adaitem{\adarmlink{RM-K-2.html\#p27}}{Ceiling}{S'Ceiling (X:T) return T}{Smallest (most negative) integral value greater than or equal to argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p31}}{Class}{S'Class return class-wide type}{Returns the class-wide type for subtype S of an untagged private type whose full view is tagged.}
+   \adaitem{\adarmlink{RM-K-2.html\#p36}}{Component\_Size}{X'Component\_Size return universal\_integer}{Size in bits of components of the array subtype or object.}
+   \adaitem{\adarmlink{RM-K-2.html\#p38}}{Compose}{S'Compose (Fraction:T;Exponent:universal\_integer) return T}{Combine fraction and exponent into a floating point subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p42}}{Constrained}{A'Constrained return Boolean}{True if A of discriminated type denotes a constant, a value, or a constrained variable.}
+   \adaitem{\adarmlink{RM-K-2.html\#p44}}{Copy\_Sign}{S'Copy\_Sign (Value,Sign:T) return T}{Result whose magnitude is that of float Value and whose sign is that of Sign.}
+   \adaitem{\adarmlink{RM-K-2.html\#p48}}{Count}{E'Count return universal\_integer}{Number of calls presently queued on the entry.}
+   \adaitem{\adarmlink{RM-K-2.html\#p50}}{Definite}{S'Definite return Boolean}{True if the actual subtype of a a formal indefinite subtype is definite.}
+   \adaitem{\adarmlink{RM-K-2.html\#p52}}{Delta}{S'Delta return universal\_real}{The delta of the fixed point subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p54}}{Denorm}{S'Denorm return Boolean}{True if every value is expressible in canonical form with an an exponent of T'Machine\_Emin.}
+   \adaitem{\adarmlink{RM-K-2.html\#p56}}{Digits}{S'Digits return universal\_integer}{Number of decimal mantissa digits for floating point subtype.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p59.1}}{Enum\_Rep}{S'Enum\_Rep (X:S'Base) return universal\_integer}{Return the number representing a given enumeration literal.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p59.5}}{Enum\_Val}{S'Enum\_Val (X:universal\_integer) return S'Base}{Return the enumeration literal represented by a given number.}
+   \adaitem{\adarmlink{RM-K-2.html\#p60}}{Exponent}{S'Exponent (X:T) return universal\_integer}{Normalized exponent of the floating point argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p64}}{External\_Tag}{S'External\_Tag return String}{An external string representation of the tagged type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p70}}{First}{A'First (N) return index\_type}{Lower bound of N-th index of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p66}}{First}{A'First return index\_type}{Lower bound of first index of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p68}}{First}{S'First return S}{Lower bound of the range of scalar subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p72}}{First\_Bit}{R.C'First\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the first bit occupied by C.}
+   \adaitem{\adarmlink{RM-K-2.html\#p73.1}}{First\_Valid}{S'First\_Valid return S}{Denotes the smallest value that belongs to S and satisfies the predicates of S.}
+   \adaitem{\adarmlink{RM-K-2.html\#p74}}{Floor}{S'Floor (X:T) return T}{Largest integral value less than or equal to the argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p78}}{Fore}{S'Fore return universal\_integer}{Minimum number of characters needed before the decimal point.}
+   \adaitem{\adarmlink{RM-K-2.html\#p80}}{Fraction}{S'Fraction (X:T) return T}{Decompose floating point argument into fractional part.}
+   \adaitem{\adarmlink{RM-K-2.html\#p83.1}}{Has\_Same\_Storage}{X'Has\_Same\_Storage  (X2:any\_type) return Boolean}{Returns True if the representation of X2 occupies exactly the same bits as the representation of X and the objects occupy at least one bit.}
+   \adaitem{\adarmlink{RM-K-2.html\#p84}}{Identity}{E'Identity return Exception\_Id}{Yields unique identity of the exception.}
+   \adaitem{\adarmlink{RM-K-2.html\#p86}}{Identity}{T'Identity return Task\_Id}{Yields unique identity of the task.}
+   \adaitem{\adarmlink{RM-K-2.html\#p88}}{Image}{S'Image (X) return String}{Image of the value of X as a String.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p91.1}}{Image}{X'Image return String}{Image of the value of X as a String.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p91.3}}{Index}{E'Index return entry\_index\_subtype}{Within a precondition or postcondition expression for entry family E, denotes the value of the entry index for the call of E.}
+   \adaitem{\adarmlink{RM-K-2.html\#p92}}{Class'Input}{S'Class'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T'Class}{First reads the external tag from Stream and determines the corresponding internal tag which can raise Tag\_Error and then dispatches to the subprogram denoted by the Input attribute of the specific type identified by the internal tag.}
+   \adaitem{\adarmlink{RM-K-2.html\#p96}}{Input}{S'Input (Stream:access Ada.Streams.Root\_Stream\_Type'Class) return T}{Reads and returns one value from the Stream argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p104}}{Last}{A'Last (N) return index\_type}{Upper bound of N-th index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p100}}{Last}{A'Last return index\_type}{Upper bound of first index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p102}}{Last}{S'Last return T}{Upper bound of the range of scalar subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p106}}{Last\_Bit}{R.C'Last\_Bit return universal\_integer}{Bit offset, from the start of the first of the storage elements occupied by C, of the last bit occupied by C.}
+   \adaitem{\adarmlink{RM-K-2.html\#p107.1}}{Last\_Valid}{S'Last\_Valid return S}{Denotes the largest value that belongs to S and satisfies the predicates of S.}
+   \adaitem{\adarmlink{RM-K-2.html\#p108}}{Leading\_Part}{S'Leading\_Part (X:T;Radix\_Digits:universal\_integer) return T}{The leading part of floating point value with number of radix digits given by second argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p117}}{Length}{A'Length (N) return universal\_integer}{Number of values of the N-th index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p115}}{Length}{A'Length return universal\_integer}{Number of values of the first index range of [constrained] array type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p119}}{Machine}{S'Machine (X:T) return T}{Machine representation of floating point argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p123}}{Machine\_Emax}{S'Machine\_Emax return universal\_integer}{Largest (most positive) value of floating point exponent.}
+   \adaitem{\adarmlink{RM-K-2.html\#p125}}{Machine\_Emin}{S'Machine\_Emin return universal\_integer}{Smallest (most negative) value of floating point exponent.}
+   \adaitem{\adarmlink{RM-K-2.html\#p127}}{Machine\_Mantissa}{S'Machine\_Mantissa return universal\_integer}{Number of digits in machine representation of mantissa.}
+   \adaitem{\adarmlink{RM-K-2.html\#p129}}{Machine\_Overflows}{S'Machine\_Overflows return Boolean}{True if numeric overflow detected for fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html\#p133}}{Machine\_Radix}{S'Machine\_Radix return universal\_integer}{Radix of machine representation of the fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html\#p137}}{Machine\_Rounds}{S'Machine\_Rounds return Boolean}{True if rounding is performed on inexact results of the fixed or floating point.}
+   \adaitem{\adarmlink{RM-K-2.html\#p136.1}}{Machine\_Rounding}{S'Machine\_Rounding (X:T) return T}{Yields the integral value nearest to X.}
+   \adaitem{\adarmlink{RM-K-2.html\#p141}}{Max}{S'Max (X1,X2:S) return S}{Returns the greater of the values of the two parameters.}
+   \adaitem{\adarmlink{RM-K-2.html\#p144}}{Max\_Alignment\_For\_Allocation}{S'Max\_Alignment\_For\_Allocation return universal\_integer}{Maximum value for Alignment that can be requested by the implementation via Allocate for an access type whose designated subtype is S.}
+   \adaitem{\adarmlink{RM-K-2.html\#p145}}{Max\_Size\_In\_Storage\_Elements}{S'Max\_Size\_In\_Storage\_Elements return universal\_integer}{Maximum value for Size\_In\_Storage\_Elements that will be requested via Allocate.}
+   \adaitem{\adarmlink{RM-K-2.html\#p147}}{Min}{S'Min (X1,X2:S) return S}{The lesser of the values of the two scalar arguments.}
+   \adaitem{\adarmlink{RM-K-2.html\#p150.1}}{Mod}{S'Mod (X:T) return S}{Will correctly convert any integer type to a given modular type (S), using wraparound semantics.}
+   \adaitem{\adarmlink{RM-K-2.html\#p151}}{Model}{S'Model (X:T) return T}{Model number of floating point type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p155}}{Model\_Emin}{S'Model\_Emin return universal\_integer}{Model number version of S''Machine\_Emin.}
+   \adaitem{\adarmlink{RM-K-2.html\#p157}}{Model\_Epsilon}{S'Model\_Epsilon return universal\_real}{Absolute difference between the model number 1.0 and the next model number above for subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p159}}{Model\_Mantissa}{S'Model\_Mantissa return universal\_integer}{Model number version of S'Machine\_Mantissa.}
+   \adaitem{\adarmlink{RM-K-2.html\#p161}}{Model\_Small}{S'Model\_Small return universal\_real}{Smallest positive model number of subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p163}}{Modulus}{S'Modulus return universal\_integer}{The modulus of the modular subtype.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p164.1}}{Object\_Size}{S'Object\_Size return universal\_integer}{The size of an object of subtype S. Must be a value that the compiler is able to allocate (usually an entire storage unit).}
+   \adaitem{\adarmlink{RM-K-2.html\#p164.3}}{Old}{X'Old return T}{The value of X on entry, has same type as X.}
+   \adaitem{\adarmlink{RM-K-2.html\#p165}}{Class'Output}{S'Class'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the external tag of Item to Stream and then dispatches to the subprogram denoted by the Output attribute of the specific type identified by the tag.}
+   \adaitem{\adarmlink{RM-K-2.html\#p169}}{Output}{S'Output (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X)}{Writes the value of X to Stream, including any bounds or discriminants.}
+   \adaitem{\adarmlink{RM-K-2.html\#p172.1}}{Overlaps\_Storage}{X'Overlaps\_Storage (X2) return Boolean}{Returns True if the representation of X2 shares at least one bit with the representation of the object denoted by X.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p172.5}}{Parallel\_Reduce}{X'Parallel\_Reduce (Reducer,Initial\_Value)}{Reduction expression that yields a result equivalent to replacing the attribute identifier with Reduce and the prefix of the attribute with the value\_sequence.}
+   \adaitem{\adarmlink{RM-K-2.html\#p173}}{Partition\_ID}{D'Partition\_ID return universal\_integer}{Identifies the partition in which D was elaborated.}
+   \adaitem{\adarmlink{RM-K-2.html\#p175}}{Pos}{S'Pos (X) return universal\_integer}{Position of the value of the discrete subtype argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p179}}{Position}{R.C'Position return universal\_integer}{Same as R.C'Address - R'Address for component C.}
+   \adaitem{\adarmlink{RM-K-2.html\#p181}}{Pred}{S'Pred (X) return S}{Predecessor of the argument.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p184.1}}{Preelaborable\_Initialization}{S'Preelaborable\_Initialization return Boolean}{Returns whether the type of S has preelaborable initialization.}
+   \adaitem{\adarmlink{RM-K-2.html\#p184.3}}{Priority}{P'Priority return System.Any\_Priority}{Returns the priority of P.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p184.5}}{Put\_Image}{S'Put\_Image (Buffer:Ada.Strings.Text\_Buffers.Root\_Buffer\_Type'Class;X)}{ Writes an image of the value of X.}
+   \adaitem{\adarmlink{RM-K-2.html\#p185}}{Range}{A'Range return range}{Equivalent to the range A'First .. A'Last.}
+   \adaitem{\adarmlink{RM-K-2.html\#p187}}{Range}{S'Range return range}{Equivalent to the range S'First .. S'Last.}
+   \adaitem{\adarmlink{RM-K-2.html\#p189}}{Range}{A'Range (N) return range}{Equivalent to the range A'First(N) .. A'Last(N).}
+   \adaitem{\adarmlink{RM-K-2.html\#p195}}{Read}{S'Read (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T)}{Reads the value of X from Stream.}
+   \adaitem{\adarmlink{RM-K-2.html\#p191}}{Read}{S'Class'Read(Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:out T'Class)}{Reads the value of X from Stream.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p198.1}}{Reduce}{X|V'Reduce(Reducer, Initial\_Value)}{This attribute represents a reduction expression, and is in the form of a reduction\_attribute\_reference.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p198.7}}{Relative\_Deadline}{P'Relative\_Deadline return Ada.Real\_Time.Time\_Span}{Relative deadline of P.}
+   \adaitem{\adarmlink{RM-K-2.html\#p199}}{Remainder}{S'Remainder (X,Y:T) return T}{Remainder after dividing the first floating point argument by its second.}
+   \adaitem{\adarmlink{RM-K-2.html\#p202.1}}{Result}{F'Result return X}{Within a postcondition expression for F, denotes the return object of the function call for which the postcondition expression is evaluated.}
+   \adaitem{\adarmlink{RM-K-2.html\#p203}}{Round}{F'Round (X) return S}{Fixed-point value obtained by rounding X (away from 0, if X is midway between two values).}
+   \adaitem{\adarmlink{RM-K-2.html\#p207}}{Rounding}{S'Rounding (X:T) return T}{Floating-point integral value nearest to X, rounding away from zero if X lies exactly halfway between two integers.}
+   \adaitem{\adarmlink{RM-K-2.html\#p211}}{Safe\_First}{S'Safe\_First return universal\_real}{Returns lower bound of the safe range.}
+   \adaitem{\adarmlink{RM-K-2.html\#p213}}{Safe\_Last}{S'Safe\_Last return universal\_real}{Returns upper bound of the safe range}
+   \adaitem{\adarmlink{RM-K-2.html\#p215}}{Scale}{S'Scale return universal\_integer}{Position of the fixed-point relative to the rightmost significant digits of values of subtype S.}
+   \adaitem{\adarmlink{RM-K-2.html\#p217}}{Scaling}{S'Scaling (X:T;Adjustment:universal\_integer) return T}{Scaling by a power of the hardware radix.}
+   \adaitem{\adarmlink{RM-K-2.html\#p221}}{Signed\_Zeros}{S'Signed\_Zeros return Boolean}{True if positive and negative signed zeros are representable.}
+   \adaitem{\adarmlink{RM-K-2.html\#p223}}{Size}{S'Size universal\_integer}{Size in bits of objects instantiated from subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p228}}{Size}{X'Size return universal\_integer}{Size in bits of the representation of the object.}
+   \adaitem{\adarmlink{RM-K-2.html\#p230}}{Small}{S'Small return universal\_real}{Small of the fixed-point type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p232}}{Storage\_Pool}{S'Storage\_Pool return Root\_Storage\_Pool'Class}{Returns Storage pool of the access subtype.}
+   \adaitem{\adarmlink{RM-K-2.html\#p234}}{Storage\_Size}{S'Storage\_Size return universal\_integer}{Number of storage elements reserved for the storage pool.}
+   \adaitem{\adarmlink{RM-K-2.html\#p236}}{Storage\_Size}{T'Storage\_Size return universal\_integer}{Number of storage elements reserved for the task.}
+   \adaitem{\adarmlink{RM-K-2.html\#p237.1}}{Stream\_Size}{S'Stream\_Size return universal\_integer}{Number of bits read from or written to a stream by the default implementations of S'Read and S'Write.}
+   \adaitem{\adarmlink{RM-K-2.html\#p238}}{Succ}{S'Succ (X:T) return T}{Returns successor of the X.}
+   \adaitem{\adarmlink{RM-K-2.html\#p242}}{Tag}{X|S'Tag return Tag}{Returns the tag of the [class-wide] tagged type or of object X that is a class-wide tagged type.}
+   \adaitem{\adarmlink{RM-K-2.html\#p246}}{Terminated}{T'Terminated return Boolean}{Returns True if the task denoted by T is terminated.}
+   \adaitem{\adarmlink{RM-K-2.html\#p248}}{Truncation}{S'Truncation (X:T) return T}{Returns the value Ceiling(X) when X is negative, else Floor(X).}
+   \adaitem{\adarmlink{RM-K-2.html\#p252}}{Unbiased\_Rounding}{S'Unbiased\_Rounding (X:T) return T}{Integral value nearest to X, rounding toward the even integer if X lies exactly halfway between two integers.}
+   \adaitem{\adarmlink{RM-K-2.html\#p256}}{Unchecked\_Access}{X'Unchecked\_Access (X:T) return access type}{Same as X'Access but lacks accessibility rules/checks.}
+   \adaitem{\adarmlink{RM-K-2.html\#p258}}{Val}{S'Val (universal\_integer) return S}{Value of the discrete subtype whose position number equals the value of argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p262}}{Valid}{X'Valid return Boolean}{True if and only if the scalar object denoted by X is normal and has a valid representation.}
+   \adaitem{\adarmlink{RM-K-2.html\#p264}}{Value}{S'Value (X:String) return S}{Returns a value of the subtype given an image of the value as a String argument.}
+   \adaitem{\adarmlink{RM-K-2.html\#p268}}{Version}{P'Version return String}{Yields string that identifies the version of the compilation unit that contains the declaration of the program unit.}
+   \adaitem{\adarmlink{RM-K-2.html\#p270}}{Wide\_Image}{S'Wide\_Image (X:S) return Wide\_String}{Image of the value of X as a Wide\_String.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p273.1}}{Wide\_Image}{X'Wide\_Image return Wide\_String}{Image of the value of X as a Wide\_String.}
+   \adaitem{\adarmlink{RM-K-2.html\#p274}}{Wide\_Value}{S'Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_String argument (X).}
+   \adaitem{\adarmlink{RM-K-2.html\#p278}}{Wide\_Width}{S'Wide\_Width return universal\_integer}{Maximum length of Wide\_String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html\#p277.1}}{Wide\_Wide\_Image}{S'Wide\_Wide\_Image (X:S) return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
+   \adanewitem{\adarmlink{RM-K-2.html\#p277.5}}{Wide\_Wide\_Image}{X'Wide\_Wide\_Image return Wide\_Wide\_String}{Image of the value of X as a Wide\_Wide\_String.}
+   \adaitem{\adarmlink{RM-K-2.html\#p277.7}}{Wide\_Wide\_Value}{S'Wide\_Wide\_Value (X:String) return S}{Returns a value given an image of the value as a Wide\_Wide\_String argument (X).}
+   \adaitem{\adarmlink{RM-K-2.html\#p277.11}}{Wide\_Wide\_Width}{S'Wide\_Wide\_Width return universal\_integer}{Maximum length of Wide\_Wide\_String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html\#p280}}{Width}{S'Width return universal\_integer}{Maximum length of String returned by S'Image.}
+   \adaitem{\adarmlink{RM-K-2.html\#p282}}{Class'Write}{S'Class'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T'Class)}{Writes X to Stream.}
+   \adaitem{\adarmlink{RM-K-2.html\#p286}}{Write}{S'Write (Stream:access Ada.Streams.Root\_Stream\_Type'Class;X:T)}{Writes X to Stream.}
 \end{description}
 \section*{\textsc{Aspects}}
 \raggedright
 \begin{description}[leftmargin=8em,style=nextline]
    \adaitem{\adarmlink{RM-13-3.html}}{Address}{X|P|L with Address => System.Address}{Address of the first of the storage elements allocated.}
    \adanewitem{\adarmlink{RM-4-3-5.html}}{Aggregate}{S with Aggregate => (aggregate)}{Mechanism to define user-defined aggregates.}
-   \adaitem{\adarmlink{RM-13-3.html}}{Alignment}{X|S with Alignment => universal\_integer}{Alignment of object or subtype.}
-   \adaitem{\adarmlink{RM-E-2-3.html}}{All\_Calls\_Remote}{P with All\_Calls\_Remote [=> Boolean]}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
-   \adanewitem{\adarmlink{RM-5-5-3.html}}{Allows\_Exit}{P with Allows\_Exit [=> Boolean]}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
-   \adaitem{\adarmlink{RM-E-4-1.html}}{Asynchronous}{P with Asynchronous [=> Boolean]}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Atomic}{S|X|C with Atomic [=> Boolean]}{Declare that a type, object, or component is atomic.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Atomic\_Components}{A|X with Atomic\_Components [=> Boolean]}{Declare that the components of an array type or object are atomic.}
-   \adaitem{\adarmlink{RM-C-3-1.html}}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure P is attached to an interrupt.}
+   \adaitem{\adarmlink{RM-13-3.html\#p23}}{Alignment}{X|S with Alignment => universal\_integer}{Alignment of object or subtype.}
+   \adaitem{\adarmlink{RM-E-2-3.html\#p16}}{All\_Calls\_Remote}{P with All\_Calls\_Remote [=> Boolean]}{All indirect or dispatching remote subprogram calls, and all direct remote subprogram calls, should use the Partition Communication Subsystem.}
+   \adanewitem{\adarmlink{RM-5-5-3.html\#p18}}{Allows\_Exit}{P with Allows\_Exit [=> Boolean]}{An indication of whether a subprogram will operate correctly for arbitrary transfers of control.}
+   \adaitem{\adarmlink{RM-E-4-1.html\#p8.3}}{Asynchronous}{P with Asynchronous [=> Boolean]}{Remote procedure calls are asynchronous; the caller continues without waiting for the call to return.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.2}}{Atomic}{S|X|C with Atomic [=> Boolean]}{Declare that a type, object, or component is atomic.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.7}}{Atomic\_Components}{A|X with Atomic\_Components [=> Boolean]}{Declare that the components of an array type or object are atomic.}
+   \adaitem{\adarmlink{RM-C-3-1.html\#p6.3}}{Attach\_Handler}{P with Attach\_Handler => Ada.Interrupts.\allowbreak Interrupt\_Id}{Protected procedure P is attached to an interrupt.}
    \adaitem{\adarmlink{RM-13-5-3.html}}{Bit\_Order}{S with Bit\_Order => System.Bit\_Order}{Order of bit numbering in a record\_representation\_clause.}
    \adaitem{\adarmlink{RM-13-3.html}}{Component\_Size}{A|X with Component\_Size => universal\_integer}{Size in bits of a component of an array type.}
-   \adaitem{\adarmlink{RM-4-1-6.html}}{Constant\_Indexing}{S with Constant\_Indexing => P}{Defines function to implement user-defined indexed\_components.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Convention}{S|P with Convention => convention\_identifier}{Calling convention or other convention used for interfacing to other languages.}
-   \adanewitem{\adarmlink{RM-D-16.html}}{CPU}{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}{Processor on which a given task, or calling task for a protected operation, should run.}
-   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Component\_Value}{S with Default\_Component\_Value => Component\_Type}{Default value for the components of an array-of-scalar subtype.}
-   \adanewitem{\adarmlink{RM-3-6.html}}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition [=> Boolean]}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
-   \adaitem{\adarmlink{RM-3-6.html}}{Default\_Iterator}{S with Default\_Iterator => F}{Default iterator to be used in for loops.}
-   \adaitem{\adarmlink{RM-3-5.html}}{Default\_Value}{S with Default\_Value => scalar value}{Default value for a scalar subtype.}
-   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{S|E with Discard\_Names [=> Boolean]}{Requests a reduction in storage.}
-   \adanewitem{\adarmlink{RM-D-16-1.html}}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
+   \adaitem{\adarmlink{RM-4-1-6.html\#p2}}{Constant\_Indexing}{S with Constant\_Indexing => P}{Defines function to implement user-defined indexed\_components.}
+   \adaitem{\adarmlink{RM-B-1.html\#p11}}{Convention}{S|P with Convention => convention\_identifier}{Calling convention or other convention used for interfacing to other languages.}
+   \adanewitem{\adarmlink{RM-D-16.html\#p8}}{CPU}{T with CPU => System.\allowbreak Multiprocessors.\allowbreak CPU\_Range}{Processor on which a given task, or calling task for a protected operation, should run.}
+   \adaitem{\adarmlink{RM-3-6.html\#p22.2}}{Default\_Component\_Value}{S with Default\_Component\_Value => Component\_Type}{Default value for the components of an array-of-scalar subtype.}
+   \adanewitem{\adarmlink{RM-3-6.html\#p2}}{Default\_Initial\_Condition}{S with Default\_Initial\_Condition [=> Boolean]}{If the Default\_Initial\_Condition aspect is specified for a type T, then the default initial condition expression applies to S and to all descendants of S.}
+   \adaitem{\adarmlink{RM-3-6.html\#p8}}{Default\_Iterator}{S with Default\_Iterator => F}{Default iterator to be used in for loops.}
+   \adaitem{\adarmlink{RM-3-5.html\#p56.3}}{Default\_Value}{S with Default\_Value => scalar value}{Default value for a scalar subtype.}
+   \adaitem{\adarmlink{RM-C-5.html\#p1.3}}{Discard\_Names}{S|E with Discard\_Names [=> Boolean]}{Requests a reduction in storage.}
+   \adanewitem{\adarmlink{RM-D-16-1.html\#p8}}{Dispatching}{P with Dispatching => dispatching\_operation\_specifier}{.}
    \adaitem{\adarmlink{RM-D-16-1.html}}{Dispatching\_Domain}{T with Dispatching\_Domain => System.\allowbreak Multiprocessors.\allowbreak Dispatching\_Domains.\allowbreak Dispatching\_Domain}{Domain (group of processors) on which a given task should run.}
    \adanewitem{\adarmlink{RM-3-2-4.html}}{Dynamic\_Predicate}{S with Dynamic\_Predicate [=> Boolean]}{Condition that will hold true for objects of a given subtype; the subtype is not static.}
-   \adanewitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_Body}{D with Elaborate\_Body [=> Boolean]}{A given package will have a body, and that body is elaborated immediately after the declaration.}
-   \adaitem{\adarmlink{RM-9-5-1.html}}{Exclusive\_Functions}{S with Exclusive\_Functions [=> Boolean]}{Specifies mutual exclusion behavior of protected functions in a protected type.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Export}{P|X with Export [=> Boolean]}{Entity is exported to another language.}
-   \adaitem{\adarmlink{RM-B-1.html}}{External\_Name}{P|X with External\_Name => String}{Name used to identify an imported or exported entity.}
-   \adaitem{\adarmlink{RM-13-3.html}}{External\_Tag}{S with External\_Tag => String}{Unique identifier for a tagged type in streams.}
-   \adanewitem{\adarmlink{RM-C-6.html}}{Full\_Access\_Only}{X|C with Full\_Access\_Only [=> Boolean]}{Declare that a volatile type, object, or component is full access.}
+   \adanewitem{\adarmlink{RM-10-2-1.html\#p25}}{Elaborate\_Body}{D with Elaborate\_Body [=> Boolean]}{A given package will have a body, and that body is elaborated immediately after the declaration.}
+   \adaitem{\adarmlink{RM-9-5-1.html\#p2.2}}{Exclusive\_Functions}{S with Exclusive\_Functions [=> Boolean]}{Specifies mutual exclusion behavior of protected functions in a protected type.}
+   \adaitem{\adarmlink{RM-B-1.html\#p9.2}}{Export}{P|X with Export [=> Boolean]}{Entity is exported to another language.}
+   \adaitem{\adarmlink{RM-B-1.html\#p10}}{External\_Name}{P|X with External\_Name => String}{Name used to identify an imported or exported entity.}
+   \adaitem{\adarmlink{RM-13-3.html\#p73.11}}{External\_Tag}{S with External\_Tag => String}{Unique identifier for a tagged type in streams.}
+   \adanewitem{\adarmlink{RM-C-6.html\#p6.5}}{Full\_Access\_Only}{X|C with Full\_Access\_Only [=> Boolean]}{Declare that a volatile type, object, or component is full access.}
    \adanewitem{\adarmlink{RM-6-1-2.html}}{Global}{D with Global => global\_aspect\_definition}{Global object usage contract.}
    \adanewitem{\adarmlink{RM-6-1-2.html}}{Global'Class}{D with Global'Class => global\_aspect\_definition}{Global object usage contract inherited on derivation.}
    \adaitem{\adarmlink{RM-4-1-5.html}}{Implicit\_Dereference}{A with Implicit\_Dereference => Discriminant}{Mechanism for user-defined implicit .all.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Import}{P|X with Import [=> Boolean]}{Entity is imported from another language.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Independent}{X|S with Independent [=> Boolean]}{Declare that a type, object, or component is independently addressable.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Independent\_Components}{A|R with Independent\_Components [=> Boolean]}{Declare that the components of an array or record type, or an array object, are independently addressable.}
-   \adaitem{\adarmlink{RM-6-3-2.html}}{Inline}{P|E with Inline [=> Boolean]}{For efficiency, Inline calls are requested for a subprogram.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{Integer\_Literal}{S with Integer\_Literal => F}{Defines a function to implement user-defined integer literals.}
-   \adaitem{\adarmlink{RM-C-3-1.html}}{Interrupt\_Handler}{P with Interrupt\_Handler}{Protected procedure P may be attached to interrupts.}
-   \adaitem{\adarmlink{RM-D-1.html}}{Interrupt\_Priority}{T|S|P with Interrupt\_Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
-   \adaitem{\adarmlink{RM-5-5-1.html}}{Iterator\_Element}{S with Iterator\_Element => S2}{Element type to be used for user-defined iterators.}
-   \adanewitem{\adarmlink{RM-5-5-1.html}}{Iterator\_View}{S with Iterator\_View => S2}{An alternative type to be used for container element iterators.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Link\_Name}{P|X with Link\_Name => String}{Linker symbol used to identify an imported or exported entity.}
-   \adanewitem{\adarmlink{RM-D-4.html}}{Max\_Entry\_Queue\_Length}{T|S|E with Max\_Entry\_Queue\_Length => Integer}{The maximum entry queue length for a task type, protected type, or entry.}
+   \adaitem{\adarmlink{RM-B-1.html\#p9.2}}{Import}{P|X with Import [=> Boolean]}{Entity is imported from another language.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.3}}{Independent}{X|S with Independent [=> Boolean]}{Declare that a type, object, or component is independently addressable.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.10}}{Independent\_Components}{A|R with Independent\_Components [=> Boolean]}{Declare that the components of an array or record type, or an array object, are independently addressable.}
+   \adaitem{\adarmlink{RM-6-3-2.html\#p5.1}}{Inline}{P|E with Inline [=> Boolean]}{For efficiency, Inline calls are requested for a subprogram.}
+   \adanewitem{\adarmlink{RM-4-2-1.html\#p3}}{Integer\_Literal}{S with Integer\_Literal => F}{Defines a function to implement user-defined integer literals.}
+   \adaitem{\adarmlink{RM-C-3-1.html\#p6.2}}{Interrupt\_Handler}{P with Interrupt\_Handler}{Protected procedure P may be attached to interrupts.}
+   \adaitem{\adarmlink{RM-D-1.html\#p6.3}}{Interrupt\_Priority}{T|S|P with Interrupt\_Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is in the interrupt range.}
+   \adaitem{\adarmlink{RM-5-5-1.html\#p9}}{Iterator\_Element}{S with Iterator\_Element => S2}{Element type to be used for user-defined iterators.}
+   \adanewitem{\adarmlink{RM-5-5-1.html\#p9.1}}{Iterator\_View}{S with Iterator\_View => S2}{An alternative type to be used for container element iterators.}
+   \adaitem{\adarmlink{RM-B-1.html\#p10}}{Link\_Name}{P|X with Link\_Name => String}{Linker symbol used to identify an imported or exported entity.}
+   \adanewitem{\adarmlink{RM-D-4.html\#p18}}{Max\_Entry\_Queue\_Length}{T|S|E with Max\_Entry\_Queue\_Length => Integer}{The maximum entry queue length for a task type, protected type, or entry.}
    \adanewitem{\adarmlink{RM-H-4-1.html}}{No\_Controlled\_Parts}{S with No\_Controlled\_Parts [=> Boolean]}{A specification that a type and its descendants do not have controlled parts.}
    \adanewitem{\adarmlink{RM-6-5-1.html}}{No\_Return}{P with No\_Return [=> Boolean]}{Procedure cannot return normally; it may raise an exception, loop forever, or terminate the program.}
-   \adanewitem{\adarmlink{RM-9-5.html}}{Nonblocking}{P with Nonblocking [=> Boolean]}{Specifies that an associated subprogram P does not block.}
+   \adanewitem{\adarmlink{RM-9-5.html\#p19}}{Nonblocking}{P with Nonblocking [=> Boolean]}{Specifies that an associated subprogram P does not block.}
    \adaitem{\adarmlink{RM-13-2.html}}{Pack}{R|A with Pack [=> Boolean]}{Minimize storage when laying out records and arrays.}
-   \adanewitem{\adarmlink{RM-9-10-1.html}}{Parallel\_Calls}{P with Parallel\_Calls [=> Boolean]}{Specifies whether a given subprogram is expected to be called in parallel.}
-   \adanewitem{\adarmlink{RM-5-5-3.html}}{Parallel\_Iterator}{P with Parallel\_Iterator [=> Boolean]}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Post}{P with Post => Condition}{Postcondition; a condition that will hold true after a call.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Post'Class}{P with Post'Class => Condition}{Postcondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre}{P with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
-   \adaitem{\adarmlink{RM-6-1-1.html}}{Pre'Class}{P with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
-   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{S with Predicate\_Failure => String}{Defines message of the Assertion\_Error exception raised when a predicate check fails.}
-   \adaitem{\adarmlink{RM-3-2-4.html}}{Predicate\_Failure}{S with Predicate\_Failure => raise E [with String]}{Declares exception to be raised when a predicate check fails.}
-   \adanewitem{\adarmlink{RM-10-2-1.html}}{Preelaborable\_Initialization}{S with Preelaborable\_Initialization [=> Boolean]}{Declares that a type has preelaborable initialization.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Preelaborate}{P with Preelaborate [=> Boolean]}{Code execution during elaboration is avoided for a given package.}
-   \adaitem{\adarmlink{RM-D-1.html}}{Priority}{T|S|P with Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Pure}{D with Pure [=> Boolean]}{Side effects are avoided in the subprograms of a given package.}
-   \adanewitem{\adarmlink{RM-4-10.html}}{Put\_Image}{S with Put\_Image => P}{Procedure to define the image of a given type.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{Real\_Literal}{S with Real\_Literal => F}{Defines a function or functions to implement user-defined real literals.}
-   \adanewitem{\adarmlink{RM-D-2-6.html}}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
-   \adaitem{\adarmlink{RM-E-2-3.html}}{Remote\_Call\_Interface}{D with Remote\_Call\_Interface [=> Boolean]}{Subprograms in a given package may be used in remote procedure calls.}
-   \adaitem{\adarmlink{RM-E-2-2.html}}{Remote\_Types}{D with Remote\_Types [=> Boolean]}{Types in a given package may be used in remote procedure calls.}
-   \adaitem{\adarmlink{RM-E-2-1.html}}{Shared\_Passive}{D with Shared\_Passive [=> Boolean]}{A given package is used to represent shared memory in a distributed system.}
-   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties}{S with Stable\_Properties => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
-   \adanewitem{\adarmlink{RM-7-3-4.html}}{Stable\_Properties'Class}{S with Stable\_Properties'Class => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
-   \adanewitem{\adarmlink{RM-6-8.html}}{Static}{F with Static [=> Boolean]}{Specifies that an associated expression function can be used in static expressions.}
+   \adanewitem{\adarmlink{RM-9-10-1.html\#p24}}{Parallel\_Calls}{P with Parallel\_Calls [=> Boolean]}{Specifies whether a given subprogram is expected to be called in parallel.}
+   \adanewitem{\adarmlink{RM-5-5-3.html\#p20}}{Parallel\_Iterator}{P with Parallel\_Iterator [=> Boolean]}{An indication of whether a subprogram may use multiple threads of control to invoke a loop body procedure.}
+   \adaitem{\adarmlink{RM-6-1-1.html\#p4}}{Post}{P with Post => Condition}{Postcondition; a condition that will hold true after a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html\#p5}}{Post'Class}{P with Post'Class => Condition}{Postcondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-6-1-1.html\#p2}}{Pre}{P with Pre => Condition}{Precondition; a condition that is expected to hold true before a call.}
+   \adaitem{\adarmlink{RM-6-1-1.html\#p3}}{Pre'Class}{P with Pre'Class => Condition}{Precondition that applies to corresponding subprograms of descendant types.}
+   \adaitem{\adarmlink{RM-3-2-4.html\#p14.2}}{Predicate\_Failure}{S with Predicate\_Failure => String}{Defines message of the Assertion\_Error exception raised when a predicate check fails.}
+   \adaitem{\adarmlink{RM-3-2-4.html\#p14.2}}{Predicate\_Failure}{S with Predicate\_Failure => raise E [with String]}{Declares exception to be raised when a predicate check fails.}
+   \adanewitem{\adarmlink{RM-10-2-1.html\#p11.4}}{Preelaborable\_Initialization}{S with Preelaborable\_Initialization [=> Boolean]}{Declares that a type has preelaborable initialization.}
+   \adaitem{\adarmlink{RM-10-2-1.html\#p11}}{Preelaborate}{P with Preelaborate [=> Boolean]}{Code execution during elaboration is avoided for a given package.}
+   \adaitem{\adarmlink{RM-D-1.html\#p6.2}}{Priority}{T|S|P with Priority => Integer}{Priority of a task object or type, or priority of a protected object or type; the priority is not in the interrupt range.}
+   \adaitem{\adarmlink{RM-10-2-1.html\#p17}}{Pure}{D with Pure [=> Boolean]}{Side effects are avoided in the subprograms of a given package.}
+   \adanewitem{\adarmlink{RM-4-10.html\#p5}}{Put\_Image}{S with Put\_Image => P}{Procedure to define the image of a given type.}
+   \adanewitem{\adarmlink{RM-4-2-1.html\#p4}}{Real\_Literal}{S with Real\_Literal => F}{Defines a function or functions to implement user-defined real literals.}
+   \adanewitem{\adarmlink{RM-D-2-6.html\#p9.2}}{Relative\_Deadline}{T with Relative\_Deadline => RD}{Ensures that the absolute deadline of the task when created is RD of type Real\_Time.Time\_Span.}
+   \adaitem{\adarmlink{RM-E-2-3.html\#p7}}{Remote\_Call\_Interface}{D with Remote\_Call\_Interface [=> Boolean]}{Subprograms in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-2.html\#p4}}{Remote\_Types}{D with Remote\_Types [=> Boolean]}{Types in a given package may be used in remote procedure calls.}
+   \adaitem{\adarmlink{RM-E-2-1.html\#p4}}{Shared\_Passive}{D with Shared\_Passive [=> Boolean]}{A given package is used to represent shared memory in a distributed system.}
+   \adanewitem{\adarmlink{RM-7-3-4.html\#p5}}{Stable\_Properties}{S with Stable\_Properties => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of the type or an individual primitive subprogram.}
+   \adanewitem{\adarmlink{RM-7-3-4.html\#p6}}{Stable\_Properties'Class}{S with Stable\_Properties'Class => (F [,...])}{A list of functions describing characteristics that usually are unchanged by primitive operations of a class of types or a primitive subprogram for such a class.}
+   \adanewitem{\adarmlink{RM-6-8.html\#p5.1}}{Static}{F with Static [=> Boolean]}{Specifies that an associated expression function can be used in static expressions.}
    \adanewitem{\adarmlink{RM-3-2-4.html}}{Static\_Predicate}{S with Static\_Predicate [=> Boolean]}{Condition that will hold true for objects of a given subtype; the subtype may be static.}
-   \adaitem{\adarmlink{RM-13-11.html}}{Storage\_Size}{S with Storage\_Size => universal\_integer}{Sets memory size for storage pool of the access type S.}
-   \adaitem{\adarmlink{RM-13-3.html}}{Storage\_Size}{T with Storage\_Size => universal\_integer}{Size in storage elements reserved for a task type or single task object.}
-   \adanewitem{\adarmlink{RM-4-2-1.html}}{String\_Literal}{S with String\_Literal => F}{Defines a function to implement user-defined string literals.}
-   \adanewitem{\adarmlink{RM-9-5.html}}{Synchronization}{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}{Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure.}
-   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant}{S with Type\_Invariant => Condition}{Condition that will hold true for all objects of a type.}
-   \adaitem{\adarmlink{RM-7-3-2.html}}{Type\_Invariant'Class}{S with Type\_Invariant'Class => Condition}{A condition that will hold true for all objects in a class of types.}
-   \adaitem{\adarmlink{RM-B-3-3.html}}{Unchecked\_Union}{R with Unchecked\_Union [=> Boolean]}{The discriminated record type R is used to interface to a C union type.}
-   \adanewitem{\adarmlink{RM-H-7-1.html}}{Use\_Formal}{P with Use\_Formal => all|null|formal\_parameter\_name[,...]}{Generic formal parameters used in the implementation of an entity.}
-   \adaitem{\adarmlink{RM-4-1-6.html}}{Variable\_Indexing}{S with Variable\_Indexing => F}{Defines function(S, Key) to implement user-defined indexed\_components.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Volatile}{S|X|C with Volatile [=> Boolean]}{Declare that a type, object, or component is volatile.}
-   \adaitem{\adarmlink{RM-C-6.html}}{Volatile\_Components}{A|X with Volatile\_Components [=> Boolean]}{Declare that the components of an array type or object are volatile.}
-   \adanewitem{\adarmlink{RM-D-2-1.html}}{Yield}{S with Yield [=> Boolean]}{Ensures that a callable entity includes a task dispatching point.}
+   \adaitem{\adarmlink{RM-13-11.html\#p14}}{Storage\_Size}{S with Storage\_Size => universal\_integer}{Sets memory size for storage pool of the access type S.}
+   \adaitem{\adarmlink{RM-13-3.html\#p14}}{Storage\_Size}{T with Storage\_Size => universal\_integer}{Size in storage elements reserved for a task type or single task object.}
+   \adanewitem{\adarmlink{RM-4-2-1.html\#p5}}{String\_Literal}{S with String\_Literal => F}{Defines a function to implement user-defined string literals.}
+   \adanewitem{\adarmlink{RM-9-5.html\#p12}}{Synchronization}{P with Synchronization => By\_Entry | By\_Protected\_Procedure | Optional}{Defines whether a given primitive operation of a synchronized interface will be implemented by an entry or protected procedure.}
+   \adaitem{\adarmlink{RM-7-3-2.html\#p2}}{Type\_Invariant}{S with Type\_Invariant => Condition}{Condition that will hold true for all objects of a type.}
+   \adaitem{\adarmlink{RM-7-3-2.html\#p3}}{Type\_Invariant'Class}{S with Type\_Invariant'Class => Condition}{A condition that will hold true for all objects in a class of types.}
+   \adaitem{\adarmlink{RM-B-3-3.html\#p3.2}}{Unchecked\_Union}{R with Unchecked\_Union [=> Boolean]}{The discriminated record type R is used to interface to a C union type.}
+   \adanewitem{\adarmlink{RM-H-7-1.html\#p3}}{Use\_Formal}{P with Use\_Formal => all|null|formal\_parameter\_name[,...]}{Generic formal parameters used in the implementation of an entity.}
+   \adaitem{\adarmlink{RM-4-1-6.html\#p3}}{Variable\_Indexing}{S with Variable\_Indexing => F}{Defines function(S, Key) to implement user-defined indexed\_components.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.4}}{Volatile}{S|X|C with Volatile [=> Boolean]}{Declare that a type, object, or component is volatile.}
+   \adaitem{\adarmlink{RM-C-6.html\#p6.8}}{Volatile\_Components}{A|X with Volatile\_Components [=> Boolean]}{Declare that the components of an array type or object are volatile.}
+   \adanewitem{\adarmlink{RM-D-2-1.html\#p1.7}}{Yield}{S with Yield [=> Boolean]}{Ensures that a callable entity includes a task dispatching point.}
 \end{description}
 \section*{\textsc{Pragmas}}
 \raggedright
 \begin{description}[leftmargin=8em,style=nextline]
    \adanewitem{\adarmlink{RM-D-4-1.html}}{Admission\_Policy}{pragma Admission\_Policy (policy\_identifier)}{An admission policy governs the order in which competing tasks are evaluated for acquiring the execution resource associated with a protected object.}
-   \adanewitem{\adarmlink{RM-J-15-15.html}}{All\_Calls\_Remote}{pragma All\_Calls\_Remote [(library\_unit\_name)]}{Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.}
-   \adaitem{\adarmlink{RM-11-4-2.html}}{Assert}{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}{Raises Assertion\_Error exception with an optional message when the expression is false.}
-   \adaitem{\adarmlink{RM-11-4-2.html}}{Assertion\_Policy}{pragma Assertion\_Policy(Check | Ignore)}{Enables or disables assertions including pre and post conditions.}
-   \adaitem{\adarmlink{RM-11-4-2.html}}{Assertion\_Policy}{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}{Enables or disables pre and post conditions.}
-   \adaitem{\adarmlink{RM-J-15-13.html}}{Asynchronous}{pragma Asynchronous (local\_name)}{The return message is dispensed with for a remote call on a procedure marked asynchronous.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Atomic}{pragma Atomic (local\_name)}{Is used with types and variables to specify that the code generated must read and write the type or variable from memory atomically, i.e. as a single/non-interruptible operation.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Atomic\_Components}{pragma Atomic\_Components (array\_local\_name)}{The components of the named array or every array of the named type is to be examined and updated atomically.}
-   \adaitem{\adarmlink{RM-J-15-7.html}}{Attach\_Handler}{pragma Attach\_Handler (handler\_name, expression)}{The handler procedure is attached to the specified interrupt.}
-   \adanewitem{\adarmlink{RM-9-10-1.html}}{Conflict\_Check\_Policy}{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}{This subclause determines what checks are performed relating to possible concurrent conflicting actions.}
-   \adaitem{\adarmlink{RM-J-15-5.html}}{Convention}{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}{Directs the compiler to represent a type or subprogram using a foreign language convention.}
-   \adaitem{\adarmlink{RM-J-15-9.html}}{CPU}{pragma CPU (System.Multiprocessors.CPU\_Range)}{Processor on which a given task, or calling task for a protected operation, should run.}
-   \adaitem{\adarmlink{RM-13-11-3.html}}{Default\_Storage\_Pool}{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}{Specifies the storage pool that will be used in the absence of an explicit specification of a storage pool or storage size for an access type.}
-   \adaitem{\adarmlink{RM-H-5.html}}{Detect\_Blocking}{pragma Detect\_Blocking}{Raises Program\_Error when a potentially blocking operation is detected that occurs during the execution of a protected operation or a parallel construct defined within a compilation unit to which the pragma applies.}
-   \adaitem{\adarmlink{RM-C-5.html}}{Discard\_Names}{pragma Discard\_Names [([On => ] local\_name)]}{Reduce the memory needed to store names of Ada entities, where no operation uses those names.}
-   \adaitem{\adarmlink{RM-J-15-10.html}}{Dispatching\_Domain}{pragma Dispatching\_Domain (expression)}{Domain (group of processors) on which a given task should run.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Elaborate}{pragma Elaborate (library\_unit\_name[, ...])}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.}
-   \adaitem{\adarmlink{RM-10-2-1.html}}{Elaborate\_All}{pragma Elaborate\_All (library\_unit\_name[, ...])}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.}
-   \adanewitem{\adarmlink{RM-J-15-14.html}}{Elaborate\_Body}{pragma Elaborate\_Body [(library\_unit\_name)]}{Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.}
-   \adaitem{\adarmlink{RM-J-15-5.html}}{Export}{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.}
-   \adanewitem{\adarmlink{RM-D-2-6.html}}{Generate\_Deadlines}{pragma Generate\_Deadlines}{Makes the deadline of a task be recomputed each time it becomes ready. The new deadline is the value of Real\_Time.Clock at the time the task is added to a ready queue plus the value returned by Get\_Relative\_Deadline.}
-   \adaitem{\adarmlink{RM-J-15-5.html}}{Import}{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to use code or data objects written in a foreign computer language.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Independent}{pragma Independent (component\_local\_name)}{Declare that a type, object, or component is independently addressable.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Independent\_Components}{pragma Independent\_Components (local\_name)}{Declare that the components of an array or record type, or an array object, are independently addressable.}
-   \adaitem{\adarmlink{RM-J-15-1.html}}{Inline}{pragma Inline (name[, ...])}{Directs the compiler to inline the code of the given subprogram, making execution faster by eliminating overhead of the subprogram call.}
-   \adaitem{\adarmlink{RM-H-3-2.html}}{Inspection\_Point}{pragma Inspection\_Point [(object\_name[, ...])]}{Directs the compiler to ensure that the specified variable is available where the pragma appears. This pragma aids in debugging.}
-   \adaitem{\adarmlink{RM-J-15-7.html}}{Interrupt\_Handler}{pragma Interrupt\_Handler (handler\_name)}{Tell the compiler this is an interrupt handler.}
-   \adaitem{\adarmlink{RM-J-15-11.html}}{Interrupt\_Priority}{pragma Interrupt\_Priority [(expression)]}{Assigns the given priority to the whole protected object. No other interrupts at or below that level will be enabled whenever the procedure is executing.}
-   \adaitem{\adarmlink{RM-B-1.html}}{Linker\_Options}{pragma Linker\_Options (string\_expression)}{Used to specify the system linker parameters needed when a given compilation unit is included in a partition.}
-   \adaitem{\adarmlink{RM-2-8.html}}{List}{pragma List (identifier)}{Specifies that listing of the compilation is to be continued (On) or suspended (Off) until a List pragma with the opposite argument is given within the same compilation.}
-   \adaitem{\adarmlink{RM-D-3.html}}{Locking\_Policy}{pragma Locking\_Policy (policy\_identifier)}{Chooses locking policy.}
-   \adaitem{\adarmlink{RM-J-15-2.html}}{No\_Return}{pragma No\_Return (subprogram\_local\_name[, subprogram\_local\_name])}{States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.}
-   \adaitem{\adarmlink{RM-H-1.html}}{Normalize\_Scalars}{pragma Normalize\_Scalars}{Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.}
-   \adaitem{\adarmlink{RM-2-8.html}}{Optimize}{pragma Optimize (identifier)}{Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).}
-   \adaitem{\adarmlink{RM-J-15-3.html}}{Pack}{pragma Pack (first\_subtype\_local\_name)}{Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.}
-   \adaitem{\adarmlink{RM-2-8.html}}{Page}{pragma Page}{Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).}
-   \adaitem{\adarmlink{RM-H-6.html}}{Partition\_Elaboration\_Policy}{pragma Partition\_Elaboration\_Policy (policy\_identifier)}{Specifies the elaboration policy for a partition.}
-   \adanewitem{\adarmlink{RM-J-15-14.html}}{Preelaborable\_Initialization}{pragma Preelaborable\_Initialization (direct\_name)}{Specifies that all objects of the type have preelaborable initialization expressions.}
-   \adanewitem{\adarmlink{RM-J-15-14.html}}{Preelaborate}{pragma Preelaborate [(library\_unit\_name)]}{Slightly less restrictive than pragma Pure, but still strong enough to prevent access before elaboration problems within a unit.}
-   \adaitem{\adarmlink{RM-J-15-11.html}}{Priority}{pragma Priority (Integer)}{Sets a task's priority. The pragma must be called in the task specification.}
-   \adaitem{\adarmlink{RM-D-2-2.html}}{Priority\_Specific\_Dispatching}{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}{Specifies the task dispatching policy for the specified range of priorities.}
-   \adaitem{\adarmlink{RM-13-12.html}}{Profile}{pragma Profile (profile\_identifier [, profile\_pragma\_argument\_association])}{Expresses the user's intent to abide by a set of Restrictions or other specified run-time policies. These may facilitate the construction of simpler run-time environments.}
-   \adanewitem{\adarmlink{RM-J-15-14.html}}{Pure}{pragma Pure [(library\_unit\_name)]}{Guarantees that no scenario within the unit can result in an access before elaboration problem.}
-   \adaitem{\adarmlink{RM-D-4.html}}{Queuing\_Policy}{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}{Defines the queuing policy used on task entry to an Ada partition.}
-   \adaitem{\adarmlink{RM-J-15-12.html}}{Relative\_Deadline}{pragma Relative\_Deadline (Real\_Time.Time\_Span)}{Defines deadline.}
-   \adanewitem{\adarmlink{RM-J-15-15.html}}{Remote\_Call\_Interface}{pragma Remote\_Call\_Interface [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Call-Interface.}
-   \adanewitem{\adarmlink{RM-J-15-15.html}}{Remote\_Types}{pragma Remote\_Types [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Type.}
-   \adaitem{\adarmlink{RM-13-12.html}}{Restrictions}{pragma Restrictions (restriction[, ...])}{Used to forbid the utilization of some language features.}
-   \adaitem{\adarmlink{RM-H-3-1.html}}{Reviewable}{pragma Reviewable}{Directs the compiler to provide information that aids inspection of the program's object code.}
-   \adanewitem{\adarmlink{RM-J-15-15.html}}{Shared\_Passive}{pragma Shared\_Passive [(library\_unit\_name)]}{Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.}
-   \adaitem{\adarmlink{RM-J-15-4.html}}{Storage\_Size}{pragma Storage\_Size (expression)}{Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).}
-   \adaitem{\adarmlink{RM-11-5.html}}{Suppress}{pragma Suppress (identifier)}{Gives the compiler permission to omit checks, but does not require the compiler to omit checks.}
-   \adaitem{\adarmlink{RM-D-2-2.html}}{Task\_Dispatching\_Policy}{pragma Task\_Dispatching\_Policy (policy\_identifier)}{Chooses scheduling policies.}
-   \adaitem{\adarmlink{RM-J-15-6.html}}{Unchecked\_Union}{pragma Unchecked\_Union (first\_subtype\_local\_name)}{Denotes an unconstrained discriminated record subtype having a variant\_part.}
-   \adaitem{\adarmlink{RM-11-5.html}}{Unsuppress}{pragma Unsuppress (identifier)}{Unsuppresses a given check.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
-   \adaitem{\adarmlink{RM-J-15-8.html}}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
+   \adanewitem{\adarmlink{RM-J-15-15.html\#p6}}{All\_Calls\_Remote}{pragma All\_Calls\_Remote [(library\_unit\_name)]}{Force all calls on a remote-call-interface library unit from other library units in the same active partition to be remote.}
+   \adaitem{\adarmlink{RM-11-4-2.html\#p3}}{Assert}{pragma Assert([Check =>] boolean\_expression[, [Message =>] string\_expression])}{Raises Assertion\_Error exception with an optional message when the expression is false.}
+   \adaitem{\adarmlink{RM-11-4-2.html\#p6}}{Assertion\_Policy}{pragma Assertion\_Policy(Check | Ignore)}{Enables or disables assertions including pre and post conditions.}
+   \adaitem{\adarmlink{RM-11-4-2.html\#p6}}{Assertion\_Policy}{pragma Assertion\_Policy(Pre => Check | Ignore, Post => Check | Ignore)}{Enables or disables pre and post conditions.}
+   \adaitem{\adarmlink{RM-J-15-13.html\#p1}}{Asynchronous}{pragma Asynchronous (local\_name)}{The return message is dispensed with for a remote call on a procedure marked asynchronous.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p2}}{Atomic}{pragma Atomic (local\_name)}{Is used with types and variables to specify that the code generated must read and write the type or variable from memory atomically, i.e. as a single/non-interruptible operation.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p5}}{Atomic\_Components}{pragma Atomic\_Components (array\_local\_name)}{The components of the named array or every array of the named type is to be examined and updated atomically.}
+   \adaitem{\adarmlink{RM-J-15-7.html\#p4}}{Attach\_Handler}{pragma Attach\_Handler (handler\_name, expression)}{The handler procedure is attached to the specified interrupt.}
+   \adanewitem{\adarmlink{RM-9-10-1.html\#p3}}{Conflict\_Check\_Policy}{pragma Conflict\_Check\_Policy (policy\_identifier[, policy\_identifier])}{This subclause determines what checks are performed relating to possible concurrent conflicting actions.}
+   \adaitem{\adarmlink{RM-J-15-5.html\#p4}}{Convention}{pragma Convention ([Convention =>] convention\_identifier, [Entity =>] local\_name)}{Directs the compiler to represent a type or subprogram using a foreign language convention.}
+   \adaitem{\adarmlink{RM-J-15-9.html\#p1}}{CPU}{pragma CPU (System.Multiprocessors.CPU\_Range)}{Processor on which a given task, or calling task for a protected operation, should run.}
+   \adaitem{\adarmlink{RM-13-11-3.html\#p1}}{Default\_Storage\_Pool}{pragma Default\_Storage\_Pool (storage\_pool\_indicator)}{Specifies the storage pool that will be used in the absence of an explicit specification of a storage pool or storage size for an access type.}
+   \adaitem{\adarmlink{RM-H-5.html\#p1}}{Detect\_Blocking}{pragma Detect\_Blocking}{Raises Program\_Error when a potentially blocking operation is detected that occurs during the execution of a protected operation or a parallel construct defined within a compilation unit to which the pragma applies.}
+   \adaitem{\adarmlink{RM-C-5.html\#p1}}{Discard\_Names}{pragma Discard\_Names [([On => ] local\_name)]}{Reduce the memory needed to store names of Ada entities, where no operation uses those names.}
+   \adaitem{\adarmlink{RM-J-15-10.html\#p1}}{Dispatching\_Domain}{pragma Dispatching\_Domain (expression)}{Domain (group of processors) on which a given task should run.}
+   \adaitem{\adarmlink{RM-10-2-1.html\#p20}}{Elaborate}{pragma Elaborate (library\_unit\_name[, ...])}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma.}
+   \adaitem{\adarmlink{RM-10-2-1.html\#p21}}{Elaborate\_All}{pragma Elaborate\_All (library\_unit\_name[, ...])}{Guarantees that both the spec and body of its argument will be elaborated prior to the unit with the pragma, as well as all units withed by the spec and body of the argument, recursively.}
+   \adanewitem{\adarmlink{RM-J-15-14.html\#p25}}{Elaborate\_Body}{pragma Elaborate\_Body [(library\_unit\_name)]}{Requires that the body of a unit is elaborated immediately after its spec. This restriction guarantees that no client scenario can invoke a server target before the target body has been elaborated.}
+   \adaitem{\adarmlink{RM-J-15-5.html\#p3}}{Export}{pragma Export ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to make available subprograms or data objects written in Ada to foreign computer languages.}
+   \adanewitem{\adarmlink{RM-D-2-6.html\#p9.4}}{Generate\_Deadlines}{pragma Generate\_Deadlines}{Makes the deadline of a task be recomputed each time it becomes ready. The new deadline is the value of Real\_Time.Clock at the time the task is added to a ready queue plus the value returned by Get\_Relative\_Deadline.}
+   \adaitem{\adarmlink{RM-J-15-5.html\#p2}}{Import}{pragma Import ([Convention =>] convention\_identifier, [Entity =>] local\_name [, [External\_Name =>] string\_expression] [,[Link\_Name =>] string\_expression])}{Directs the compiler to use code or data objects written in a foreign computer language.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p4}}{Independent}{pragma Independent (component\_local\_name)}{Declare that a type, object, or component is independently addressable.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p7}}{Independent\_Components}{pragma Independent\_Components (local\_name)}{Declare that the components of an array or record type, or an array object, are independently addressable.}
+   \adaitem{\adarmlink{RM-J-15-1.html\#p2}}{Inline}{pragma Inline (name[, ...])}{Directs the compiler to inline the code of the given subprogram, making execution faster by eliminating overhead of the subprogram call.}
+   \adaitem{\adarmlink{RM-H-3-2.html\#p1}}{Inspection\_Point}{pragma Inspection\_Point [(object\_name[, ...])]}{Directs the compiler to ensure that the specified variable is available where the pragma appears. This pragma aids in debugging.}
+   \adaitem{\adarmlink{RM-J-15-7.html\#p1}}{Interrupt\_Handler}{pragma Interrupt\_Handler (handler\_name)}{Tell the compiler this is an interrupt handler.}
+   \adaitem{\adarmlink{RM-J-15-11.html\#p1}}{Interrupt\_Priority}{pragma Interrupt\_Priority [(expression)]}{Assigns the given priority to the whole protected object. No other interrupts at or below that level will be enabled whenever the procedure is executing.}
+   \adaitem{\adarmlink{RM-B-1.html\#p8}}{Linker\_Options}{pragma Linker\_Options (string\_expression)}{Used to specify the system linker parameters needed when a given compilation unit is included in a partition.}
+   \adaitem{\adarmlink{RM-2-8.html\#p21}}{List}{pragma List (identifier)}{Specifies that listing of the compilation is to be continued (On) or suspended (Off) until a List pragma with the opposite argument is given within the same compilation.}
+   \adaitem{\adarmlink{RM-D-3.html\#p1}}{Locking\_Policy}{pragma Locking\_Policy (policy\_identifier)}{Chooses locking policy.}
+   \adaitem{\adarmlink{RM-J-15-2.html\#p1}}{No\_Return}{pragma No\_Return (subprogram\_local\_name[, subprogram\_local\_name])}{States that a procedure will never return normally; that is, it will raise an exception, loop endlessly, or terminate the program.}
+   \adaitem{\adarmlink{RM-H-1.html\#p1}}{Normalize\_Scalars}{pragma Normalize\_Scalars}{Directs the compiler to initialize otherwise uninitialized scalar variables with predictable values. If possible, the compiler will choose out-of-range values.}
+   \adaitem{\adarmlink{RM-2-8.html\#p23}}{Optimize}{pragma Optimize (identifier)}{Gives advice to the implementation as to whether time (Time) or space (Space) is the primary optimization criterion, or that optional optimizations should be turned off (Off).}
+   \adaitem{\adarmlink{RM-J-15-3.html\#p1}}{Pack}{pragma Pack (first\_subtype\_local\_name)}{Directs the compiler to use type representations that favor conservation of storage space, rather than ease of access.}
+   \adaitem{\adarmlink{RM-2-8.html\#p22}}{Page}{pragma Page}{Specifies that the program text which follows the pragma should start on a new page (if the compiler is currently producing a listing).}
+   \adaitem{\adarmlink{RM-H-6.html\#p1}}{Partition\_Elaboration\_Policy}{pragma Partition\_Elaboration\_Policy (policy\_identifier)}{Specifies the elaboration policy for a partition.}
+   \adanewitem{\adarmlink{RM-J-15-14.html\#p4}}{Preelaborable\_Initialization}{pragma Preelaborable\_Initialization (direct\_name)}{Specifies that all objects of the type have preelaborable initialization expressions.}
+   \adanewitem{\adarmlink{RM-J-15-14.html\#p3}}{Preelaborate}{pragma Preelaborate [(library\_unit\_name)]}{Slightly less restrictive than pragma Pure, but still strong enough to prevent access before elaboration problems within a unit.}
+   \adaitem{\adarmlink{RM-J-15-11.html\#p1}}{Priority}{pragma Priority (Integer)}{Sets a task's priority. The pragma must be called in the task specification.}
+   \adaitem{\adarmlink{RM-D-2-2.html\#p2.2}}{Priority\_Specific\_Dispatching}{pragma Priority\_Specific\_Dispatching (policy\_identifier, first\_priority\_expression, last\_priority\_expression)}{Specifies the task dispatching policy for the specified range of priorities.}
+   \adaitem{\adarmlink{RM-13-12.html\#p11}}{Profile}{pragma Profile (profile\_identifier [, profile\_pragma\_argument\_association])}{Expresses the user's intent to abide by a set of Restrictions or other specified run-time policies. These may facilitate the construction of simpler run-time environments.}
+   \adanewitem{\adarmlink{RM-J-15-14.html\#p9}}{Pure}{pragma Pure [(library\_unit\_name)]}{Guarantees that no scenario within the unit can result in an access before elaboration problem.}
+   \adaitem{\adarmlink{RM-D-4.html\#p1}}{Queuing\_Policy}{pragma Queuing\_Policy (FIFO\_Queuing|Priority\_Queuing)}{Defines the queuing policy used on task entry to an Ada partition.}
+   \adaitem{\adarmlink{RM-J-15-12.html\#p1}}{Relative\_Deadline}{pragma Relative\_Deadline (Real\_Time.Time\_Span)}{Defines deadline.}
+   \adanewitem{\adarmlink{RM-J-15-15.html\#p5}}{Remote\_Call\_Interface}{pragma Remote\_Call\_Interface [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Call-Interface.}
+   \adanewitem{\adarmlink{RM-J-15-15.html\#p4}}{Remote\_Types}{pragma Remote\_Types [(library\_unit\_name)]}{Categorizes a library-unit as a Remote-Type.}
+   \adaitem{\adarmlink{RM-13-12.html\#p1}}{Restrictions}{pragma Restrictions (restriction[, ...])}{Used to forbid the utilization of some language features.}
+   \adaitem{\adarmlink{RM-H-3-1.html\#p1}}{Reviewable}{pragma Reviewable}{Directs the compiler to provide information that aids inspection of the program's object code.}
+   \adanewitem{\adarmlink{RM-J-15-15.html\#p3}}{Shared\_Passive}{pragma Shared\_Passive [(library\_unit\_name)]}{Allows the use of passive partitions in the context described in the Ada Reference Manual; i.e., for communication between separate partitions of a distributed application using the features in Annex E.}
+   \adaitem{\adarmlink{RM-J-15-4.html\#p2}}{Storage\_Size}{pragma Storage\_Size (expression)}{Specifies the amount of space to be allocated for the task stack. This cannot be extended, and if the stack is exhausted, then Storage\_Error will be raised (if stack checking is enabled).}
+   \adaitem{\adarmlink{RM-11-5.html\#p4}}{Suppress}{pragma Suppress (identifier)}{Gives the compiler permission to omit checks, but does not require the compiler to omit checks.}
+   \adaitem{\adarmlink{RM-D-2-2.html\#p1}}{Task\_Dispatching\_Policy}{pragma Task\_Dispatching\_Policy (policy\_identifier)}{Chooses scheduling policies.}
+   \adaitem{\adarmlink{RM-J-15-6.html\#p2}}{Unchecked\_Union}{pragma Unchecked\_Union (first\_subtype\_local\_name)}{Denotes an unconstrained discriminated record subtype having a variant\_part.}
+   \adaitem{\adarmlink{RM-11-5.html\#p4.1}}{Unsuppress}{pragma Unsuppress (identifier)}{Unsuppresses a given check.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p3}}{Volatile}{pragma Volatile (local\_name)}{Is used with types and variables to specify that the variable in question may suddenly change in value. For example, this may occur due to a device writing to a shared buffer.}
+   \adaitem{\adarmlink{RM-J-15-8.html\#p6}}{Volatile\_Components}{pragma Volatile\_Components (array\_local\_name)}{notDeclares that the components of the array type — but not the array type itself — are volatile.e}
 \end{description}
 \section*{\textsc{Standard Library}}
 \begin{itemize}[leftmargin=0mm]
@@ -374,7 +373,7 @@
 	\item[] \href{\adarmlink{RM-A-18-20.html}}{Bounded\_Doubly\_Linked\_Lists}
 	\item[] \href{\adarmlink{RM-A-18-21.html}}{Bounded\_Hashed\_Maps}
 	\item[] \href{\adarmlink{RM-A-18-23.html}}{Bounded\_Hashed\_Sets}
-	\item[] \href{\adarmlink{RM-A-18-32.html}}{Bounded\_Indefinite\_Holders}
+	\item[] \href{\adarmlink{RM-A-18-32.html}}{\textit{Bounded\_Indefinite\_Holders}}
 	\item[] \href{\adarmlink{RM-A-18-25.html}}{Bounded\_Multiway\_Trees}
 	\item[] \href{\adarmlink{RM-A-18-22.html}}{Bounded\_Ordered\_Maps}
 	\item[] \href{\adarmlink{RM-A-18-24.html}}{Bounded\_Ordered\_Sets}
